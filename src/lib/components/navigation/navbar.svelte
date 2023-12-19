@@ -1,0 +1,169 @@
+<script lang="ts">
+    import { goto } from "$app/navigation";
+    import { fade } from "svelte/transition";
+    import { AddLink, type Link } from "./utils";
+    let width: number;
+    let height: number;
+    let mobile: boolean = false;
+    let menuOpen : boolean = false;
+
+    let links : Link[] = [];
+    AddLink(links,"How to play","/how-to-play");
+    AddLink(links,"About","/about");
+    AddLink(links,"Blog","/blog");
+    AddLink(links,"Taxonomy","/taxonomy");
+    AddLink(links,"Cards","/cards");
+    AddLink(links,"Home","/");
+
+    function getMobile(w: number, h: number) {
+        mobile = w / h < 1;
+    }
+
+
+    function toggleMenu()
+    {
+        menuOpen = !menuOpen;
+        if(menuOpen)
+        {
+            document.body.style["overflow"] = "hidden"
+        }
+        else
+        {
+            document.body.style["overflow"] = "auto"
+        }
+    }
+
+$: getMobile(width, height);
+
+
+</script>
+
+<svelte:window bind:innerWidth={width} bind:innerHeight={height} />
+
+<nav>
+    <a class="logo" href="/">Cornucopia</a>
+    {#if mobile}
+        {#if menuOpen}
+            <button in:fade on:click={toggleMenu}><img alt="button to close the menu" src="/icons/close.png"/></button>
+        {:else}
+            <button in:fade on:click={toggleMenu}><img alt="button to open the menu" src="/icons/menu.png"/></button>
+        {/if}
+    {:else}
+        <a class="link webshop" target="_blank" href="https://webshop.dotnetlab.eu/product/cornucopia-card-deck/">Webshop</a>
+        {#each links as link}
+            <a class="link" href="{link.href}">{link.name}</a>
+        {/each}
+    {/if}
+</nav>
+
+{#if menuOpen}
+    <div class="mobile-menu">
+        {#each [...links].reverse() as link}
+            <button class="link-mobile" on:click={()=>{toggleMenu();goto(link.href)}}>{link.name}</button>
+        {/each}
+        <button class="link-mobile" on:click={()=>{toggleMenu();goto('https://webshop.dotnetlab.eu/product/cornucopia-card-deck/')}}>Webshop</button>
+    </div>
+{/if}
+
+<style>
+    .webshop
+    {
+        border: 4px white solid;
+        padding : .5rem;
+        margin-right: 1.5rem!important;
+    }
+    .webshop:hover
+    {
+        text-decoration: none!important;
+        background-color: white;
+        color:black;
+    }
+
+    .link-mobile
+    {
+        color:var(--white);
+        text-decoration: none;
+        font-size: 2rem;;
+        display: none;
+        width : 100%;
+        font-family: 'modern-dos';
+        text-align: center;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        border-bottom: 1px rgba(255, 255, 255, 0.203) solid;
+    }
+    .mobile-menu
+    {
+        position: fixed;
+        width : 100%;
+        height : 100%;
+        background-color: var(--background);
+        z-index: 100;
+    }
+    button
+    {
+        background:none;
+        border:none;
+        float:right;
+        margin:1rem;
+    }
+    img
+    {
+        width : 3rem;
+    }
+    .link
+    {
+        float:right;
+        color:white;
+        font-family: 'modern-dos';
+        text-decoration: none;
+        padding: .5rem;
+        font-size: 1.5rem;
+        margin-left:.2rem;
+        margin-right:.2rem;
+        margin-top: 1rem;
+    }
+
+    .link:hover
+    {
+        text-decoration: underline;
+    }
+
+    .logo
+    {
+        display:inline-block;
+        width : 15rem;
+        text-decoration: none;
+        margin:0;
+        font-size: 3rem;
+        padding: 1rem;
+        font-family: 'modern-dos';
+        color: var(--white);
+    }
+
+    .logo:hover
+    {
+        text-decoration: underline;
+    }
+    
+    nav
+    {
+        width : 100vw;
+        height : 5rem;
+        background-color: var(--background);
+        border-bottom: 1px var(--white) solid;
+    }
+
+    @media (max-aspect-ratio: 1/1) 
+    {
+        .link-mobile
+        {
+            display: block;
+        }
+
+        .link
+        {
+            display:none;
+        }
+    }
+</style>
