@@ -13,7 +13,7 @@ export async function load({params})
 
 function getMarkdown(category : string, entry : string) : string
 {
-    let markdown = fs.readFileSync("./data/taxonomy/" + category + '/' + entry + '/index.md', 'utf8');
+    let filepath : string = "./data/taxonomy/" + category + '/' + entry + '/index.md';
+    let markdown = fs.readFileSync(filepath, 'utf8');
     return markdown;
-
 }

@@ -1,8 +1,9 @@
 <script>
+    import { Text } from "$lib/utils/text";
+
     export let data;
 </script>
 
-<h1>Taxonomy overview:</h1>
 {#each data.categories as category}
-    <p><a href="/taxonomy/{category}">{category}</a></p>
+    <p><a href="/taxonomy/{category}">{Text.Format(category)}</a></p>
 {/each}
