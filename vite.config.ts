@@ -5,7 +5,7 @@ import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 let vitePluginRestartOptions = {restart: ['./data/**']}
 
-let viteStaticCopyTargets = [{src: './data/*',dest: '/data'}]
+let viteStaticCopyTargets = [{src: './data/*',dest: './data/'}]
 let viteStaticCopyOptions = { targets: viteStaticCopyTargets}
 
 export default defineConfig({

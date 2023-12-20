@@ -2,9 +2,6 @@ import fs from "fs"
 
 export async function load({params})
 {
-    const images = import.meta.glob('./data/author/ive-verstappen/*');
-    console.dir(images)
-
     return {
         markdown : getAuthorMarkdown(params.name),
         author : params.name,
