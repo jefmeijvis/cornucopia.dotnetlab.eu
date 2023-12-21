@@ -49,7 +49,7 @@
 
 <svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 
-<div>
+<div style="display:none;">
     {#each data.suits as suit}
         {#each suit.cards as card}
             <a href="{generateLink(suit.name,card.value)}">{card.value}</a>
