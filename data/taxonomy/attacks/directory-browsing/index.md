@@ -1,4 +1,11 @@
 # Directory Browsing
 This post is about Directory Browsing
 
-# new title
+# Example
+Text
+
+# Articles and blogposts
+Text
+
+# Relevant cards for this attack
+Text
