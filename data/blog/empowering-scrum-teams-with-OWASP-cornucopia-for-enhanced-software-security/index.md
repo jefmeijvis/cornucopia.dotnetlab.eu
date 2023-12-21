@@ -26,5 +26,3 @@ The subsequent phase involves a deep dive into threat modeling, where you valida
 Integrating Cornucopia into your Scrum workflow transforms security from a static checklist into a dynamic, sprint-by-sprint endeavor. It fosters a culture of proactive security, ensuring that safeguards evolve in tandem with your software's development.
  
 Ready to fortify your team's security posture? Begin with the Cornucopia Card Deck, your gateway to a more secure development cycle. Find it in [our webshop](https://webshop.dotnetlab.eu/product/cornucopia-card-deck/) and take the next step towards building robust, secure software.
-
-![OWASP Logo](opengraph.png)

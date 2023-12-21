@@ -15,6 +15,7 @@
             {post.id} █
             {post.attributes.date} █
             {Text.Format(post.attributes.author)}
+            <a class= "link" href="/blog/{post.title}">>> Read more</a>
         </p>
     </button>
 {/each}
@@ -24,6 +25,10 @@
 
 
 <style>
+    .link
+    {
+        display: none;
+    }
     .info
     {
         font-size: 1rem;

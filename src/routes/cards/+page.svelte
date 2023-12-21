@@ -49,6 +49,14 @@
 
 <svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 
+<div>
+    {#each data.suits as suit}
+        {#each suit.cards as card}
+            <a href="{generateLink(suit.name,card.value)}">{card.value}</a>
+        {/each}
+    {/each}
+</div>
+
 <div class="container">
     <div class="tree">
         <h1>Cards</h1>
