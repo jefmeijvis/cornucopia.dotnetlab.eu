@@ -1,6 +1,7 @@
 ---
 author: ive-verstappen
 date: 16/10/2021
+tags: scrum,agile,test
 ---
 
 # Empowering Scrum Teams with OWASP Cornucopia for Enhanced Software Security

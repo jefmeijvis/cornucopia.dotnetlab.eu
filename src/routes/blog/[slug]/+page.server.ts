@@ -9,7 +9,6 @@ export async function load({params})
 
     return {
         markdown : parsed.body,
-        author : parsed.attributes.author,
-        date : parsed.attributes.date,
+        attributes : parsed.attributes,
     }
 }

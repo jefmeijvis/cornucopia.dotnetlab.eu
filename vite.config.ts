@@ -5,6 +5,7 @@ import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 let vitePluginRestartOptions = {restart: ['./data/**']}
 
+// This copies the content from the filesystem data folder to the static file location under '/data/' available at runtime.
 let viteStaticCopyTargets = [{src: './data/*',dest: './data/'}]
 let viteStaticCopyOptions = { targets: viteStaticCopyTargets}
 

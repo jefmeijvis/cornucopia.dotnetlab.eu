@@ -1,12 +1,12 @@
 <script>
     import Breadcrumbs from "$lib/components/breadcrumbs.svelte";
+
 </script>
 
 <div>
     <Breadcrumbs></Breadcrumbs>
     <slot></slot>
 </div>
-
 
 <style>
     div
