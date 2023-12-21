@@ -1,4 +1,4 @@
-# Cross-Site Scripting (XSS)
+# DOS attack
 
 
 ## Example
@@ -6,7 +6,7 @@
 
 ## Links
 - []()
-- [](https:)
-- [](https:)
+- []()
+- []()
 
 ## Cards

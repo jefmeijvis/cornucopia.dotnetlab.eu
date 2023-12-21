@@ -1,12 +1,11 @@
-# Cross-Site Scripting (XSS)
-
+# Manipulation of Hash Functions
 
 ## Example
 
 
 ## Links
 - []()
-- [](https:)
-- [](https:)
+- []()
+- []()
 
 ## Cards

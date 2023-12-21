@@ -1,4 +1,4 @@
-# Cross-Site Scripting (XSS)
+# Cryptographic Algorithm Attacks
 
 
 ## Example
@@ -6,7 +6,7 @@
 
 ## Links
 - []()
-- [](https:)
-- [](https:)
+- []()
+- []()
 
 ## Cards

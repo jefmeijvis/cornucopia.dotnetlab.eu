@@ -1,12 +1,11 @@
-# Cross-Site Scripting (XSS)
-
+# Hash Collision Attacks
 
 ## Example
 
 
 ## Links
 - []()
-- [](https:)
-- [](https:)
+- []()
+- []()
 
 ## Cards
