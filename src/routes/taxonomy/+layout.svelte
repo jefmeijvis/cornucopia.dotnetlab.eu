@@ -16,4 +16,12 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+
+    @media (max-aspect-ratio: 1/1) 
+    {
+        div
+        {
+            width: 95%;
+        }
+    }
 </style>

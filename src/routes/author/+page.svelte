@@ -11,3 +11,10 @@
         <a href="/author/{author}">{Text.Format(author)}</a>
     </p>
 {/each}
+
+<style>
+    p
+    {
+        font-size: 1.5rem;
+    }
+</style>

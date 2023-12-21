@@ -1,5 +1,5 @@
 <script>
-    import Deck from "./deck.svelte";
+    import Deck from "../deck/deck.svelte";
     import HeroText from "./heroText.svelte";
 </script>
 
