@@ -1,4 +1,4 @@
-import { FileSystemHelper } from '$lib/filesystem/fileSystemHelper.js'
+import { getBlogpostEntries, type Blogpost } from './posts.js'
 
 export async function load({params})
 {
@@ -7,7 +7,4 @@ export async function load({params})
     }
 }
 
-function getBlogpostEntries() : string[]
-{
-    return FileSystemHelper.getDirectories("./data/blog")
-}
+

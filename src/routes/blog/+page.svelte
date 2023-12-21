@@ -1,5 +1,7 @@
 <script>
-    
+    import { goto } from '$app/navigation';
+    import { Text } from '$lib/utils/text';
+
     export let data;
 </script>
 
@@ -7,9 +9,14 @@
 
 <div class="list">
 {#each data.posts as post}
-    <p>
-        <a href="/blog/{post}">{post}</a>
-    </p>
+    <button title="View this post" on:click={()=>goto('/blog/' + post.title)}>
+        <p class="title">{Text.Format(post.title)}</p>
+        <p class="info">
+            {post.id} █
+            {post.attributes.date} █
+            {Text.Format(post.attributes.author)}
+        </p>
+    </button>
 {/each}
 </div>
 
@@ -17,6 +24,40 @@
 
 
 <style>
+    .info
+    {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    .title
+    {
+        background-color: var(--white);
+        color: var(--background);
+        margin: 0;
+        padding: .5rem;
+    }
+    button
+    {
+        padding: 0;
+        width : 100%;
+        text-align: left;
+        font-family: 'modern-dos';
+        font-weight: 400;
+        background: none;
+        border:none;
+        cursor:pointer;
+        color:var(--white);
+        outline: 1px white solid;
+        margin-bottom: 2rem;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    }
+
+    button:hover
+    {
+        opacity: 70%;
+    }
 
     p
     {
