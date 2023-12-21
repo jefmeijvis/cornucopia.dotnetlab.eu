@@ -1,4 +1,5 @@
 ---
+id : 1
 author: ive-verstappen
 date: 16/10/2021
 tags: scrum,agile,test
@@ -9,9 +10,13 @@ This is the first post in a series on how Cornucopia can concretely assist Scrum
  
 In today's fast-paced agile software development environment, security considerations may inadvertently take a back seat. However, OWASP Cornucopia turns the tables by embedding security into the very fabric of the development lifecycle.
  
+ ![OWASP Logo](owasp-logo.png)
+ 
 ## 1. Reimagining Product Planning 
 Product planning and grooming sessions are transformed with Cornucopia. This game sparks collaborative discussions on cybersecurity threats, making complex security concepts accessible and engaging for the entire development team and stakeholders. The outcome? A curated list of pertinent security threats tailored to your application.
- 
+
+![OWASP Logo](opengraph.png)
+
 ## 2. Strategic Threat Prioritization
 With a clear list of threats from Cornucopia, prioritizing them within the product backlog is crucial.
 Cornucopia's intuitive card hierarchy (where higher-ranked cards indicate higher risks) guides this process.

@@ -1,7 +1,11 @@
 <script lang="ts">
+    import { page } from "$app/stores";
+
     export let href = ''
     export let title : string = ""
     export let text = ''
+
+    let url : string = '/data' + $page.url.pathname + '/' + href
 
     // Using /static allows autocomplete in VS code somehow, but breaks the image linking
     // So I just remove it before applying the href property of the img tag.
@@ -39,8 +43,9 @@
 
   </script>
   
-  <img loading="lazy" style="{getStyle()}" src={href} {title} alt={text}>
+  <img loading="lazy" style="{getStyle()}" src={url} {title} alt={text}>
   <p class="alt-text"><i>Image: {text}</i></p>
+  <p class="alt-text"><i>Path: {url}</i></p>
 
 
   <style>

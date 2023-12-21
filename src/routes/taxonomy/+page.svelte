@@ -5,12 +5,13 @@
 </script>
 
 {#each data.categories as category}
-    <p><a href="/taxonomy/{category}">{Text.Format(category)}</a></p>
+    <p>├──<a href="/taxonomy/{category}">{Text.Format(category)}</a></p>
 {/each}
 
 <style>
     p
     {
         font-size: 1.5rem;
+        margin:0;
     }
 </style>
