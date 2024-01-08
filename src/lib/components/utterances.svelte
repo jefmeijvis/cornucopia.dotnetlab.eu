@@ -7,6 +7,7 @@
 	let percentage : number = 0;
 
     export let name : string;
+	export let delay : number = 250;
 
 	onMount(async ()=> createCommentSection())
 
@@ -21,7 +22,7 @@
 	{
 		for(let i = 0 ; i < 10 ; i++)
 		{
-			await sleep(250);
+			await sleep(delay);
 			percentage += 10
 		}
 		loading = false;

@@ -3,7 +3,7 @@ id : 2
 author: jef-meijvis
 date: 21/12/2023
 tags: appsec
-published: true
+published: false
 ---
 
 # Empowering Scrum Teams with OWASP Cornucopia for Enhanced Software Security

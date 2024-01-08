@@ -1,2 +1,2 @@
 # Jef Meijvis
-Author bio goes here
+Jef Meijvis is responsible for the Cybersecurity unit of dotNET lab.

@@ -9,10 +9,10 @@
 
 <div class="metadata">
     <div class="left">
-        <p>Date: {attributes.date}</p>
+        <p>Date: {Text.FormatDate(attributes.date)}</p>
         <p>Author: <a href="{authorLink}">{Text.Format(attributes.author)}</a></p>
         <p>Tags: 
-            {#each attributes.tags.split(',') as tag}
+            {#each attributes?.tags?.split(',') ?? [] as tag}
             <a class="tag" href="/blog">{Text.Format(tag)}</a><span></span>
             {/each}
         </p>

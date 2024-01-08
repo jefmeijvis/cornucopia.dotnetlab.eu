@@ -33,9 +33,15 @@
       color: var(--white);
     }
 
-    h2::after
+    h2::after,h3::after
     {
       content: '_';
+    }
+
+    h3
+    {
+      color: rgb(0, 209, 0);
+      font-size: 1.2rem;
     }
  
   </style>

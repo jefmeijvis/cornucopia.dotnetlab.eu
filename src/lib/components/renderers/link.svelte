@@ -37,6 +37,7 @@
 
     a:hover
     {
-        opacity: 50%;
-    }
+      color: rgb(0, 209, 0);
+      font-weight: bold;
+    }    
   </style>

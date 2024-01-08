@@ -14,12 +14,12 @@ export class Text
         return input;
     }
 
-    public static FormatDate(date: string, dateStyle: DateStyle = 'medium', locales = 'nl-nl') 
+    public static FormatDate(input : string) : string
     {
-        date = "1-12-2023"
-        // Safari is mad about dashes in the date
-        const dateToFormat = new Date(date.replaceAll('-', '/'))
-        const dateFormatter = new Intl.DateTimeFormat(locales, { dateStyle })
-        return dateFormatter.format(dateToFormat)
+        // This method expects 20 december 2020 as 20/12/2020 (DD/MM/YYYY)
+        var dateParts = input.split("/");
+        let date = new Date(Number.parseInt(dateParts[2]), Number.parseInt(dateParts[1]) - 1, Number.parseInt(dateParts[0]));
+        let result = date.getDate() + ' ' + date.toLocaleString('en-US', { month: 'short' }) + ', ' + date.getFullYear();
+        return result
     }
 }

@@ -12,8 +12,7 @@
     <button title="View this post" on:click={()=>goto('/blog/' + post.title)}>
         <p class="title">{Text.Format(post.title)}</p>
         <p class="info">
-            {post.id} █
-            {post.attributes.date} █
+            {Text.FormatDate(post.attributes.date)} •
             {Text.Format(post.attributes.author)}
             <a class= "link" href="/blog/{post.title}">>> Read more</a>
         </p>
