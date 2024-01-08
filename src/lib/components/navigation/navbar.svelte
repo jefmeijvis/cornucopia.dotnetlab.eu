@@ -88,8 +88,8 @@ $: getMobile(width, height);
         width : 100%;
         font-family: 'modern-dos';
         text-align: center;
-        padding-top: .75rem;
-        padding-bottom: .75rem;
+        padding-top: .2rem;
+        padding-bottom: .5rem;
         border-bottom: 1px rgba(255, 255, 255, 0.203) solid;
     }
     .mobile-menu
