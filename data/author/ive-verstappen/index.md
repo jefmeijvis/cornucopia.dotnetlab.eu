@@ -1,7 +1,6 @@
 ---
 website: https://www.dotnetlab.eu
 linkedin: https://be.linkedin.com/in/iveverstappen
-email: placeholder@email.com
 ---
 
 # Ive Verstappen

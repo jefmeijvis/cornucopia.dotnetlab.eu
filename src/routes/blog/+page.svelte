@@ -7,18 +7,23 @@
 
 <h1>Blogposts</h1>
 
-<div class="list">
-{#each data.posts as post}
-    <button title="View this post" on:click={()=>goto('/blog/' + post.title)}>
-        <p class="title">{Text.Format(post.title)}</p>
-        <p class="info">
-            {Text.FormatDate(post.attributes.date)} •
-            {Text.Format(post.attributes.author)}
-            <a class= "link" href="/blog/{post.title}">>> Read more</a>
-        </p>
-    </button>
-{/each}
-</div>
+{#if data.posts.length == 0}
+<p>No blogposts have been published yet, come back soon!</p>
+{:else}
+    <div class="list">
+        {#each data.posts as post}
+            <button title="View this post" on:click={()=>goto('/blog/' + post.title)}>
+                <p class="title">{Text.Format(post.title)}</p>
+                <p class="info">
+                    {Text.FormatDate(post.date)} •
+                    {Text.Format(post.author)}
+                    <a class= "link" href="/blog/{post.title}">>> Read more</a>
+                </p>
+            </button>
+        {/each}
+    </div>
+{/if}
+
 
 <p>View <a href="/author">All authors</a></p>
 

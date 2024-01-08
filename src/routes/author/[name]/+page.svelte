@@ -48,6 +48,18 @@ import SvelteMarkdown from "svelte-markdown";
 </div>
 
 <SvelteMarkdown source={data.author.bio}></SvelteMarkdown>
+<h2>All blogposts by this author:</h2>
+    {#if data.blogposts.length == 0}
+        <p>This author didn't publish yet</p>
+    {:else}
+        <ul>
+            {#each data.blogposts as blogpost}
+                <li>
+                    <a href="/blog/{blogpost.title}">{Text.Format(blogpost.title)}</a>
+                </li>
+            {/each}
+        </ul>
+    {/if}
 
 <style>
     .container
