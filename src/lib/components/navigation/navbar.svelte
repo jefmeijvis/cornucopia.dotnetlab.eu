@@ -61,7 +61,7 @@ $: getMobile(width, height);
         {#each [...links].reverse() as link}
             <button class="link-mobile" on:click={()=>{toggleMenu();goto(link.href)}}>{link.name}</button>
         {/each}
-        <button class="link-mobile" on:click={()=>{goto('https://webshop.dotnetlab.eu/product/cornucopia-card-deck/')}}>Webshop</button>
+        <button class="link-mobile" on:click={()=>{window.location = 'https://webshop.dotnetlab.eu/product/cornucopia-card-deck/'}}>Webshop</button>
     </div>
 {/if}
 
