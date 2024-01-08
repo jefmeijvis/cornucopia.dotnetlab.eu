@@ -1,3 +1,9 @@
+---
+website: https://www.dotnetlab.eu
+linkedin: https://be.linkedin.com/in/iveverstappen
+email: placeholder@email.com
+---
+
 # Ive Verstappen
 As the founder of [dotNET lab](https://www.dotnetlab.eu/), I am blessed to be able to work with world-class people, all of whom I respect and admire. I'm also pleased to have great, understanding customers from whom I learn a great deal about building a trustworthy business. Every day is a learning-experience for me.
 

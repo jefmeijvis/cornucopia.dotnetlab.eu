@@ -22,4 +22,9 @@ export class Text
         let result = date.getDate() + ' ' + date.toLocaleString('en-US', { month: 'short' }) + ', ' + date.getFullYear();
         return result
     }
+
+    public static DisplayLink(input : string) : string
+    {
+        return input.trim().replaceAll('https','').replaceAll('http','').replaceAll('://','')
+    }
 }

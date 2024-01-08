@@ -8,7 +8,7 @@
 
 {#each data.authors as author}
     <p>
-        <a href="/author/{author}">{Text.Format(author)}</a>
+        <a href="/author/{author.name}">{Text.Format(author.name)}</a>
     </p>
 {/each}
 

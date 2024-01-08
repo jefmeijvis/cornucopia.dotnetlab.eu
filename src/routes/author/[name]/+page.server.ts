@@ -1,16 +1,9 @@
-import fs from "fs"
+import { getAuthor } from "../../../domain/author/authorController.js"
+import type { Author } from "../../../domain/author/author.js";
 
 export async function load({params})
 {
     return {
-        markdown : getAuthorMarkdown(params.name),
-        author : params.name,
+        author : getAuthor(params.name),
     }
-}
-
-function getAuthorMarkdown(name : string)
-{
-    let filepath : string = "./data/author/" + name + '/index.md';
-    let markdown = fs.readFileSync(filepath, 'utf8');
-    return markdown;
 }
