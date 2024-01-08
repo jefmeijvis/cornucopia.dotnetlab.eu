@@ -5,4 +5,4 @@ email: jef.meijvis@dotnetlab.eu
 ---
 
 # Jef Meijvis
-Jef Meijvis is responsible for the Cybersecurity unit of dotNET lab.
+Jef Meijvis is unit director for the Cybersecurity unit of dotNET lab.

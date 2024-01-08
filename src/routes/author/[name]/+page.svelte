@@ -10,6 +10,7 @@ import SvelteMarkdown from "svelte-markdown";
     </div>
     <div class="right">
         <table>
+            {#if data.author.linkedin}
             <tr>
                 <td>
                     <img alt="linkedin logo" class="icon" src="/icons/linkedin.png"/>
@@ -18,7 +19,9 @@ import SvelteMarkdown from "svelte-markdown";
                     <a target="_blank" href="{data.author.linkedin}">LinkedIn</a>
                 </td>
             </tr>
+            {/if}
 
+            {#if data.author.email}
             <tr>
                 <td>
                     <img alt="email logo" class="icon" src="/icons/mail.png"/>
@@ -27,7 +30,9 @@ import SvelteMarkdown from "svelte-markdown";
                     <a target="_blank" href="mailto:{data.author.email}">Mail</a>
                 </td>
             </tr>
+            {/if}
 
+            {#if data.author.website}
             <tr>
                 <td>
                     <img alt="globe logo" class="icon" src="/icons/globe.png"/>
@@ -35,7 +40,8 @@ import SvelteMarkdown from "svelte-markdown";
                 <td>
                     <a target="_blank" href="{data.author.website}">{Text.DisplayLink(data.author.website)}</a>
                 </td>
-            </tr>       
+            </tr>
+            {/if}   
         </table>
 
     </div>
