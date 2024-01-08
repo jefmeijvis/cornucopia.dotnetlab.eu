@@ -3,6 +3,7 @@ id : 4
 author: jef-meijvis
 date: 21/12/2023
 tags: scrum
+published: false
 ---
 
 # Empowering Scrum Teams with OWASP Cornucopia for Enhanced Software Security

@@ -21,11 +21,21 @@
   {/if}
 
   <style>
-    h1,h2,h3
+    h1
     {
       background-color: var(--white);
       color: var(--background);
       padding: .5rem;
+    }
+
+    h2
+    {
+      color: var(--white);
+    }
+
+    h2::after
+    {
+      content: '_';
     }
  
   </style>

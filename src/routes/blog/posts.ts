@@ -32,7 +32,9 @@ export function getBlogpostEntries() : Blogpost[]
             markdown : parsed.body,
             attributes : parsed.attributes
         }
-        result.push(post)
+
+        if(post.attributes.published)
+            result.push(post)
     }
     result.sort((a : Blogpost, b : Blogpost) => a.id - b.id)
     return result;

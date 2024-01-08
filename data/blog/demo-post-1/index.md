@@ -3,6 +3,7 @@ id : 3
 author: raul-iglesias
 date: 21/12/2023
 tags: scrum,agile,test
+published: false
 ---
 
 # Empowering Scrum Teams with OWASP Cornucopia for Enhanced Software Security
