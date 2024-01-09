@@ -47,3 +47,9 @@ export function getBlogpostsByAuthor(name : string) : Blogpost[]
     let blogposts = getBlogposts();
     return blogposts.filter(post => post.author == name);
 }
+
+export function getBlogpostByTitle(title : string) : Blogpost
+{
+    let blogposts = getBlogposts();
+    return blogposts.find(post => post.title == title) || {} as Blogpost
+}

@@ -1,5 +1,6 @@
 import fs from "fs"
 import fm from "front-matter"
+import { getBlogpostByTitle } from "../../../domain/blogpost/blogpostController.js";
 
 export async function load({params})
 {
@@ -8,7 +9,6 @@ export async function load({params})
     let parsed = fm(filecontent);
 
     return {
-        markdown : parsed.body,
-        attributes : parsed.attributes,
+        blogpost : getBlogpostByTitle(params.slug)
     }
 }

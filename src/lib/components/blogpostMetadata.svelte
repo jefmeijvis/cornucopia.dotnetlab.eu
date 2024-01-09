@@ -1,25 +1,26 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import { Text } from "$lib/utils/text";
+    import type { Blogpost } from "../../domain/blogpost/blogpost";
 
-    export let attributes : any;
+    export let blogpost : Blogpost
 
-    let authorLink : string = '/author/' + attributes.author;
+    let authorLink : string = '/author/' + blogpost.author;
 </script>
 
 <div class="metadata">
     <div class="left">
-        <p>Date: {Text.FormatDate(attributes.date)}</p>
-        <p>Author: <a href="{authorLink}">{Text.Format(attributes.author)}</a></p>
+        <p>Date: {Text.FormatDate(blogpost.date)}</p>
+        <p>Author: <a href="{authorLink}">{Text.Format(blogpost.author)}</a></p>
         <p>Tags: 
-            {#each attributes?.tags?.split(',') ?? [] as tag}
+            {#each blogpost.tags as tag}
             <a class="tag" href="/blog">{Text.Format(tag)}</a><span></span>
             {/each}
         </p>
     </div>
     <div class="right">
         <button on:click={()=>goto(authorLink)}>
-        <img title="{Text.Format(attributes.author)}" alt="{attributes.author} profile picture" src="/data/author/{attributes.author}/profile-picture.jpg"/>
+        <img title="{Text.Format(blogpost.author)}" alt="{blogpost.author} profile picture" src="/data/author/{blogpost.author}/profile-picture.jpg"/>
         </button>
     </div>
 </div>
