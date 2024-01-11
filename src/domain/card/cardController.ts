@@ -7,6 +7,7 @@ export function getCardBySuitAndName(suit : string, card : string) : Card
     suit = suit.replace('&','and');
     let base : string = './data/cards/cornucopia-v1/';
     let path : string = base + suit + '/' + card + '/explanation.md';
+    console.log(path);
     let file = fs.readFileSync(path, 'utf8');
     let parsed = fm(file);
 
