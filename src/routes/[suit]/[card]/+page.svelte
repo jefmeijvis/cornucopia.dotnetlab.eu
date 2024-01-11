@@ -7,6 +7,7 @@
 
     let suit = data.info.suit;
     let card = data.info.card;
+    let cardObject = data.card;
 
     function cardFound() {
       let cards_options = ["a","2","3","4","5","6","7","8","9","10","j","q","k","joker-a","joker-b","cornucopia"]
@@ -19,7 +20,7 @@
 
 <p><a href="/cards">Back to overview</a></p>
 {#if cardFound()}
-  <CardFound {suit} {card}/>
+  <CardFound {cardObject} {suit} {card}/>
 {:else}
   <CardNotFound {suit} {card}/>
 {/if}
