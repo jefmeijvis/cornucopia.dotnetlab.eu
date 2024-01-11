@@ -8,5 +8,6 @@
         font-size: 1.2rem;
         opacity: 90%;
         font-family: 'Courier New', Courier, monospace;
+        margin-top: 0;
     }
 </style>

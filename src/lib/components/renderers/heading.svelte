@@ -42,6 +42,7 @@
     {
       color: rgb(0, 209, 0);
       font-size: 1.2rem;
+      margin-bottom: 0;
     }
  
   </style>

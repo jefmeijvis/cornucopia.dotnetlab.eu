@@ -22,3 +22,5 @@ Access control enforces policy such that users cannot act outside of their inten
 - Rate limit API and controller access to minimize the harm from automated attack tooling.
 - Stateful session identifiers should be invalidated on the server after logout. Stateless JWT tokens should rather be short-lived so that the window of opportunity for an attacker is minimized. For longer lived JWTs it's highly recommended to follow the OAuth standards to revoke access.
 - Developers and QA staff should include functional access control unit and integration tests.
+
+[Source: OWASP TOP 10 broken access controls](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)

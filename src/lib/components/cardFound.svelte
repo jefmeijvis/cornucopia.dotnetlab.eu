@@ -4,12 +4,12 @@
     import { onDestroy } from "svelte";
     import { GetCardAttacks, GetCardDescription, GetCardImageUrl, GetCardMappings, type Attack, type Mapping } from "$lib/cards";
     import AsvsOverview from "$lib/components/ASVSOverview.svelte";
-    import BackgroundCard from "$lib/components/backgroundCard.svelte";
     import CardPreview from "$lib/components/cardPreview.svelte";
     import MappingsList from "$lib/components/mappingsList.svelte";
     import Utterances from "$lib/components/utterances.svelte";
     import data from "$lib/data";
     import { browser } from "$app/environment";
+    import Summary from "./summary.svelte";
 
     export let suit : string;
     export let card : string;
@@ -124,23 +124,21 @@
 
 {#key card}
     <div class="container">
+        <h1 class="title">{title}</h1>
+            <Summary {suit} {card}></Summary>
+
         <div class="card-panel">
             <div class="left">
                 <button title="View previous card" on:click="{()=>goPrevious()}">{"<"}</button>
             </div>
             <div class="center">
-                <BackgroundCard position={-2} url={GetCardImageUrl(suit,card,-2)}></BackgroundCard>
-                <BackgroundCard position={-1} url={GetCardImageUrl(suit,card,-1)}></BackgroundCard>
                 <CardPreview url={GetCardImageUrl(suit,card)}></CardPreview>
-                <BackgroundCard position={+1} url={GetCardImageUrl(suit,card,+1)}></BackgroundCard>
-                <BackgroundCard position={+2} url={GetCardImageUrl(suit,card,+2)}></BackgroundCard>
             </div>
             <div class="right">
                 <button title="View next card" on:click="{()=>goNext()}">{">"}</button>
             </div>
         </div>
         <a class="link" href="/how-to-play">How to play?</a>
-        <h1 class="title">{title}</h1>
         <p>{GetCardDescription(suit,card)}</p>
         {#if mappings}
             <h1 class="title">Mappings</h1>
@@ -192,7 +190,7 @@
 
     .center
     {
-        width : max(25vw, 25vh);
+        width : max(15vw, 15vh);
     }
 
     .card-panel
