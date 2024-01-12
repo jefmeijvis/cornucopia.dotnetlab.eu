@@ -14,8 +14,6 @@
     export let card : string;
     export let cardObject : Card;
 
-
-
     function linkASVS(input : string)
     {
         return "https://owasp-aasvs.readthedocs.io/en/latest/requirement-" + input + ".html"
