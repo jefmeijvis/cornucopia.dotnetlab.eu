@@ -1,4 +1,5 @@
-### Scenario: Ivan’s Session Identifier Theft Picture a scenario where Ivan, a savvy attacker, steals session identifiers due to their exposure through various insecure means. He exploits system weaknesses such as: 
+### Scenario: Ivan’s Session Identifier Theft 
+Picture a scenario where Ivan, a savvy attacker, steals session identifiers due to their exposure through various insecure means. He exploits system weaknesses such as: 
 
 1. **Transmission over Insecure Channels:** Session identifiers are sent over unencrypted connections. 
 

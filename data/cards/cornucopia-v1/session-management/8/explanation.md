@@ -1,9 +1,9 @@
 ### Scenario: Matt’s Abuse of Long-Lasting Sessions 
 Visualize a scenario where Matt exploits the lack of periodic re-authentication in an application. This issue arises because: 
 
-1. **Prolonged Session Duration: The application allows sessions to remain active for extended periods without re-verifying the user's identity or privileges. 
+1. **Prolonged Session Duration:** The application allows sessions to remain active for extended periods without re-verifying the user's identity or privileges. 
 
-2. **No Checks for Privilege Changes: The system does not reassess user privileges during long sessions, potentially missing changes in user status or permissions. 
+2. **No Checks for Privilege Changes:** The system does not reassess user privileges during long sessions, potentially missing changes in user status or permissions. 
 
 ### Example: 
 
