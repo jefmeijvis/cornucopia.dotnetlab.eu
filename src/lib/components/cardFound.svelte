@@ -10,9 +10,11 @@
     import data from "$lib/data";
     import { browser } from "$app/environment";
     import Summary from "./summary.svelte";
+    import type { Card } from "../../domain/card/card";
 
     export let suit : string;
     export let card : string;
+    export let cardObject : Card;
 
     let tape : string[]= [];
 
@@ -125,7 +127,7 @@
 {#key card}
     <div class="container">
         <h1 class="title">{title}</h1>
-            <Summary {suit} {card}></Summary>
+            <Summary {cardObject}}></Summary>
 
         <div class="card-panel">
             <div class="left">
