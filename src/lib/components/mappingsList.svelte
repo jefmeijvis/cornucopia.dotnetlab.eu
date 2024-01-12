@@ -6,8 +6,8 @@
 
 <p>
     {title} 
-    {#each mappings as m} 
-        <a href="{linkFunction(m)}">{m}</a>, 
+    {#each mappings as m,index} 
+        <a href="{linkFunction(m)}">{m}</a>{#if index != mappings.length-1},{/if} 
     {/each}
 </p>
 
