@@ -9,7 +9,7 @@ Visualize a scenario where Sebastien, using simple techniques, can easily identi
 
 ### Example: 
 
-Sebastien enumerates the usernames of a company by compiling a list of employees from publicly available sources such as LinkedIn. He then applies the general pattern " firstname.lastname@company.com " to generate potential email addresses, which are often used as usernames.  Setting the stage for further attacks like password guessing or phishing. 
+Sebastien enumerates the usernames of a company by compiling a list of employees from publicly available sources such as LinkedIn. He then applies the general pattern " firstname.lastname'@'company.com " to generate potential email addresses, which are often used as usernames.  Setting the stage for further attacks like password guessing or phishing. 
 
 ### Risks: 
 
