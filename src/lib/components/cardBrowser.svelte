@@ -126,6 +126,7 @@
         font-size: 5rem;
         cursor:pointer;
         text-align: center;
+        transform: translate(0,10rem);
     }
 
     .center

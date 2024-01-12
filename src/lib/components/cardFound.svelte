@@ -114,7 +114,7 @@
     {
         .container
         {
-            width : 100vw;
+            width : calc(100% - 2rem);
         }
     }
 </style>
