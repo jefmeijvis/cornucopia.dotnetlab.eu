@@ -36,6 +36,9 @@
         let index = getCurrentIndex(card);
         index -= 1;
         index = index % cards.length;
+        if(index < 0)
+            index = cards.length - 1;
+
         let previousCard = cards[index];
         return '/' + previousCard.suit + '/' + previousCard.card + '/#card';    
     }
