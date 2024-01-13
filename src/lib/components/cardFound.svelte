@@ -6,9 +6,11 @@
     import Utterances from "$lib/components/utterances.svelte";
     import Summary from "./summary.svelte";
     import {Text} from "$lib/utils/text"
+    import CardBrowser from "$lib/components/cardBrowser.svelte"
     import type { Card } from "../../domain/card/card";
 
-    export let cardObject : Card;
+    export let card : Card;
+    export let cards : Card[];
 
     function linkASVS(input : string)
     {
@@ -21,23 +23,24 @@
     }
 
     let title : string = ""
-    let mappings : Mapping | undefined = GetCardMappings(cardObject.suit,cardObject.card);
-    let attacks : Attack[] = GetCardAttacks(cardObject.suit,cardObject.card);
-
+    let mappings : Mapping | undefined = GetCardMappings(card.suit,card.card);
+    let attacks : Attack[] = GetCardAttacks(card.suit,card.card);
+    
     $: 
     {
-        title = cardObject.suit[0].toUpperCase() + cardObject.suit.substring(1,cardObject.suit.length) + " " + cardObject.card.toUpperCase();
-        mappings = GetCardMappings(cardObject.suit,cardObject.card);
-        attacks = GetCardAttacks(cardObject.suit,cardObject.card);
+        title = card.suit[0].toUpperCase() + card.suit.substring(1,card.suit.length) + " " + card.card.toUpperCase();
+        mappings = GetCardMappings(card.suit,card.card);
+        attacks = GetCardAttacks(card.suit,card.card);
     }
 </script>
 
 {#key $page.url.pathname}
     <div class="container">
         <h1 class="title">{Text.Format(title)}</h1>
-        <Summary {cardObject}></Summary>
+        <Summary {card}></Summary>
+        <CardBrowser card={card} {cards}></CardBrowser>
         <a class="link" href="/how-to-play">How to play?</a>
-        <p>{GetCardDescription(cardObject.suit,cardObject.card)}</p>
+        <p>{GetCardDescription(card.suit,card.card)}</p>
         {#if mappings}
             <h1 class="title">Mappings</h1>
             <MappingsList title="Owasp ASVS (3.0):" mappings={mappings.owasp_asvs} linkFunction={linkASVS}/>
@@ -57,7 +60,7 @@
         {/each}
 
         <h1 class="title">Comments</h1>
-        <Utterances name={cardObject.suit + '-' + cardObject.card}></Utterances>
+        <Utterances name={card.suit + '-' + card.card}></Utterances>
     </div>
 {/key}
 

@@ -3,38 +3,50 @@
     import CardPreview from "./cardPreview.svelte";
     import { onDestroy } from "svelte";
     import { browser } from "$app/environment";
-    import { page } from "$app/stores";
     import type { Card } from "../../domain/card/card";
-    import type { Suit } from "../../domain/suit/suit";
+    import { goto } from "$app/navigation";
 
-    export let data : any;
     export let card : Card;
-    export let suits : Suit[];
-
-    let tape : string[]= [];
-
-    for(let i = 0 ; i < data.suits.length ; i++)
-    {
-        let suit = data.suits[i];
-        let suitName : string = suit.name;
-        suitName = suitName.replaceAll(' ','-');
-        for(let j = 0 ; j < suit.cards.length ; j++)
-        {
-            let card = suit.cards[j];
-            let value = card.value;
-            value = value.replace('Joker','joker-')
-            tape.push('/' + suitName.toLowerCase() + '/' + value.toLowerCase())
-        }
-    }
+    export let cards : Card[];
   
     function checkKey(event : any) 
     {
         const KEYCODE_RIGHT = 39;
         const KEYCODE_LEFT = 37;
         if(event.keyCode == KEYCODE_RIGHT)
-            
+        {
+            goto(getNext(card))
+        }   
 
         if(event.keyCode == KEYCODE_LEFT)
+        {
+            goto(getPrevious(card))
+        }
+    }
+
+    function getCurrentIndex(card : Card)
+    {
+        // cards are equal when both their suit and card value (e.g. authentication 4) are equal.
+        return cards.map(card => card.suit + card.card).indexOf(card.suit + card.card);
+    }
+
+
+    function getPrevious(card : Card)
+    {
+        let index = getCurrentIndex(card);
+        index -= 1;
+        index = index % cards.length;
+        let previousCard = cards[index];
+        return '/' + previousCard.suit + '/' + previousCard.card + '/#card';    
+    }
+
+    function getNext(card : Card)
+    {
+        let index = getCurrentIndex(card);
+        index += 1;
+        index = index % cards.length;
+        let nextCard = cards[index];
+        return '/' + nextCard.suit + '/' + nextCard.card + '/#card';
     }
 
     onDestroy(()=> {if(browser)document.onkeydown = null})
@@ -45,13 +57,13 @@
 
 <div class="card-panel" id="card">
     <div class="left">
-        <a data-sveltekit-reload class="arrow" title="View previous card">{"<"}</a>
+        <a href={getPrevious(card)} class="arrow" title="View previous card">{"<"}</a>
     </div>
     <div class="center">
         <CardPreview url={GetCardImageUrl(card.suit,card.card)}></CardPreview>
     </div>
     <div class="right">
-        <a data-sveltekit-reload class="arrow" title="View next card">{">"}</a>
+        <a href={getNext(card)} class="arrow" title="View next card">{">"}</a>
     </div>
 </div>
 

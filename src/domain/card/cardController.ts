@@ -3,6 +3,8 @@ import fm from "front-matter"
 import type { Card } from './card';
 import { FileSystemHelper } from '$lib/filesystem/fileSystemHelper';
 import { order } from './order';
+import { getSuits } from '../suit/suitController';
+import type { Suit } from '../suit/suit';
 
 export function getCardBySuitAndName(suit : string, card : string) : Card
 {
@@ -34,6 +36,22 @@ export function getCardsBySuit(suit : string) : Card[]
     }
 
     return cards.sort(orderFunction);
+}
+
+export function getCardsFlat() : Card[]
+{
+    let result = new Array<Card>();
+    let suits : Suit[] = getSuits();
+    for(let i = 0 ; i < suits.length ; i++)
+    {
+        for(let j = 0 ; j < suits[i].cards.length ; j++)
+        {
+            let card : Card = suits[i].cards[j];
+            result.push(card);
+        }
+    }
+
+    return result;
 }
 
 function orderFunction(a : Card, b : Card) : number

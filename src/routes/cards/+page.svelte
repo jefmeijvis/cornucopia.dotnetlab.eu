@@ -41,7 +41,7 @@
             {#if map.get(suit.name)}
                 {#each suit.cards as card}
                     <p on:mouseenter={()=>{enter(suit.name,card.card)}}>
-                        <a href="{card.url}">├── {card.card}</a>
+                        <a href="{card.url}">├── {Text.Format(card.card)}</a>
                     </p>
                 {/each}
             {/if}

@@ -1,9 +1,9 @@
 <script lang="ts">
     import {type Card} from "../../domain/card/card"
-    export let cardObject : Card;
+    export let card : Card;
 </script>
 
-<p>Unknown card: {cardObject.card} {cardObject.suit}</p>
+<p>Unknown card: {card.card} {card.suit}</p>
 
 <style>
     p {
