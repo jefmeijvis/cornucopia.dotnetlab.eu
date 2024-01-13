@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
-    import { fade } from 'svelte/transition';
 	let bindingElement: HTMLElement;
 	let loading : boolean = true;
 	let percentage : number = 0;
@@ -25,11 +23,12 @@
 			await sleep(delay);
 			percentage += 10
 		}
+
 		loading = false;
 		let scriptTag = document.createElement('script');
 		scriptTag.classList.add("utterances-script")
 		scriptTag.setAttribute('id','comment-section')
-		scriptTag.setAttribute('repo', 'jefmeijvis/cornucopia');
+		scriptTag.setAttribute('repo', 'jefmeijvis/cornucopia.dotnetlab.eu');
 		scriptTag.setAttribute('issue-term', name);
 		scriptTag.setAttribute('theme', 'github-dark');
         scriptTag.setAttribute('label', '🔮 Utterances');

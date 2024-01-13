@@ -57,7 +57,7 @@
         {/each}
 
         <h1 class="title">Comments</h1>
-        <Utterances name={cardObject.suit + ' ' + cardObject.card}></Utterances>
+        <Utterances name={cardObject.suit + '-' + cardObject.card}></Utterances>
     </div>
 {/key}
 
