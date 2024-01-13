@@ -2,6 +2,7 @@ import fs from 'fs'
 import fm from "front-matter"
 import type { Card } from './card';
 import { FileSystemHelper } from '$lib/filesystem/fileSystemHelper';
+import { order } from './order';
 
 export function getCardBySuitAndName(suit : string, card : string) : Card
 {
@@ -32,5 +33,12 @@ export function getCardsBySuit(suit : string) : Card[]
         cards.push(card);
     }
 
-    return cards;
+    return cards.sort(orderFunction);
+}
+
+function orderFunction(a : Card, b : Card) : number
+{
+    let orderA = order.get(a.card) || -1;
+    let orderB = order.get(b.card) || -1;
+    return orderA < orderB ? -1 : 1
 }

@@ -1,6 +1,7 @@
 import type { Suit } from "./suit";
 import { FileSystemHelper } from "$lib/filesystem/fileSystemHelper";
 import { getCardsBySuit } from "../card/cardController";
+import { order } from "./order";
 
 export function getSuits() : Suit[]
 {
@@ -20,5 +21,12 @@ export function getSuits() : Suit[]
         suits.push(suit);
     }
 
-    return suits;
+    return suits.sort(orderFunction);
+}
+
+function orderFunction(a : Suit, b : Suit) : number
+{
+    let orderA = order.get(a.name) || -1;
+    let orderB = order.get(b.name) || -1;
+    return orderA < orderB ? -1 : 1
 }
