@@ -3,5 +3,5 @@
     export let text : string;
   </script>
 
-<p>lang</p>
+<p>{lang}</p>
 <p>{text}</p>

@@ -4,14 +4,10 @@
     import AsvsOverview from "$lib/components/ASVSOverview.svelte";
     import MappingsList from "$lib/components/mappingsList.svelte";
     import Utterances from "$lib/components/utterances.svelte";
-    import data from "$lib/data";
     import Summary from "./summary.svelte";
     import {Text} from "$lib/utils/text"
     import type { Card } from "../../domain/card/card";
-    import CardBrowser from "./cardBrowser.svelte";
 
-    export let suit : string;
-    export let card : string;
     export let cardObject : Card;
 
     function linkASVS(input : string)
@@ -25,30 +21,23 @@
     }
 
     let title : string = ""
-    let mappings : Mapping | undefined = GetCardMappings(suit,card);
-    let attacks : Attack[] = GetCardAttacks(suit,card);
+    let mappings : Mapping | undefined = GetCardMappings(cardObject.suit,cardObject.card);
+    let attacks : Attack[] = GetCardAttacks(cardObject.suit,cardObject.card);
 
     $: 
     {
-        title = suit[0].toUpperCase() + suit.substring(1,suit.length) + " " + card.toUpperCase();
-        mappings = GetCardMappings(suit,card);
-        attacks = GetCardAttacks(suit,card);
+        title = cardObject.suit[0].toUpperCase() + cardObject.suit.substring(1,cardObject.suit.length) + " " + cardObject.card.toUpperCase();
+        mappings = GetCardMappings(cardObject.suit,cardObject.card);
+        attacks = GetCardAttacks(cardObject.suit,cardObject.card);
     }
-
-
-
-
-
-
 </script>
 
 {#key $page.url.pathname}
     <div class="container">
         <h1 class="title">{Text.Format(title)}</h1>
         <Summary {cardObject}></Summary>
-        <CardBrowser {card} {suit} {data}></CardBrowser>
         <a class="link" href="/how-to-play">How to play?</a>
-        <p>{GetCardDescription(suit,card)}</p>
+        <p>{GetCardDescription(cardObject.suit,cardObject.card)}</p>
         {#if mappings}
             <h1 class="title">Mappings</h1>
             <MappingsList title="Owasp ASVS (3.0):" mappings={mappings.owasp_asvs} linkFunction={linkASVS}/>
@@ -68,7 +57,7 @@
         {/each}
 
         <h1 class="title">Comments</h1>
-        <Utterances name={suit + ' ' + card}></Utterances>
+        <Utterances name={cardObject.suit + ' ' + cardObject.card}></Utterances>
     </div>
 {/key}
 

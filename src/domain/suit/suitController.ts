@@ -8,14 +8,13 @@ export function getSuits() : Suit[]
     let directories = FileSystemHelper.getDirectories(path);
 
     let suits = new Array<Suit>();
-    console.dir(directories)
 
     for(let i = 0 ; i < directories.length ; i++)
     {
         let directory : string = directories[i];
         let suit : Suit = 
         {
-            name : directory.substring(2,directory.length),
+            name : directory,
             cards  : getCardsBySuit(directory)
         };
         suits.push(suit);

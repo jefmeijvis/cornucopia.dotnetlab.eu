@@ -1,7 +1,9 @@
 <script lang="ts">
     import { GetCardImageUrl } from "$lib/cards";
     import CardPreview from "$lib/components/cardPreview.svelte";
-    import data from "./data";
+    import {Text} from "$lib/utils/text.js"
+    //import data from "./data";
+    export let data;
     let card : string;
     let suit : string;
 
@@ -9,16 +11,6 @@
     for(let i = 0 ; i < data.suits.length ; i++)
     {
         map.set(data.suits[i].name,false);
-    }
-
-    function generateLink(suitParam : string , cardParam : string)
-    {
-        suitParam = suitParam.toLowerCase();
-        suitParam = suitParam.replaceAll(" ","-");
-
-        cardParam = cardParam.replace("JokerA","joker-a");
-        cardParam = cardParam.replace("JokerB","joker-b");
-        return `/${suitParam}/${cardParam}`;
     }
 
     function toggle(suit : string)
@@ -33,46 +25,30 @@
         suit = suitParam;
         card = cardParam;
     }
-
-    let width: number;
-    let height: number;
-    export let mobile: boolean = false;
-
-    function getMobile(w: number, h: number) 
-    {
-        mobile = w / h < 1;
-    }
-
-    $: getMobile(width, height);
-
 </script>
 
-<svelte:window bind:innerWidth={width} bind:innerHeight={height} />
-
-<div style="display:none;">
-    {#each data.suits as suit}
-        {#each suit.cards as card}
-            <a href="{generateLink(suit.name,card.value)}">{card.value}</a>
-        {/each}
+{#each data.suits as suit}
+    {#each suit.cards as card}
+        <p><a style="display:none;" href="{card.url}">{suit.name} {card.card}</a></p>
     {/each}
-</div>
+{/each}
 
 <div class="container">
     <div class="tree">
         <h1>Cards</h1>
         {#each data.suits as suit}
-            <h2 on:keypress="{()=>toggle(suit.name)}" on:click="{()=>toggle(suit.name)}">└── {suit.name}</h2>
+            <h2 on:keypress="{()=>toggle(suit.name)}" on:click="{()=>toggle(suit.name)}">└── {Text.Format(suit.name)}</h2>
             {#if map.get(suit.name)}
                 {#each suit.cards as card}
-                    <p on:mouseenter={()=>{enter(suit.name,card.value)}}><a href="{generateLink(suit.name,card.value)}">├── {card.value}</a></p>
+                    <p on:mouseenter={()=>{enter(suit.name,card.card)}}>
+                        <a href="{card.url}">├── {card.card}</a>
+                    </p>
                 {/each}
             {/if}
         {/each}
     </div>
     <div class="preview-container">
-        {#if !mobile}
             <CardPreview url={GetCardImageUrl(suit,card)}></CardPreview>
-        {/if}
     </div>
 </div>
 
@@ -145,6 +121,11 @@
         .tree
         {
             width : 100%;
+        }
+
+        .preview-container
+        {
+            display: none;
         }
     }
 </style>
