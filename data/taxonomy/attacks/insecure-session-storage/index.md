@@ -9,4 +9,5 @@ In a fictional scenario, an attacker named Eve exploits an online banking applic
 - [IDOR - Inside the Session Storage](https://shahjerry33.medium.com/idor-inside-the-session-storage-88af485fc899)
 
 ## Cards
-"AC3"
+### Authentication
+- [Authentication 3](/authentication/3)

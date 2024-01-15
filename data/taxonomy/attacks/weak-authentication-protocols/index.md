@@ -9,7 +9,18 @@ Heartbleed, a serious vulnerability discovered in the OpenSSL cryptographic soft
 - [What is Weak Authentication?](https://affinity-it-security.com/what-is-weak-authentication/)
 
 ## Cards
-"AC7","AC9","ACK",
-"AZ6",
-"CR4","CR7",
-"CO3","CO4"
+### Authentication
+- [Authentication 7](/authentication/7)
+- [Authentication 9](/authentication/9)
+- [Authentication K](/authentication/K)
+
+### Authorization
+- [Authorization 6](/authorization/6)
+
+### Cryptography
+- [Cryptography 4](/cryptography/4)
+- [Cryptography 7](/cryptography/7)
+
+### Cornucopia
+- [Cornucopia 3](/cornucopia/3)
+- [Cornucopia 4](/cornucopia/4)

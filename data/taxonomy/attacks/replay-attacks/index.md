@@ -10,5 +10,10 @@ Honda vehicles are reportedly vulnerable to the Rolling PWN attack, allowing rem
 - [What is a Replay Attack and How to Prevent it?](https://www.kaspersky.com/resource-center/definitions/replay-attack)
 
 ## Cards
-"AC6","ACJ",
-"SM5","SMJ"
+### Authentication
+- [Authentication 6](/authentication/6)
+- [Authentication J](/authentication/J)
+
+### Session-management
+- [Session-management 5](/session-management/5)
+- [Session-management J](/session-management/J)

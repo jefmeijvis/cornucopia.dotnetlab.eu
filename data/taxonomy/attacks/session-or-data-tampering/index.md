@@ -10,9 +10,37 @@ In 2017, Equifax, one of the largest credit reporting agencies, suffered a massi
 - [Data tampering](https://www.tributech.io/blog/cybersecurity-threat-data-tampering)
 
 ## Cards
-"DV3","DV6","DV8","DV9","DV10","DVJ","DVQ",
-"AC8","ACJ",
-"AZ2","AZ3","AZ5","AZ8","AZK",
-"SM10","SMJ","SMK",
-"CR2","CR3","CR6",
-"CO5","CO7"
+
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 3](/data-validation-&-encoding/3)
+- [Data-validation-&-encoding 6](/data-validation-&-encoding/6)
+- [Data-validation-&-encoding 8](/data-validation-&-encoding/8)
+- [Data-validation-&-encoding 9](/data-validation-&-encoding/9)
+- [Data-validation-&-encoding J](/data-validation-&-encoding/J)
+- [Data-validation-&-encoding Q](/data-validation-&-encoding/Q)
+- [Data-validation-&-encoding A](/data-validation-&-encoding/A)
+
+### Authentication
+- [Authentication 8](/authentication/8)
+- [Authentication J](/authentication/J)
+
+### Authorization
+- [Authorization 2](/authorization/2)
+- [Authorization 3](/authorization/3)
+- [Authorization 5](/authorization/5)
+- [Authorization 8](/authorization/8)
+- [Authorization K](/authorization/K)
+
+### Session-management
+- [Session-management A](/session-management/A)
+- [Session-management J](/session-management/J)
+- [Session-management K](/session-management/K)
+
+### Cryptography
+- [Cryptography 2](/cryptography/2)
+- [Cryptography 3](/cryptography/3)
+- [Cryptography 6](/cryptography/6)
+
+### Cornucopia
+- [Cornucopia 5](/cornucopia/5)
+- [Cornucopia 7](/cornucopia/7)

@@ -10,9 +10,45 @@ Yahoo suffered from an XSS attack that affected its advertising network. Attacke
 - [What is cross-site scripting (XSS) and how to prevent it?](https://portswigger.net/web-security/cross-site-scripting)
 
 ## Cards
-"DV2","DV4","DV5","DV6","DV7","DV8","DV9","DV10","DVJ","DVQ","DVK",
-"AC8","ACJ",
-"AZ5","AZ6","AZ7","AZ8","AZ10","AZQ",
-"SM2","SM3","SM4","SM6","SM7","SM9","SMQ",
-"CR8",
-"CO9","CO10","COQ" 
+
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 2](/data-validation-&-encoding/2)
+- [Data-validation-&-encoding 4](/data-validation-&-encoding/4)
+- [Data-validation-&-encoding 5](/data-validation-&-encoding/5)
+- [Data-validation-&-encoding 6](/data-validation-&-encoding/6)
+- [Data-validation-&-encoding 7](/data-validation-&-encoding/7)
+- [Data-validation-&-encoding 8](/data-validation-&-encoding/8)
+- [Data-validation-&-encoding 9](/data-validation-&-encoding/9)
+- [Data-validation-&-encoding J](/data-validation-&-encoding/J)
+- [Data-validation-&-encoding Q](/data-validation-&-encoding/Q)
+- [Data-validation-&-encoding K](/data-validation-&-encoding/K)
+- [Data-validation-&-encoding A](/data-validation-&-encoding/A)
+
+### Authentication
+- [Authentication 8](/authentication/8)
+- [Authentication J](/authentication/J)
+
+### Authorization
+- [Authorization 5](/authorization/5)
+- [Authorization 6](/authorization/6)
+- [Authorization 7](/authorization/7)
+- [Authorization 8](/authorization/8)
+- [Authorization Q](/authorization/Q)
+- [Authorization A](/authorization/A)
+
+### Session-management
+- [Session-management 2](/session-management/2)
+- [Session-management 3](/session-management/3)
+- [Session-management 4](/session-management/4)
+- [Session-management 6](/session-management/6)
+- [Session-management 7](/session-management/7)
+- [Session-management 9](/session-management/9)
+- [Session-management Q](/session-management/Q)
+
+### Cryptography
+- [Cryptography 8](/cryptography/8)
+
+### Cornucopia
+- [Cornucopia 9](/cornucopia/9)
+- [Cornucopia Q](/cornucopia/Q)
+- [Cornucopia A](/cornucopia/1)

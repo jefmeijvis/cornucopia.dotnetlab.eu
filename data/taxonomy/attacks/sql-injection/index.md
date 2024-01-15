@@ -10,6 +10,28 @@ Ashley Madison data breach involved a website specializing in extramarital affai
 - [SQL Injection | OWASP](https://owasp.org/www-community/attacks/SQL_Injection)
 
 ## Cards
-DV2","DV3","DV4","DV5","DV6","DV7","DV8","DV9","DV10","DVJ","DVQ","DVK",
-"AC8","ACJ","ACQ",
-"AZ6","AZ7","AZ8","AZ10","AZQ
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 2](/data-validation-&-encoding/2)
+- [Data-validation-&-encoding 3](/data-validation-&-encoding/3)
+- [Data-validation-&-encoding 4](/data-validation-&-encoding/4)
+- [Data-validation-&-encoding 5](/data-validation-&-encoding/5)
+- [Data-validation-&-encoding 6](/data-validation-&-encoding/6)
+- [Data-validation-&-encoding 7](/data-validation-&-encoding/7)
+- [Data-validation-&-encoding 8](/data-validation-&-encoding/8)
+- [Data-validation-&-encoding 9](/data-validation-&-encoding/9)
+- [Data-validation-&-encoding J](/data-validation-&-encoding/J)
+- [Data-validation-&-encoding Q](/data-validation-&-encoding/Q)
+- [Data-validation-&-encoding K](/data-validation-&-encoding/K)
+- [Data-validation-&-encoding A](/data-validation-&-encoding/A)
+
+### Authentication
+- [Authentication 8](/authentication/8)
+- [Authentication J](/authentication/J)
+- [Authentication Q](/authentication/Q)
+
+### Authorization
+- [Authorization 6](/authorization/6)
+- [Authorization 7](/authorization/7)
+- [Authorization 8](/authorization/8)
+- [Authorization Q](/authorization/Q)
+- [Authorization A](/authorization/A)

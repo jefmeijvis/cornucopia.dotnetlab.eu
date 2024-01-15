@@ -10,4 +10,7 @@ LinkedIn experienced a security breach in 2012 where attackers used compromised 
 - [Account Takeover (ATO) Attacks](https://www.vectra.ai/topics/account-takeover#:~:text=What%20is%20an%20Account%20Takeover,delivery%20or%20generate%20fraudulent%20transactions.)
 
 ## Cards
-"AC6","AC7","AC8"
+### Authentication
+- [Authentication 6](/authentication/6)
+- [Authentication 7](/authentication/7)
+- [Authentication 8](/authentication/8)

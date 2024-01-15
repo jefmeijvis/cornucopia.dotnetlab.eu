@@ -9,5 +9,18 @@ In 2011, security researcher Rishi Narang discovered a session fixation vulnerab
 - [Session fixation | OWASP Foundation](https://owasp.org/www-community/attacks/Session_fixation)
 
 ## Cards
-"AZ7",
-"SM2","SM3","SM4","SM5","SM6","SM7","SM8","SM9","SM10","SMQ","SMK"
+### Authorization
+- [Authorization 7](/authorization/7)
+
+### Session-management
+- [Session-management 2](/session-management/2)
+- [Session-management 3](/session-management/3)
+- [Session-management 4](/session-management/4)
+- [Session-management 5](/session-management/5)
+- [Session-management 6](/session-management/6)
+- [Session-management 7](/session-management/7)
+- [Session-management 8](/session-management/8)
+- [Session-management 9](/session-management/9)
+- [Session-management Q](/session-management/Q)
+- [Session-management K](/session-management/K)
+- [Session-management A](/session-management/A)

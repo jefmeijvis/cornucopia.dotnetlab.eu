@@ -10,5 +10,9 @@ A critical vulnerability in the Forminator WordPress Contact Form plugin, affect
 - [File uploads | Web Security Academy](https://portswigger.net/web-security/file-upload#:~:text=File%20upload%20vulnerabilities%20are%20when,type%2C%20contents%2C%20or%20size.)
 
 ## Cards
-"DV4","DVJ",                        
-"AZQ"
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 4](/data-validation-&-encoding/4)
+- [Data-validation-&-encoding J](/data-validation-&-encoding/J)
+
+### Authorization
+- [Authorization Q](/authorization/Q)

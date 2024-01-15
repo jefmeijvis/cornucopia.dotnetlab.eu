@@ -10,7 +10,24 @@ Shellshock was a series of security vulnerabilities discovered in the Bash shell
 
 
 ## Cards
-"DV3","DV4","DV7","DV9","DVJ","DVQ","DVK",
-"AZQ", 
-"CR7", 
-"CO2","CO6","CO10","COJ","COQ"
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 3](/data-validation-&-encoding/3)
+- [Data-validation-&-encoding 4](/data-validation-&-encoding/4)
+- [Data-validation-&-encoding 7](/data-validation-&-encoding/7)
+- [Data-validation-&-encoding 9](/data-validation-&-encoding/9)
+- [Data-validation-&-encoding J](/data-validation-&-encoding/J)
+- [Data-validation-&-encoding Q](/data-validation-&-encoding/Q)
+- [Data-validation-&-encoding K](/data-validation-&-encoding/K)
+
+### Authorization
+- [Authorization Q](/authorization/Q)
+
+### Cryptography
+- [Cryptography 7](/cryptography/7)
+
+### Cornucopia
+- [Cornucopia 2](/cornucopia/2)
+- [Cornucopia 6](/cornucopia/6)
+- [Cornucopia 1](/cornucopia/1)
+- [Cornucopia J](/cornucopia/J)
+- [Cornucopia Q](/cornucopia/Q)

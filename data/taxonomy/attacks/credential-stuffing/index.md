@@ -10,5 +10,12 @@ In 2018, credential stuffing attacks on popular platforms like Reddit and Spotif
 - [Credential stuffing | OWASP Foundation](https://owasp.org/www-community/attacks/Credential_stuffing)
 
 ## Cards
-"AC2","AC5","AC9","AC10","ACQ",
-"AZ10"
+### Authentication
+- [Authentication 2](/authentication/2)
+- [Authentication 5](/authentication/5)
+- [Authentication 9](/authentication/9)
+- [Authentication A](/authentication/A)
+- [Authentication Q](/authentication/Q)
+
+### Authorization
+- [Authorization A](/authorization/A)

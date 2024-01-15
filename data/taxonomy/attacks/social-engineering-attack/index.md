@@ -10,7 +10,28 @@ Caesar's Entertainment and MGM, two major casino operators, fell victim to cyber
 - [What is Social Engineering?](https://www.imperva.com/learn/application-security/social-engineering-attack/)
 
 ## Cards
-"AC2","AC4","AC5","AC10","ACJ",
-"AZ2","AZ3","AZ4",
-"CR6","CR10","CRQ",
-"CO4","CO5","CO7","CO8","CO9","COJ","COQ"
+### Authentication
+- [Authentication 2](/authentication/2)
+- [Authentication 4](/authentication/4)
+- [Authentication 5](/authentication/5)
+- [Authentication J](/authentication/J)
+- [Authentication A](/authentication/A)
+
+### Authorization
+- [Authorization 2](/authorization/2)
+- [Authorization 3](/authorization/3)
+- [Authorization 4](/authorization/4)
+
+### Cryptography
+- [Cryptography 6](/cryptography/6)
+- [Cryptography Q](/cryptography/Q)
+- [Cryptography A](/cryptography/A)
+
+### Cornucopia
+- [Cornucopia 4](/cornucopia/4)
+- [Cornucopia 5](/cornucopia/5)
+- [Cornucopia 7](/cornucopia/7)
+- [Cornucopia 8](/cornucopia/8)
+- [Cornucopia 9](/cornucopia/9)
+- [Cornucopia J](/cornucopia/J)
+- [Cornucopia Q](/cornucopia/Q)

@@ -9,4 +9,5 @@ security specialist Zara confronts a challenge in bypassing a company's robust e
 - [Can hackers decrypt encrypted data?](https://www.vintageisthenewold.com/game-pedia/can-hackers-decrypt-encrypted-data#:~:text=Hackers%20can%20break%20encryption%20to,been%20decrypted%20by%20the%20recipient.)
 
 ## Cards
-"CR9"
+### Cryptography
+- [Cryptography 9](/cryptography/9)

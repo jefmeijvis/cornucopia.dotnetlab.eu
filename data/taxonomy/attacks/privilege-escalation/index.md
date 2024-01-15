@@ -9,9 +9,32 @@ In June 2022, a privilege escalation vulnerability in MikroTik RouterOS was disc
 - [Privilege Escalation Attacks](https://purplesec.us/privilege-escalation-attacks/#Examples)
 
 ## Cards
-"DV5","DV6","DV8","DV9",
-"AC8","ACJ",
-"AZ4","AZ5","AZ8","AZJ","AZQ","AZK",
-"SM8", 
-"CRJ",
-"CO4","CO10", "COQ"
+
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 5](/data-validation-&-encoding/5)
+- [Data-validation-&-encoding 6](/data-validation-&-encoding/6)
+- [Data-validation-&-encoding 8](/data-validation-&-encoding/8)
+- [Data-validation-&-encoding 9](/data-validation-&-encoding/9)
+
+### Authentication
+- [Authentication 8](/authentication/8)
+- [Authentication J](/authentication/J)
+
+### Authorization
+- [Authorization 4](/authorization/4)
+- [Authorization 5](/authorization/5)
+- [Authorization 8](/authorization/8)
+- [Authorization J](/authorization/J)
+- [Authorization Q](/authorization/Q)
+- [Authorization K](/authorization/K)
+
+### Session-management
+- [Session-management 8](/session-management/8)
+
+### Cryptography
+- [Cryptography J](/cryptography/J)
+
+### Cornucopia
+- [Cornucopia 4](/cornucopia/4)
+- [Cornucopia Q](/cornucopia/Q)
+- [Cornucopia A](/cornucopia/A)

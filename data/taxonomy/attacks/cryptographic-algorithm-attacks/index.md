@@ -8,4 +8,5 @@ Cryptographic algorithms are designed to secure information and protect against 
 - [Cryptography Attacks](https://www.ccn.com/education/cryptography-attacks-6-types-and-prevention-measures/#:~:text=Cryptography%20attacks%20come%20in%20various,to%20fortify%20defenses%20against%20attacks.)
 
 ## Cards
-"CR9"
+### Cryptography
+- [Cryptography 9](/cryptography/9)

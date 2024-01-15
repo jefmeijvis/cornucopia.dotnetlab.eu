@@ -9,5 +9,9 @@ Equifax data breach in 2017 was caused by a vulnerability in the Apache Struts w
 - [Buffer Overflow | OWASP Foundation](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow#:~:text=A%20buffer%20overflow%20condition%20exists,to%20an%20array%20of%20integers.)
 
 ## Cards
-"DV7",
-"CO2"
+
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 7](/data-validation-&-encoding/7)
+
+### Cornucopia
+- [Cornucopia 2](/cornucopia/2)

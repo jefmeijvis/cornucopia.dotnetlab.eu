@@ -8,4 +8,5 @@ Over years, a significant number of cryptographic hash functions have been broke
 - [Cryptographic Hash Functions](https://kwahome.medium.com/cryptographic-hash-functions-2cc49723ea06)
 
 ## Cards
-"CRK"
+### Cryptography
+- [Cryptography K](/cryptography/K)

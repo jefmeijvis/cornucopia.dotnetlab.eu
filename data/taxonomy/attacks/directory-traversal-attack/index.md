@@ -9,4 +9,5 @@ The Cisco Duo Device Health Application for Windows has a vulnerability allowing
 - [Path Traversal | OWASP Foundation](https://owasp.org/www-community/attacks/Path_Traversal)
 
 ## Cards
-"DV2"
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 2](/data-validation-&-encoding/2)

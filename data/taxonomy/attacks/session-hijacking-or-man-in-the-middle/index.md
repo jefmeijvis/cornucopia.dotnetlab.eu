@@ -9,9 +9,18 @@ Lenovo faced backlash in 2015 when it was revealed that some of its laptops were
 - [Session Hijacking](https://usa.kaspersky.com/resource-center/definitions/what-is-session-hijacking)
 
 ## Cards
-"DV10",
-"AC2","AC4","AC9","AC10","ACJ","ACQ",
-"AZ3","AZ4","AZ5","AZ6","AZ7","AZ8","AZ10","AZJ","AZQ","AZK",
-"SM2","SM3","SM4","SM5","SM6","SM7","SM8","SM9","SM10","SMJ","SMQ","SMK",
-"CR3","CR4","CR5","CR6","CR7","CR8","CR10","CRJ",
-"CO5","CO9","CO10","COJ"
+### Authorization
+- [Authorization 7](/authorization/7)
+
+### Session-management
+- [Session-management 2](/session-management/2)
+- [Session-management 3](/session-management/3)
+- [Session-management 4](/session-management/4)
+- [Session-management 5](/session-management/5)
+- [Session-management 6](/session-management/6)
+- [Session-management 7](/session-management/7)
+- [Session-management 8](/session-management/8)
+- [Session-management 9](/session-management/9)
+- [Session-management A](/session-management/A)
+- [Session-management Q](/session-management/Q)
+- [Session-management K](/session-management/K)

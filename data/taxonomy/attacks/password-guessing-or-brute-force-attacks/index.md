@@ -10,8 +10,44 @@ In 2014, a cyber attack on Sony Pictures involved brute force attacks on employe
 - [Brute Force Attacks](https://www.kaspersky.com/resource-center/definitions/brute-force-attack)
 
 ## Cards
-"AC2","AC4","AC5","AC6","AC7","AC8","AC10","ACQ",
-"AZ3","AZ4","AZ6","AZ7","AZ10",
-"SM2","SM3","SM4","SM5","SM6","SM7","SM8","SMQ","SMK",
-"CR2","CR5","CR7","CR10","CRJ","CRQ",
-"CO6","CO9","COK"
+
+### Authentication
+- [Authentication 2](/authentication/2)
+- [Authentication 4](/authentication/4)
+- [Authentication 5](/authentication/5)
+- [Authentication 6](/authentication/6)
+- [Authentication 7](/authentication/7)
+- [Authentication 8](/authentication/8)
+- [Authentication Q](/authentication/Q)
+- [Authentication A](/authentication/A)
+
+### Authorization
+- [Authorization 3](/authorization/3)
+- [Authorization 4](/authorization/4)
+- [Authorization 6](/authorization/6)
+- [Authorization 7](/authorization/7)
+- [Authorization A](/authorization/A)
+
+### Session-management
+- [Session-management 2](/session-management/2)
+- [Session-management 3](/session-management/3)
+- [Session-management 4](/session-management/4)
+- [Session-management 5](/session-management/5)
+- [Session-management 6](/session-management/6)
+- [Session-management 7](/session-management/7)
+- [Session-management 8](/session-management/8)
+- [Session-management Q](/session-management/Q)
+- [Session-management K](/session-management/K)
+
+### Cryptography
+- [Cryptography 2](/cryptography/2)
+- [Cryptography 5](/cryptography/5)
+- [Cryptography 7](/cryptography/7)
+- [Cryptography J](/cryptography/J)
+- [Cryptography Q](/cryptography/Q)
+- [Cryptography A](/cryptography/A)
+
+### Cornucopia
+- [Cornucopia 6](/cornucopia/6)
+- [Cornucopia 9](/cornucopia/9)
+- [Cornucopia K](/cornucopia/K)

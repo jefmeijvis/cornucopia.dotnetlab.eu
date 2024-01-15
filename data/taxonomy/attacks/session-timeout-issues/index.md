@@ -9,4 +9,6 @@ In a session timeout exploit, an attacker manipulates a captured session token, 
 - [Security theater - What attacks are prevented using Session Timeout or Expiry?](https://security.stackexchange.com/questions/224199/what-attacks-are-prevented-using-session-timeout-or-expiry)
 
 ## Cards
-"SM2","SM3"
+### Session-management
+- [Session-management 2](/session-management/2)
+- [Session-management 3](/session-management/3)
