@@ -42,10 +42,10 @@
     {#if mappings}
         <h1 class="title">Mappings</h1>
         <MappingsList title="Owasp ASVS (3.0):" mappings={mappings.owasp_asvs} linkFunction={linkASVS}/>
-        <MappingsList title="Capec" mappings={mappings.capec} linkFunction={linkCapec}/>
+        <MappingsList title="Capec:" mappings={mappings.capec} linkFunction={linkCapec}/>
         <MappingsList title="Owasp SCP:" mappings={mappings.owasp_scp} />
         <MappingsList title="Owasp Appsensor:" mappings={mappings.owasp_appsensor}/>
-        <MappingsList title="Safecode" mappings={mappings.safecode}/>
+        <MappingsList title="Safecode:" mappings={mappings.safecode}/>
     {/if}
 
     <h1 class="title">ASVS (4.0) Cheatsheetseries Index</h1>
