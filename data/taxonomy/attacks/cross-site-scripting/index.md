@@ -51,4 +51,4 @@ Yahoo suffered from an XSS attack that affected its advertising network. Attacke
 ### Cornucopia
 - [Cornucopia 9](/cornucopia/9)
 - [Cornucopia Q](/cornucopia/Q)
-- [Cornucopia A](/cornucopia/1)
+- [Cornucopia A](/cornucopia/A)

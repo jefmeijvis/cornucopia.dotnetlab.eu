@@ -28,6 +28,6 @@ Shellshock was a series of security vulnerabilities discovered in the Bash shell
 ### Cornucopia
 - [Cornucopia 2](/cornucopia/2)
 - [Cornucopia 6](/cornucopia/6)
-- [Cornucopia 1](/cornucopia/1)
 - [Cornucopia J](/cornucopia/J)
 - [Cornucopia Q](/cornucopia/Q)
+- [Cornucopia A](/cornucopia/A)
