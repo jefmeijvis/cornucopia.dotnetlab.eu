@@ -18,6 +18,8 @@ export function getCardBySuitAndName(suit : string, card : string) : Card
     cardObject.suit = suit;
     cardObject.card = card;
     cardObject.url = '/' + suit + '/' + card;
+    cardObject.githubUrl = 'data/cards/cornucopia-v1/' + suit + '/' + card;
+
     return cardObject;
 }
 

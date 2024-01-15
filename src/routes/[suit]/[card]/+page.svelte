@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { PageData } from './$types';
-    import CardFound from "$lib/components/cardFound.svelte"
-    import CardNotFound from "$lib/components/cardNotFound.svelte"
+    import CardFound from "$lib/components/cardFound.svelte";
+    import CardNotFound from "$lib/components/cardNotFound.svelte";
 
     export let data : PageData;
     let cardObject = data.card;

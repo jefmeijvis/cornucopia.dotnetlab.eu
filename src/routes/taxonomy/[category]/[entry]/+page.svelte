@@ -10,4 +10,4 @@
 <h1>{Text.Format(data.category)} - {Text.Format(data.entry)}</h1>
 <SvelteMarkdown {renderers} source={data.markdown}></SvelteMarkdown>
 <ViewSourceOnGithub path="data/taxonomy/{data.category}/{data.entry}/index.md"></ViewSourceOnGithub>
-<Utterances name={data.category + '-' + data.entry}></Utterances>
+<Utterances delay={100} name={data.category + '-' + data.entry}></Utterances>

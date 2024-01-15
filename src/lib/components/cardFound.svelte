@@ -7,6 +7,7 @@
     import {Text} from "$lib/utils/text"
     import CardBrowser from "$lib/components/cardBrowser.svelte"
     import type { Card } from "../../domain/card/card";
+    import ViewSourceOnGithub from "$lib/components/viewSourceOnGithub.svelte";
 
     export let card : Card;
     export let cards : Card[];
@@ -59,6 +60,7 @@
 
     <h1 class="title">Comments</h1>
     <Utterances name={card.suit + '-' + card.card}></Utterances>
+    <ViewSourceOnGithub path="{card.githubUrl}"></ViewSourceOnGithub>
 </div>
 
 <style>

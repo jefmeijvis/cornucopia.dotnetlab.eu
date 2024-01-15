@@ -26,6 +26,7 @@
         margin:auto;
         padding: .5rem;
         margin-top: 4rem;
+        margin-bottom: 2rem;
         cursor:pointer;
         width:max-content;
         text-decoration: none;

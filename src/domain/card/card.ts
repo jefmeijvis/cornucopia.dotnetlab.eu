@@ -4,4 +4,5 @@ export type Card =
     suit : string,
     summary : string,
     url : string,
+    githubUrl : string,
 }
