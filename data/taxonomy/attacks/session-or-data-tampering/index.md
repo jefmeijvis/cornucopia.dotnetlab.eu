@@ -32,9 +32,9 @@ In 2017, Equifax, one of the largest credit reporting agencies, suffered a massi
 - [Authorization K](/authorization/K)
 
 ### Session-management
-- [Session-management A](/session-management/A)
 - [Session-management J](/session-management/J)
 - [Session-management K](/session-management/K)
+- [Session-management A](/session-management/A)
 
 ### Cryptography
 - [Cryptography 2](/cryptography/2)

@@ -21,6 +21,6 @@ Lenovo faced backlash in 2015 when it was revealed that some of its laptops were
 - [Session-management 7](/session-management/7)
 - [Session-management 8](/session-management/8)
 - [Session-management 9](/session-management/9)
-- [Session-management A](/session-management/A)
 - [Session-management Q](/session-management/Q)
 - [Session-management K](/session-management/K)
+- [Session-management A](/session-management/A)
