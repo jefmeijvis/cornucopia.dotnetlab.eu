@@ -1,4 +1,5 @@
 export const order = new Map<string,number>([
+    // Regular cards
     ["2", 0],
     ["3", 1],
     ["4", 2],
@@ -12,6 +13,8 @@ export const order = new Map<string,number>([
     ["K", 10],
     ["Q", 11],
     ["A", 12],
+    // Special cards
     ["joker-a", 13],
     ["joker-b", 14],
+    ["explanation", 14],
 ]);

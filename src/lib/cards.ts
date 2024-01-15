@@ -80,7 +80,7 @@ export function GetCardDescription(suit : string , card : string) : string
 {
     let thisCard : Card | undefined = GetCard(suit,card);
     if(!thisCard)
-        return "undefined";
+        return "";
 
     return thisCard.desc
 }
@@ -89,7 +89,7 @@ export function GetCardExplanation(suit : string , card : string) : string
 {
     let thisCard : Card | undefined = GetCard(suit,card);
     if(!thisCard)
-        return "undefined";
+        return "";
 
     return thisCard.desc
 }
@@ -156,6 +156,9 @@ export function GetCardImageUrl(suit : string , card : string, addition : number
 
     if(id == 81)
         id = 1
+
+    if(suit == 'explanation')
+        id = 81;
     
 
     return '/cards/all/' + id + '.png';

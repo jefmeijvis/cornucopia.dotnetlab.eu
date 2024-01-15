@@ -6,6 +6,7 @@ export const order = new Map<string,number>([
     ["cryptography", 4],
     ["cornucopia", 5],
     ["wild-card", 6],
+    ["explanation", 7],
 ]);
 
 
