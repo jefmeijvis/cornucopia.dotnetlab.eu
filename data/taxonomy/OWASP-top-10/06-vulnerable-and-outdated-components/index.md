@@ -20,3 +20,6 @@ There should be a patch management process in place to:
 Every organization must ensure an ongoing plan for monitoring, triaging, and applying updates or configuration changes for the lifetime of the application or portfolio.
 
 [Source: OWASP TOP 10 Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
+
+## Cheatcheats
+[Vulnerable and Outdated Components Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a062021-vulnerable-and-outdated-components)

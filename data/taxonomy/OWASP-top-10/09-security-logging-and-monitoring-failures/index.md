@@ -25,3 +25,6 @@ Developers should implement some or all the following controls, depending on the
 There are commercial and open-source application protection frameworks such as the OWASP ModSecurity Core Rule Set, and open-source log correlation software, such as the Elasticsearch, Logstash, Kibana (ELK) stack, that feature custom dashboards and alerting.
 
 [Source: OWASP TOP 10 Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/)
+
+## Cheatcheats
+[Security Logging and Monitoring Failures Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a092021-security-logging-and-monitoring-failures)

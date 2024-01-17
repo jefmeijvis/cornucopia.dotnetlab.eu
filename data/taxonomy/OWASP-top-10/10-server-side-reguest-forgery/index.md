@@ -28,3 +28,6 @@ Do not mitigate SSRF via the use of a deny list or regular expression. Attackers
 - For frontends with dedicated and manageable user groups use network encryption (e.g. VPNs) on independent systems to consider very high protection needs
 
 [Source: OWASP TOP 10 Server-Side Request Forgery (SSRF)](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/)
+
+## Cheatcheats
+[Server-Side Request Forgery (SSRF) Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a102021-server-side-request-forgery-ssrf)

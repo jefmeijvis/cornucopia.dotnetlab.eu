@@ -32,3 +32,6 @@ The first thing is to determine the protection needs of data in transit and at r
 - Verify independently the effectiveness of configuration and settings.
 
 [Source: OWASP TOP 10 Cryptographic failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/)
+
+## Cheatcheats
+[Cryptographic failures Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a022021-cryptographic-failures)

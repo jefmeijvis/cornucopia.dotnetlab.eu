@@ -22,3 +22,6 @@ Confirmation of the user's identity, authentication, and session management is c
 - Use a server-side, secure, built-in session manager that generates a new random session ID with high entropy after login. Session identifier should not be in the URL, be securely stored, and invalidated after logout, idle, and absolute timeouts.
 
 [Source: OWASP TOP 10 Identification and Authentication Failures ](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
+
+## Cheatcheats
+[Identification and Authentication Failures Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a072021-identification-and-authentication-failures)

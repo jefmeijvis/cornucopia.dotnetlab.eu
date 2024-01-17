@@ -22,3 +22,6 @@ Without a concerted, repeatable application security configuration process, syst
 - An automated process to verify the effectiveness of the configurations and settings in all environments.
 
 [Source: OWASP TOP 10 Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)
+
+## Cheatcheats
+[Security Misconfiguration Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a052021-security-misconfiguration)

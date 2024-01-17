@@ -26,3 +26,6 @@ Secure software requires a secure development lifecycle, some form of secure des
 - Limit resource consumption by user or service
 
 [Source: OWASP TOP 10 Insecure Design](https://owasp.org/Top10/A04_2021-Insecure_Design/)
+
+## Cheatcheats
+[Insecure Design Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a032021-injection)

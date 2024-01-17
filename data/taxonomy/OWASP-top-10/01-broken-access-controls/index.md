@@ -24,3 +24,6 @@ Access control enforces policy such that users cannot act outside of their inten
 - Developers and QA staff should include functional access control unit and integration tests.
 
 [Source: OWASP TOP 10 broken access controls](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
+
+## Cheatsheets
+[Broken Access Controls Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a012021-broken-access-control)

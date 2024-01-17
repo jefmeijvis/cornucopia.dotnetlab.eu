@@ -11,3 +11,6 @@ Software and data integrity failures relate to code and infrastructure that does
 - Ensure that unsigned or unencrypted serialized data is not sent to untrusted clients without some form of integrity check or digital signature to detect tampering or replay of the serialized data
 
 [Source: OWASP TOP 10 Software and Data Integrity Failures ](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/)
+
+## Cheatcheats
+[Software and Data Integrity Failures Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a082021-software-and-data-integrity-failures)

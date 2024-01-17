@@ -18,3 +18,6 @@ Note: SQL structures such as table names, column names, and so on cannot be esca
 - Use LIMIT and other SQL controls within queries to prevent mass disclosure of records in case of SQL injection.
 
 [Source: OWASP TOP 10 Injection](https://owasp.org/Top10/A03_2021-Injection/)
+
+## Cheatcheats
+[Injection Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a032021-injection)
