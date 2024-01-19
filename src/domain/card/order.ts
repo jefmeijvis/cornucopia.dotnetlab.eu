@@ -10,8 +10,8 @@ export const order = new Map<string,number>([
     ["9", 7],
     ["10",8],
     ["J", 9],
-    ["K", 10],
-    ["Q", 11],
+    ["Q", 10],
+    ["K", 11],
     ["A", 12],
     // Special cards
     ["joker-a", 13],
