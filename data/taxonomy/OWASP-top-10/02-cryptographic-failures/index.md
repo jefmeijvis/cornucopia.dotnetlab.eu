@@ -33,5 +33,37 @@ The first thing is to determine the protection needs of data in transit and at r
 
 [Source: OWASP TOP 10 Cryptographic failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/)
 
-## Cheatcheats
+## Cheatsheets
 [Cryptographic failures Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a022021-cryptographic-failures)
+
+## Cards
+### Authentication
+- [Authentication 3](/authentication/3)
+- [Authentication 4](/authentication/4)
+- [Authentication 5](/authentication/5)
+- [Authentication 6](/authentication/6)
+- [Authentication 7](/authentication/7)
+
+### Session-management
+- [Session-management 2](/session-management/2)
+- [Session-management 3](/session-management/3)
+- [Session-management 5](/session-management/5)
+- [Session-management 9](/session-management/9)
+
+### Authorization
+- [Authorization 3](/authorization/3)
+- [Authorization 8](/authorization/8)
+
+### Cryptography
+- [Cryptography 2](/cryptography/2)
+- [Cryptography 3](/cryptography/3)
+- [Cryptography 4](/cryptography/4)
+- [Cryptography 5](/cryptography/5)
+- [Cryptography 6](/cryptography/6)
+- [Cryptography 7](/cryptography/7)
+- [Cryptography 8](/cryptography/8)
+- [Cryptography 9](/cryptography/9)
+- [Cryptography 10](/cryptography/10)
+- [Cryptography J](/cryptography/J)
+- [Cryptography Q](/cryptography/Q)
+- [Cryptography K](/cryptography/K)

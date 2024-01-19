@@ -27,3 +27,42 @@ Access control enforces policy such that users cannot act outside of their inten
 
 ## Cheatsheets
 [Broken Access Controls Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a012021-broken-access-control)
+
+## Cards
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 2](/data-validation-&-encoding/2)
+- [Data-validation-&-encoding 6](/data-validation-&-encoding/6)
+- [Data-validation-&-encoding 7](/data-validation-&-encoding/7)
+- [Data-validation-&-encoding 8](/data-validation-&-encoding/8)
+- [Data-validation-&-encoding 9](/data-validation-&-encoding/9)
+- [Data-validation-&-encoding 10](/data-validation-&-encoding/10)
+- [Data-validation-&-encoding J](/data-validation-&-encoding/J)
+- [Data-validation-&-encoding K](/data-validation-&-encoding/K)
+
+### Authentication
+- [Authentication 2](/authentication/2)
+- [Authentication 8](/authentication/8)
+- [Authentication 9](/authentication/9)
+- [Authentication 10](/authentication/10)
+- [Authentication Q](/authentication/Q)
+- [Authentication K](/authentication/K)
+
+### Authorization
+- [Authorization 3](/authorization/3)
+- [Authorization 4](/authorization/4)
+- [Authorization 5](/authorization/5)
+- [Authorization 6](/authorization/6)
+- [Authorization 7](/authorization/7)
+- [Authorization 8](/authorization/8)
+- [Authorization 10](/authorization/10)
+- [Authorization J](/authorization/J)
+- [Authorization K](/authorization/K)
+
+### Cryptography
+- [Cryptography 8](/cryptography/8)
+- [Cryptography 10](/cryptography/10)
+- [Cryptography K](/cryptography/K)
+
+### Cornucopia
+- [Cornucopia 2](/cornucopia/2)
+- [Cornucopia K](/cornucopia/K)
