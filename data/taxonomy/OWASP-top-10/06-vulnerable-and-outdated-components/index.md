@@ -21,5 +21,26 @@ Every organization must ensure an ongoing plan for monitoring, triaging, and app
 
 [Source: OWASP TOP 10 Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
 
-## Cheatcheats
+## Cheatsheets
 [Vulnerable and Outdated Components Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a062021-vulnerable-and-outdated-components)
+
+## Cards
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 2](/data-validation-&-encoding/2)
+
+### Authentication
+- [Authentication 9](/authentication/9)
+
+### Authorization
+- [Authorization 8](/authorization/8)
+- [Authorization 9](/authorization/9)
+
+### Cryptography
+- [Cryptography 7](/cryptography/7)
+- [Cryptography 9](/cryptography/9)
+
+### Cornucopia
+- [Cornucopia 6](/cornucopia/6)
+- [Cornucopia 8](/cornucopia/8)
+- [Cornucopia 10](/cornucopia/10)
+- [Cornucopia J](/cornucopia/J)

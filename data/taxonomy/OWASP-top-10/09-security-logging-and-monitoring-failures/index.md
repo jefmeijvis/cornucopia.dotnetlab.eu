@@ -26,5 +26,25 @@ There are commercial and open-source application protection frameworks such as t
 
 [Source: OWASP TOP 10 Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/)
 
-## Cheatcheats
+## Cheatsheets
 [Security Logging and Monitoring Failures Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a092021-security-logging-and-monitoring-failures)
+
+## Cards
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 3](/data-validation-&-encoding/3)
+- [Data-validation-&-encoding 4](/data-validation-&-encoding/4)
+
+### Authentication
+- [Authentication 3](/authentication/3)
+
+### Authorization
+- [Authorization 9](/authorization/9)
+
+
+
+### Cornucopia
+- [Cornucopia 2](/cornucopia/2)
+- [Cornucopia 4](/cornucopia/4)
+- [Cornucopia 7](/cornucopia/7)
+- [Cornucopia 8](/cornucopia/8)
+- [Cornucopia Q](/cornucopia/Q)

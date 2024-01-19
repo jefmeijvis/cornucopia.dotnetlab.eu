@@ -19,5 +19,46 @@ Note: SQL structures such as table names, column names, and so on cannot be esca
 
 [Source: OWASP TOP 10 Injection](https://owasp.org/Top10/A03_2021-Injection/)
 
-## Cheatcheats
+## Cheatsheets
 [Injection Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a032021-injection)
+
+## Cards
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 2](/data-validation-&-encoding/2)
+- [Data-validation-&-encoding 3](/data-validation-&-encoding/3)
+- [Data-validation-&-encoding 4](/data-validation-&-encoding/4)
+- [Data-validation-&-encoding 5](/data-validation-&-encoding/5)
+- [Data-validation-&-encoding 6](/data-validation-&-encoding/6)
+- [Data-validation-&-encoding 7](/data-validation-&-encoding/7)
+- [Data-validation-&-encoding 8](/data-validation-&-encoding/8)
+- [Data-validation-&-encoding 9](/data-validation-&-encoding/9)
+- [Data-validation-&-encoding J](/data-validation-&-encoding/J)
+- [Data-validation-&-encoding Q](/data-validation-&-encoding/Q)
+- [Data-validation-&-encoding K](/data-validation-&-encoding/K)
+
+### Authentication
+- [Authentication 2](/authentication/2)
+- [Authentication 3](/authentication/3)
+- [Authentication 4](/authentication/4)
+- [Authentication 5](/authentication/5)
+- [Authentication 8](/authentication/8)
+- [Authentication J](/authentication/J)
+- [Authentication Q](/authentication/Q)
+- [Authentication K](/authentication/K)
+
+### Session-management
+- [Session-management 2](/session-management/2)
+
+### Authorization
+- [Authorization 2](/authorization/2)
+- [Authorization 3](/authorization/3)
+- [Authorization 8](/authorization/8)
+- [Authorization 9](/authorization/9)
+- [Authorization Q](/authorization/Q)
+
+### Cryptography
+- [Cryptography 8](/cryptography/8)
+
+### Cornucopia
+- [Cornucopia 3](/cornucopia/3)
+- [Cornucopia 5](/cornucopia/5)

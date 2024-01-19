@@ -27,5 +27,30 @@ Secure software requires a secure development lifecycle, some form of secure des
 
 [Source: OWASP TOP 10 Insecure Design](https://owasp.org/Top10/A04_2021-Insecure_Design/)
 
-## Cheatcheats
-[Insecure Design Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a032021-injection)
+## Cheatsheets
+[Insecure Design Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a042021-insecure-design)
+
+## Cards
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 3](/data-validation-&-encoding/3)
+- [Data-validation-&-encoding 6](/data-validation-&-encoding/6)
+- [Data-validation-&-encoding 8](/data-validation-&-encoding/8)
+- [Data-validation-&-encoding 10](/data-validation-&-encoding/10)
+- [Data-validation-&-encoding J](/data-validation-&-encoding/J)
+
+### Authentication
+- [Authentication 3](/authentication/3)
+- [Authentication 4](/authentication/4)
+- [Authentication 10](/authentication/10)
+
+### Authorization
+- [Authorization 2](/authorization/2)
+- [Authorization 4](/authorization/4)
+
+### Cryptography
+- [Cryptography 3](/cryptography/3)
+- [Cryptography 4](/cryptography/4)
+- [Cryptography 5](/cryptography/5)
+
+### Cornucopia
+- [Cornucopia 3](/cornucopia/3)

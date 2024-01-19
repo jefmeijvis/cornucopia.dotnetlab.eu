@@ -29,5 +29,29 @@ Do not mitigate SSRF via the use of a deny list or regular expression. Attackers
 
 [Source: OWASP TOP 10 Server-Side Request Forgery (SSRF)](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/)
 
-## Cheatcheats
+## Cheatsheets
 [Server-Side Request Forgery (SSRF) Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a102021-server-side-request-forgery-ssrf)
+
+## Cards
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 2](/data-validation-&-encoding/2)
+- [Data-validation-&-encoding 7](/data-validation-&-encoding/7)
+- [Data-validation-&-encoding Q](/data-validation-&-encoding/Q)
+
+### Session-management
+- [Session-management 4](/session-management/4)
+- [Session-management 10](/session-management/10)
+
+### Authorization
+- [Authorization 2](/authorization/2)
+- [Authorization 8](/authorization/8)
+- [Authorization 9](/authorization/9)
+
+### Cryptography
+- [Cryptography 7](/cryptography/7)
+- [Cryptography J](/cryptography/J)
+
+### Cornucopia
+- [Cornucopia 3](/cornucopia/3)
+- [Cornucopia 5](/cornucopia/5)
+- [Cornucopia Q](/cornucopia/Q)

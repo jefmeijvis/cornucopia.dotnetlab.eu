@@ -23,5 +23,51 @@ Confirmation of the user's identity, authentication, and session management is c
 
 [Source: OWASP TOP 10 Identification and Authentication Failures ](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
 
-## Cheatcheats
+## Cheatsheets
 [Identification and Authentication Failures Cheatcheats](https://cheatsheetseries.owasp.org/IndexTopTen.html#a072021-identification-and-authentication-failures)
+
+## Cards
+### Data-validation-&-encoding
+- [Data-validation-&-encoding 2](/data-validation-&-encoding/2)
+- [Data-validation-&-encoding 3](/data-validation-&-encoding/3)
+- [Data-validation-&-encoding 5](/data-validation-&-encoding/5)
+- [Data-validation-&-encoding 7](/data-validation-&-encoding/7)
+- [Data-validation-&-encoding 9](/data-validation-&-encoding/9)
+- [Data-validation-&-encoding 10](/data-validation-&-encoding/10)
+- [Data-validation-&-encoding K](/data-validation-&-encoding/K)
+
+### Authentication
+- [Authentication 2](/authentication/2)
+- [Authentication 3](/authentication/3)
+- [Authentication 4](/authentication/4)
+- [Authentication 5](/authentication/5)
+- [Authentication 6](/authentication/6)
+- [Authentication 7](/authentication/7)
+- [Authentication 8](/authentication/8)
+- [Authentication 9](/authentication/9)
+- [Authentication 10](/authentication/10)
+- [Authentication J](/authentication/J)
+- [Authentication Q](/authentication/Q)
+- [Authentication K](/authentication/K)
+
+### Session-management
+- [Session-management 3](/session-management/3)
+- [Session-management 6](/session-management/6)
+- [Session-management 7](/session-management/7)
+- [Session-management 8](/session-management/8)
+- [Session-management J](/session-management/J)
+- [Session-management Q](/session-management/Q)
+- [Session-management K](/session-management/K)
+
+### Authorization
+- [Authorization 3](/authorization/3)
+- [Authorization 4](/authorization/4)
+- [Authorization 5](/authorization/5)
+- [Authorization 9](/authorization/9)
+
+### Cornucopia
+- [Cornucopia 2](/cornucopia/2)
+- [Cornucopia 5](/cornucopia/5)
+- [Cornucopia 8](/cornucopia/8)
+- [Cornucopia 9](/cornucopia/9)
+- [Cornucopia K](/cornucopia/K)
