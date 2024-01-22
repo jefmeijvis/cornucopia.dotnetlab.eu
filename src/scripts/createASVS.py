@@ -5,11 +5,30 @@ from os import walk
 import json
 import os 
 
+mypath = "../../data/taxonomy/ASVS-4.0.3"
+
+
+
+def createLevelSummary(level,arr):
+    topic = ""
+    category = ""
+    os.mkdir(mypath + f'/level-{level}-controls')
+    f = open(mypath + f'/level-{level}-controls/index.md', "w")
+    f.write(f"# Level {level} controls\r\n")
+    f.write(f"Level {level} contains {len(arr)} controls listed below: \r\n")
+    for link in arr:
+        if(link['topic'] != topic):
+            topic = link['topic']
+            f.write(f"## {topic}\r\n")
+        if(link['cat'] != category):
+            category = link['cat']
+            f.write(f"### {category}\r\n")
+        f.write(f"- [{link['name']}]({link['link']})\r\n")
+    f.close()
 
 def main():
     print("Starting ASVS conversion process")
 
-    mypath = "../../data/taxonomy/ASVS-4.0.3"
     try:
         # Empty the folder 
         shutil.rmtree(mypath)
@@ -47,6 +66,7 @@ def main():
                 shortcode = subitem["Shortcode"]
                 link = f"/taxonomy/ASVS-4.0.3/{name}/{itemname}#{shortcode}"
                 obj = {
+                    'topic'  : name,
                     'cat'  : itemname,
                     'name' : f"{itemname} {shortcode}" ,
                     'link' : link
@@ -70,44 +90,9 @@ def main():
             f.write("\r\n")
             f.close()
 
-    os.mkdir(mypath + '/level-1-controls')
-    os.mkdir(mypath + '/level-2-controls')
-    os.mkdir(mypath + '/level-3-controls')
-
-    f = open(mypath + '/level-1-controls/index.md', "w")
-    f.write("# Level 1 controls\r\n")
-    f.write(f"Level 1 contains {len(L1)} controls listed below: \r\n")
-    category = ""
-    for link in L1:
-        if(link['cat'] != category):
-            category = link['cat']
-            f.write(f"## {category}\r\n")
-        f.write(f"- [{link['name']}]({link['link']})\r\n")
-    f.close()
-
-    f = open(mypath + '/level-2-controls/index.md', "w")
-    f.write("# Level 2 controls\r\n")
-    f.write(f"Level 2 contains {len(L2)} controls listed below: \r\n")
-    category = ""
-    for link in L2:
-        if(link['cat'] != category):
-            category = link['cat']
-            f.write(f"## {category}\r\n")
-        f.write(f"- [{link['name']}]({link['link']})\r\n")
-    f.close()
-
-    f = open(mypath + '/level-3-controls/index.md', "w")
-    f.write("# Level 3 controls\r\n")
-    f.write(f"Level 3 contains {len(L3)} controls listed below: \r\n")
-    category = ""
-    for link in L3:
-        if(link['cat'] != category):
-            category = link['cat']
-            f.write(f"## {category}\r\n")
-        f.write(f"- [{link['name']}]({link['link']})\r\n")
-    f.close()
-
-
+    createLevelSummary(1,L1)
+    createLevelSummary(2,L2)
+    createLevelSummary(3,L3)
 
     print("DONE")
 
