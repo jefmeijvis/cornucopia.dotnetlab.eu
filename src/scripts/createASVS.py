@@ -1,0 +1,56 @@
+# This script converts the JSON from https://github.com/OWASP/ASVS/blob/master/4.0/docs_en/OWASP%20Application%20Security%20Verification%20Standard%204.0.3-en.json
+# to the file structure that our cornucopia website can understand.
+import shutil
+from os import walk
+import json
+import os 
+
+
+def main():
+    print("Starting ASVS conversion process")
+
+    mypath = "../../data/taxonomy/ASVS-4.0.3"
+    try:
+        # Empty the folder 
+        shutil.rmtree(mypath)
+    except: 
+        print("exception")
+    os.mkdir(mypath) 
+    # Load the JSON
+    f = open('OWASP Application Security Verification Standard 4.0.3-en.json',encoding="utf8")
+    data = json.load(f)
+
+    for i in data['Requirements']:
+        name = str(i['Ordinal']).rjust(2,"0") + '-' + i['Name'].lower().replace(" ","-").replace(",","")
+        print(name);
+        os.mkdir(mypath + '/' + name) 
+        for item in i['Items']:
+            itemname = str(item["Ordinal"]).rjust(2,"0") + '-' + item["Name"].lower().replace(" ","-").replace(",","")
+            print(itemname)
+            print(item)
+            thispath = mypath + '/' + name + '/' + itemname
+            os.mkdir(thispath)
+            print("🟩")
+            f = open(thispath + '/index.md', "w")
+            f.write("#  " + item["Name"].replace(",",""))
+            f.write("\r\n")
+            for subitem in item["Items"]:
+                f.write("## " + subitem["Shortcode"] + "\r\n")
+                f.write(subitem["Description"].encode("ascii","ignore").decode("utf8","ignore") + "\r\n")
+                f.write("Level 1 required: " + str(subitem["L1"]["Required"]) + "\r\n")
+                f.write("Level 2 required: " + str(subitem["L2"]["Required"]) + "\r\n")
+                f.write("Level 3 required: " + str(subitem["L3"]["Required"]) + "\r\n")
+                cwe = str(subitem["CWE"]).replace("[","").replace("]","")
+                f.write("CWE: [" + cwe + "](https://cwe.mitre.org/data/definitions/" + cwe + ")\r\n")
+                print("🟪")
+                print(subitem)
+            f.write("\r\n")
+            f.write("## Disclaimer:\r\n")
+            f.write("Credit via [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/). For more information visit [The OWASP ASVS Project](https://owasp.org/www-project-application-security-verification-standard/) or [Github respository.](https://github.com/OWASP/ASVS). OWASP ASVS is under the [Creative Commons Attribution-Share Alike v3.0](https://creativecommons.org/licenses/by-sa/3.0/) license.")
+            f.write("\r\n")
+            f.close()
+
+
+    print("")
+
+main()
