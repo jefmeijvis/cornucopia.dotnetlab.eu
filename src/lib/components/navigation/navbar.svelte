@@ -3,7 +3,6 @@
     import { fade } from "svelte/transition";
     import { AddLink, type Link } from "./utils";
     import { page } from "$app/stores";
-    import { url } from "inspector";
     let width: number;
     let height: number;
     let mobile: boolean = false;
@@ -64,7 +63,7 @@ $: getMobile(width, height);
         {#each [...links].reverse() as link}
             <button class="link-mobile" on:click={()=>{toggleMenu();goto(link.href)}}>{link.name}</button>
         {/each}
-        <button class="link-mobile" on:click={()=>{window.location = 'https://webshop.dotnetlab.eu/product/cornucopia-card-deck/'}}>Webshop</button>
+        <button class="link-mobile" on:click={()=>{window.location.href = 'https://webshop.dotnetlab.eu/product/cornucopia-card-deck/'}}>Webshop</button>
     </div>
 {/if}
 
