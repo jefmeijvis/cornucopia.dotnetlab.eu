@@ -23,7 +23,7 @@
         </div>
         <div class="heading-right">
             <button on:click={()=>window.open(commit.html_url,'_blank')}>
-                {#if commit.status == 'success'}
+                {#if commit.status == 'success' || commit.status == 'pending'}
                     <img class="status" alt="success" src="/icons/success.png">
                 {:else}
                     <img class="status" alt="failure" src="/icons/failure.png">
