@@ -42,7 +42,7 @@
 
 <div bind:this={bindingElement} />
 {#if loading}
-	<p>Loading  {percentage}%</p>
+	<p>Loading comments {percentage}%</p>
 {/if}
 
 <style>
@@ -52,5 +52,6 @@
         font-family: 'modern-dos';
         font-weight: 400;
 		font-size: 1.5rem;
+		text-align: center;
 	}
 </style>

@@ -58,7 +58,6 @@
         <p><a href="/taxonomy/attacks/{attack.url}">{attack.name}</a></p>
     {/each}
 
-    <h1 class="title">Comments</h1>
     <Utterances name={card.suit + '-' + card.card}></Utterances>
     <ViewSourceOnGithub path="{card.githubUrl}"></ViewSourceOnGithub>
 </div>
