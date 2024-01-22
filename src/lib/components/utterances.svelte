@@ -46,6 +46,11 @@
 {/if}
 
 <style>
+	div
+	{
+		min-height: 13rem;
+	}
+
 	p
 	{
 		color: var(--white);
