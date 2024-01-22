@@ -1,5 +1,6 @@
 <script>
-    import Footer from "$lib/components/footer.svelte";
+    import DevIndicator from "$lib/components/devIndicator.svelte";
+import Footer from "$lib/components/footer.svelte";
     import Navbar from "$lib/components/navigation/navbar.svelte";
 </script>
 
@@ -10,6 +11,7 @@
     </div>
     <Footer></Footer>
 </div>
+<DevIndicator></DevIndicator>
 
 <style>
     .slot-container
