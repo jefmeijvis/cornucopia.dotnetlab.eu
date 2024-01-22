@@ -19,7 +19,6 @@
 
 <!--The location is filecontent -->
 {#if data.content && data.content != ''}
-    <h1>Content</h1>
     <SvelteMarkdown {renderers} source={data.content}></SvelteMarkdown>
     <ViewSourceOnGithub path={'./data/taxonomy/' + data.path + '/index.md'} ></ViewSourceOnGithub>
     <Utterances name={data.path} ></Utterances>

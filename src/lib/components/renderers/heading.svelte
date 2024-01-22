@@ -1,17 +1,26 @@
 <script lang="ts">
+    import { goto } from "$app/navigation";
+
     export let depth : number;
     export let raw : string;
     export let text : string;
-  </script>
+
+    function cleanText(input : string) : string
+    {
+      return input.trim().replaceAll(':','').replaceAll(' ','-').replaceAll(',','').replaceAll("'","")
+    }
+</script>
   
   {#if depth === 1}
-    <h1 id={text}><slot></slot></h1>
+    <h1 class="clickable" on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}><slot></slot></h1>
   {:else if depth === 2}
-    <h2 id={text}><slot></slot></h2>
+    <h2 class="clickable" on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}>
+      <slot></slot>
+    </h2>
   {:else if depth === 3}
-    <h3 id={text}><slot></slot></h3>
+    <h3 class="clickable" on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}><slot></slot></h3>
   {:else if depth === 4}
-    <h4 id={text}><slot></slot></h4>
+    <h4 class="clickable" on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}><slot></slot></h4>
   {:else if depth === 5}
     <h5 id={text}><slot></slot></h5>
   {:else if depth === 6}
@@ -21,6 +30,16 @@
   {/if}
 
   <style>
+    .clickable
+    {
+      cursor:pointer;
+    }
+
+    .clickable:hover
+    {
+      opacity: 70%;
+    }
+
     h1
     {
       background-color: var(--white);
