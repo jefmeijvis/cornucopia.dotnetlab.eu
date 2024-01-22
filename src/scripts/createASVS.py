@@ -68,7 +68,7 @@ def main():
                 obj = {
                     'topic'  : name,
                     'cat'  : itemname,
-                    'name' : f"{itemname} {shortcode}" ,
+                    'name' : shortcode,
                     'link' : link
                 }
                 if(subitem["L1"]["Required"]):
