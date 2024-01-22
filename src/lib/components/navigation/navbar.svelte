@@ -2,6 +2,8 @@
     import { goto } from "$app/navigation";
     import { fade } from "svelte/transition";
     import { AddLink, type Link } from "./utils";
+    import { page } from "$app/stores";
+    import { url } from "inspector";
     let width: number;
     let height: number;
     let mobile: boolean = false;
@@ -33,6 +35,7 @@
         }
     }
 
+
 $: getMobile(width, height);
 
 
@@ -41,7 +44,7 @@ $: getMobile(width, height);
 <svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 
 <nav>
-    <a class="logo" href="/">Cornucopia</a>
+    <a class="logo" href="/">{$page.url.hostname == "localhost" ? 'Development' : 'Cornucopia'}</a>
     {#if mobile}
         {#if menuOpen}
             <button in:fade on:click={toggleMenu}><img alt="button to close the menu" src="/icons/close.png"/></button>
