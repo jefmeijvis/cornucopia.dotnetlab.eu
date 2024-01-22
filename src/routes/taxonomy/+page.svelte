@@ -14,4 +14,14 @@
         font-size: 1.5rem;
         margin:0;
     }
+
+    a
+    {
+        text-decoration: none;
+    }
+
+    a:hover
+    {
+        opacity:50%;
+    }
 </style>

@@ -24,7 +24,7 @@
 
     a:hover
     {
-      color: rgb(0, 209, 0);
+      color: var(--green);
       font-weight: bold;
     }    
   </style>
