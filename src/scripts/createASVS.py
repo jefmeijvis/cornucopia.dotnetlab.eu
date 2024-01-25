@@ -23,7 +23,8 @@ def createLevelSummary(level,arr):
         if(link['cat'] != category):
             category = link['cat']
             f.write(f"### {category}\r\n")
-        f.write(f"- [{link['name']}]({link['link']})\r\n")
+        shortdesc = link['description'].replace("Verify that","").strip().capitalize()[0:50] + ' ...'
+        f.write(f"- [{link['name']}]({link['link']}) *{shortdesc}* \r\n")
     f.close()
 
 def main():
@@ -64,12 +65,14 @@ def main():
                 f.write("Level 2 required: " + str(subitem["L2"]["Required"]) + "\r\n")
                 f.write("Level 3 required: " + str(subitem["L3"]["Required"]) + "\r\n")
                 shortcode = subitem["Shortcode"]
+                description = subitem["Description"]
                 link = f"/taxonomy/ASVS-4.0.3/{name}/{itemname}#{shortcode}"
                 obj = {
                     'topic'  : name,
                     'cat'  : itemname,
                     'name' : shortcode,
-                    'link' : link
+                    'link' : link,
+                    'description' : description,
                 }
                 if(subitem["L1"]["Required"]):
                     L1.append(obj)
