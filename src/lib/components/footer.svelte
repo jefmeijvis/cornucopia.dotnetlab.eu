@@ -1,15 +1,16 @@
-<script>
-    import { page } from "$app/stores";
-</script>
-
 <footer>
     <div class="flex-container">
         <div class="box">
             <p class="title">OWASP Cornucopia</p>
             <p>
-                Created by Colin Watson.<br>
-                OWASP Cornucopia is open source and can be downloaded free of charge from the OWASP website.
-                OWASP Cornucopia is free to use.
+                This website is created, hosted and provided by <a target='_blank' href="https://www.dotnetlab.eu">dotNET lab.</a>
+                dotNET lab provides training and guidance on secure software development.
+                <a href="mailto:administratie@dotnetlab.eu?subject=Secure Software Development&body=I would like to get in touch to know more about the services dotNET lab provides for secure software development!">Contact us</a> to get in touch! 
+            </p>
+            <p>
+                OWASP Cornucopia is originally created by Colin Watson.
+                It is open source and can be downloaded free of charge from the <a target='_blank' href="https://owasp.org/www-project-cornucopia/">OWASP website</a>.
+                It is is free to use.
                 It is licensed under the Creative Commons Attribution-ShareAlike 3.0 license, so you can copy, 
                 distribute and transmit the work, and you can adapt it, and use it commercially, 
                 but all provided that you attribute the work and if you alter, transform, 
@@ -63,12 +64,13 @@
     {
         font-size: 1.5rem;
         text-decoration: underline;
+        font-family: var(--font-title);
     }
 
     p
     {
         color:var(--white);
-        font-family: "modern-dos";
+        font-family: var(--font-body);
         margin-top:.5rem;
         margin-bottom:.5rem;
     }

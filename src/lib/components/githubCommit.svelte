@@ -57,7 +57,7 @@
 
     *
     {
-        font-family: 'Courier New', Courier, monospace;
+        font-family: var(--font-body);
     }
     .heading
     {

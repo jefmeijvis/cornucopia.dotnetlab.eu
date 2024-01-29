@@ -12,7 +12,7 @@
   <style>
     h1,p
     {
-      font-family: 'modern-dos';
+      font-family: var(--font-title);
       color:white;
     }
     p

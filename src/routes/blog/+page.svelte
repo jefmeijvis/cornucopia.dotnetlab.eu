@@ -52,7 +52,7 @@
         padding: 0;
         width : 100%;
         text-align: left;
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         font-weight: 400;
         background: none;
         border:none;

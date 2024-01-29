@@ -28,7 +28,7 @@
     {
         text-align: center;
         color:var(--white);
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         transform: scale(1,1);
         font-size: 1rem;
     }

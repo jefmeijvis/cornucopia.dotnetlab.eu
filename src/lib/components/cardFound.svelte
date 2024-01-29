@@ -71,7 +71,7 @@
     h1,a,p
     {
         color: var(--white);
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         font-weight: 400;
     }
 

@@ -20,7 +20,7 @@
         display: flex;
         flex-shrink: 1;
         color:var(--color-text-primary);
-        font-family: 'Courier New', Courier, monospace;
+        font-family: var(--font-body);
         background-color: var(--background);
         border-radius: .5rem;
         margin:auto;

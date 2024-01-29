@@ -25,12 +25,12 @@
 
     p
     {
-        font-family: 'Courier New', Courier;
+        font-family: var(--font-body);
     }
 
     h1
     {
-      font-family: 'modern-dos';
+      font-family: var(--font-title);
       background-color:var(--white);
       color: var(--background);
       padding: .5rem;

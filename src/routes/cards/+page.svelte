@@ -89,7 +89,7 @@
 
     p,h1,a,h2 {
         color: var(--white);
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         font-weight: 400;
     }
 

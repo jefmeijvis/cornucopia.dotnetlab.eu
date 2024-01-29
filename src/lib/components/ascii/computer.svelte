@@ -35,7 +35,7 @@
     pre
     {
         color:var(--white);
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         transform: scale(-1,1);
         text-align: left;
     }

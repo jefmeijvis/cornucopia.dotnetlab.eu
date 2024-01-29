@@ -60,7 +60,7 @@
     p,a
     {
         color: var(--white);
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         font-weight: 400;
         font-size: 1.5rem;
     }

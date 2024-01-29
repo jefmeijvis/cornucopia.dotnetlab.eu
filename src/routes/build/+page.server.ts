@@ -14,7 +14,7 @@ let options : RequestInit =
 export async function load({params})
 {
     return {
-        commits : await LocalCache(getCommits,1,"get-all-commits"),
+        commits : await LocalCache(getCommits,3600,"get-all-commits"),
     }
 }
 

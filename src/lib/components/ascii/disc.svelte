@@ -47,7 +47,7 @@ YI;                  +Ri             :Bt                  :XR
     {
         text-align: center;
         color:var(--white);
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         transform: scale(1,0.8);
         font-size: .8rem;
     }

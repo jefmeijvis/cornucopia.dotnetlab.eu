@@ -56,7 +56,7 @@
         width : 100%;
         margin:auto;
         text-align: center;
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         font-weight: 400;
         margin-top: 10rem;
     }

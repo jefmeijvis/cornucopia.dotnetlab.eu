@@ -14,7 +14,7 @@
 <style>
     p
     {
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         font-size: 1.2rem;
         margin:0;
         padding: .2rem

@@ -3,7 +3,7 @@
     import Computer from "$lib/components/ascii/computer.svelte";
     import Disc from "$lib/components/ascii/disc.svelte";
     import Github from "$lib/components/ascii/github.svelte";
-    import TextImage from "$lib/textImage.svelte";
+    import TextImage from "$lib/components/textImage.svelte";
 </script>
 
 
@@ -46,5 +46,6 @@
     a,p
     {
         font-size: 1.3rem;
+        font-family: var(--font-body);
     }
 </style>

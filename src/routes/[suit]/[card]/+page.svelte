@@ -25,7 +25,7 @@
 <style>
   a
   {
-    font-family: 'modern-dos';
+    font-family: var(--font-title);
     color: var(--white);
     margin:1rem;
   }

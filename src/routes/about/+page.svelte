@@ -40,7 +40,7 @@
     }
     *
     {
-        font-family: "modern-dos";
+        font-family: var(--font-title);
         color: var(--white)
     }
     div

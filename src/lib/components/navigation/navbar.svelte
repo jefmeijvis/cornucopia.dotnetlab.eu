@@ -88,7 +88,7 @@ $: getMobile(width, height);
         font-size: 2rem;;
         display: none;
         width : 100%;
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         text-align: center;
         padding-top: 0rem;
         padding-bottom: 0rem;
@@ -117,7 +117,7 @@ $: getMobile(width, height);
     {
         float:right;
         color:white;
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         text-decoration: none;
         padding: .5rem;
         font-size: 1.5rem;
@@ -139,7 +139,7 @@ $: getMobile(width, height);
         margin:0;
         font-size: 3rem;
         padding: 1rem;
-        font-family: 'modern-dos';
+        font-family: var(--font-title);
         color: var(--white);
     }
 

@@ -38,7 +38,7 @@
     h3
     {
         text-align: center;
-        font-family: "modern-dos";
+        font-family: var(--font-title);
         font-weight: 500;
         font-size: 2rem;
         margin-top: 0;
@@ -51,7 +51,7 @@
         margin: 0;
         width : 100%;
         text-align: center;
-        font-family: "modern-dos";
+        font-family: var(--font-title);
         font-weight: 500;
     }
 
