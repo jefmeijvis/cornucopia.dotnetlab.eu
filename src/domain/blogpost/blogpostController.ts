@@ -40,7 +40,7 @@ export function getBlogposts() : Blogpost[]
         let month = ('' + (today.getMonth() + 1)).padStart(2,'0')
         let day = ('' + (today.getDate())).padStart(2,'0')
         let todayAsString = year + month + day;
-        if((post.date + '').localeCompare(todayAsString) == 1)
+        if((post.date + '').localeCompare(todayAsString) >= 0)
             continue;
 
         // check if the post is hidden
