@@ -34,6 +34,16 @@ export function getBlogposts() : Blogpost[]
             path : directory,
         }
 
+        // Check the post date
+        let today = new Date();
+        let year = today.getFullYear();
+        let month = ('' + (today.getMonth() + 1)).padStart(2,'0')
+        let day = ('' + (today.getDate())).padStart(2,'0')
+        let todayAsString = year + month + day;
+        if((post.date + '').localeCompare(todayAsString) == 1)
+            continue;
+
+        // check if the post is hidden
         if(post.hidden)
             continue;
 
