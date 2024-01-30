@@ -34,8 +34,10 @@ export function getBlogposts() : Blogpost[]
             path : directory,
         }
 
-        if(!post.hidden)
-            result.push(post)
+        if(post.hidden)
+            continue;
+
+        result.push(post)
     }
 
     result.sort((a : Blogpost, b : Blogpost) => ('' + a.date).localeCompare(b.date))
