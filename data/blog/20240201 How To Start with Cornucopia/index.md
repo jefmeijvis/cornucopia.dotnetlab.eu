@@ -59,9 +59,8 @@ During the Sprint Planning meeting, the developers are present.  They can play C
 
 **Wrong!  We strongly discourage teams to take the Sprint Planning route.**
 While integrating Cornucopia inside the Sprint Planning Meeting seems like a logical choice, it immediately presents all involved parties (Customer, Product Owner, Scrum Master, Team) with issues, such as:
-
-	1. Can you fit playing Cornucopia within the Sprint Planning meeting timebox?
-	2. Can the team really focus on Appsec during the Sprint Planning meeting?
+1. Can you fit playing Cornucopia within the Sprint Planning meeting timebox?
+2. Can the team really focus on Appsec during the Sprint Planning meeting?
 
 **Can you fit playing Cornucopia within the Sprint Planning meeting timebox?**
 The answer to this question is probably "NO".  We don't want to complicate the implementation of a correct Scrum-process by overloading your Sprint Planning meeting.  Quite the contrary, our aim is to improve the quality of your Scrum Process and the quality of the software your team produces.
