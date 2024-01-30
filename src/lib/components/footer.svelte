@@ -1,12 +1,13 @@
 <footer>
     <div class="flex-container">
         <div class="box">
-            <p class="title">OWASP Cornucopia</p>
+            <p class="title">Provided by dotNET lab</p>
             <p>
                 This website is created, hosted and provided by <a target='_blank' href="https://www.dotnetlab.eu">dotNET lab.</a>
                 dotNET lab provides training and guidance on secure software development.
                 <a href="mailto:administratie@dotnetlab.eu?subject=Secure Software Development&body=I would like to get in touch to know more about the services dotNET lab provides for secure software development!">Contact us</a> to get in touch! 
             </p>
+            <p class="title">OWASP Cornucopia</p>
             <p>
                 OWASP Cornucopia is originally created by Colin Watson.
                 It is open source and can be downloaded free of charge from the <a target='_blank' href="https://owasp.org/www-project-cornucopia/">OWASP website</a>.
