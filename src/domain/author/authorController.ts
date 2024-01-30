@@ -27,6 +27,11 @@ export function getAuthors() : Author[]
         author.linkedin = parsed?.attributes?.linkedin ?? '';
         author.email = parsed?.attributes?.email ?? '';
         author.bio = parsed.body;
+
+        // Skip default author
+        if(author.name == 'undefined')
+            continue;
+
         authors.push(author);
     }
 

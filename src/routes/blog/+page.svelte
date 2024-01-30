@@ -27,6 +27,11 @@
 
 
 <p>View <a href="/author">All authors</a></p>
+{#each data.authors as author}
+    <p style="display:none;">
+        <a href="/author/{author.name}">{author.name}</a>
+    </p>
+{/each}
 
 
 <style>
