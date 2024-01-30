@@ -1,6 +1,6 @@
 <script>
     import { Text } from "$lib/utils/text";
-import SvelteMarkdown from "svelte-markdown";
+    import SvelteMarkdown from "svelte-markdown";
     export let data;
 </script>
 
@@ -55,7 +55,7 @@ import SvelteMarkdown from "svelte-markdown";
         <ul>
             {#each data.blogposts as blogpost}
                 <li>
-                    <a href="/blog/{blogpost.title}">{Text.Format(blogpost.title)}</a>
+                    <a href="/blog/{blogpost.path}">{Text.Format(blogpost.title)}</a>
                 </li>
             {/each}
         </ul>
