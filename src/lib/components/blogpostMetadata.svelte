@@ -13,7 +13,7 @@
         <p>Date: {Text.FormatDate(blogpost.date)}</p>
         <p>Author: <a href="{authorLink}">{Text.Format(blogpost.author)}</a></p>
         <p>Tags: 
-            {#each blogpost.tags as tag}
+            {#each blogpost.tags || [] as tag}
             <a class="tag" href="/blog">{Text.Format(tag)}</a><span></span>
             {/each}
         </p>

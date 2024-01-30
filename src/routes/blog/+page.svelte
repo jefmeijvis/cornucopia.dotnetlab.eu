@@ -12,13 +12,13 @@
 {:else}
     <div class="list">
         {#each data.posts as post}
-            <button title="View this post" on:click={()=>goto('/blog/' + post.title)}>
+            <button title="View {Text.Format(post.path)}" on:click={()=>goto('/blog/' + post.path)}>
                 <p class="title">{Text.Format(post.title)}</p>
                 <p class="info">
                     {Text.FormatDate(post.date)}
                      • 
                     {Text.Format(post.author)}
-                    <a class= "link" href="/blog/{post.title}">>> Read more</a>
+                    <a class= "link" href="/blog/{post.path}">>> Read more</a>
                 </p>
             </button>
         {/each}

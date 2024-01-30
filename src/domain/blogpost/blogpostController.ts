@@ -20,25 +20,25 @@ export function getBlogposts() : Blogpost[]
         let parsed = fm(file);
         let post : Blogpost = 
         {
-            //@ts-ignore
-            id : parsed?.attributes?.id ?? -1,
-            title : directory,
+            title : directory.substring(9),
             markdown : parsed.body,
             //@ts-ignore
             author : parsed.attributes.author,
             //@ts-ignore
-            published : parsed.attributes.published,
+            hidden : parsed.attributes.hidden,
             //@ts-ignore
             date : parsed.attributes.date,
             //@ts-ignore
-            tags : parsed.attributes.tags.split(',')
+            tags : parsed.attributes.tags.split(','),
+            //@ts-ignore
+            path : directory,
         }
 
-        if(post.published)
+        if(!post.hidden)
             result.push(post)
     }
 
-    result.sort((a : Blogpost, b : Blogpost) => a.id - b.id)
+    result.sort((a : Blogpost, b : Blogpost) => ('' + a.date).localeCompare(b.date))
     return result;
 }
 
@@ -51,5 +51,6 @@ export function getBlogpostsByAuthor(name : string) : Blogpost[]
 export function getBlogpostByTitle(title : string) : Blogpost
 {
     let blogposts = getBlogposts();
-    return blogposts.find(post => post.title == title) || {} as Blogpost
+    
+    return blogposts.find(post => {return post.path == title}) || {} as Blogpost
 }

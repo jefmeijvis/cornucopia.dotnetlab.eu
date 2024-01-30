@@ -1,9 +1,8 @@
 ---
-id : 1
+date: 20231210
 author: ive-verstappen
-date: 10/12/2023
 tags: scrum,agile
-published: false
+hidden: false
 ---
 
 # Empowering Scrum Teams with OWASP Cornucopia for Enhanced Software Security

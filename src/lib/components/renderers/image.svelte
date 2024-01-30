@@ -45,6 +45,7 @@
   
   <img loading="lazy" style="{getStyle()}" src={url} {title} alt={text}>
   <p class="alt-text"><i>Image: {text}</i></p>
+  <p>HREF: {url}</p>
 
 
   <style>

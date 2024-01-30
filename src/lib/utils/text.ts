@@ -9,16 +9,19 @@ export class Text
 
     public static Format(input : string)
     {
-        input = input.replaceAll('-',' ')
+        input = ('' + input).replaceAll('-',' ')
         input = this.Capitalize(input);
         return input;
     }
 
     public static FormatDate(input : string) : string
     {
-        // This method expects 20 december 2020 as 20/12/2020 (DD/MM/YYYY)
-        var dateParts = input.split("/");
-        let date = new Date(Number.parseInt(dateParts[2]), Number.parseInt(dateParts[1]) - 1, Number.parseInt(dateParts[0]));
+        // This method expects 19 december 2020 as 20201219 (YYYMMDD)
+        var dateString = '' + input;
+        var year = parseInt(dateString.substring(0,4));
+        var month = parseInt(dateString.substring(4,6));
+        var day = parseInt(dateString.substring(6,8));
+        var date = new Date(year, month-1, day);
         let result = date.getDate() + ' ' + date.toLocaleString('en-US', { month: 'short' }) + ', ' + date.getFullYear();
         return result
     }

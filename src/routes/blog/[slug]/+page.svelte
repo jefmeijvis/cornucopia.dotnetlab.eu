@@ -9,7 +9,7 @@
 
 <BlogpostMetadata {blogpost}></BlogpostMetadata>
 <SvelteMarkdown {renderers} source={blogpost.markdown}></SvelteMarkdown>
-<Utterances delay={100} name={blogpost.id + ''}></Utterances>
+<Utterances delay={100} name={blogpost.title + ''}></Utterances>
 <p>
     <a href="https://github.com/jefmeijvis/cornucopia.dotnetlab.eu/tree/master/data/blog/{blogpost.title}/index.md">View this post on Github</a>
 </p>

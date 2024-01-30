@@ -1,10 +1,10 @@
 export type Blogpost =
 { 
-    id : number,
     title : string,
+    path : string,
     author : string,
     markdown : string,
     tags : string[],
-    published : boolean,
+    hidden : boolean,
     date : string,
 }

@@ -1,9 +1,8 @@
 ---
-id : 3
+date: 20240201
 author: ive-verstappen
-date: 01/02/2024
 tags: scrum,agile
-published: false
+hidden: false
 ---
 
 Individually or as a team, you have decided that you want to improve the level of cybersecurity of your applications by integrating an Appsec process in your development workflow.
