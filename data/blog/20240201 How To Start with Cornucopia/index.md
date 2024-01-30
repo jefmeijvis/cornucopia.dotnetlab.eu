@@ -58,8 +58,6 @@ So then, why don't we integrate playing Cornucopia in the Sprint Planning meetin
 During the Sprint Planning meeting, the developers are present.  They can play Cornucopia, identify threats and directly plan them in the Sprint Backlog!  So, this seems like a logical choice, doesn't it?
 
 **Wrong!  We strongly discourage teams to take the Sprint Planning route.**
-
-
 While integrating Cornucopia inside the Sprint Planning Meeting seems like a logical choice, it immediately presents all involved parties (Customer, Product Owner, Scrum Master, Team) with issues, such as:
 
 	1. Can you fit playing Cornucopia within the Sprint Planning meeting timebox?
