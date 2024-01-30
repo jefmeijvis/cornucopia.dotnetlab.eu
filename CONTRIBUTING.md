@@ -4,7 +4,7 @@ When writing a commit message, it must start with one of the following types:
 
 - content: Making changes to, or creating any type of content (blogposts, cards, taxonomy, authors, ...)
 - feat: A new feature
-- fix: A bug fix²
+- fix: A bug fix
 - perf: A code change that improves performance
 - refactor: A code change that neither fixes a bug nor adds a feature
 - style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.)
