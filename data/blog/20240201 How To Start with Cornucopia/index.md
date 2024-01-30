@@ -1,7 +1,7 @@
 ---
 id : 3
 author: ive-verstappen
-date: 08/02/2024
+date: 01/02/2024
 tags: scrum,agile
 published: true
 ---
