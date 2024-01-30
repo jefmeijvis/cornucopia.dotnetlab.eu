@@ -52,13 +52,13 @@
 
     a
     {
-        text-decoration: none;
         color:var(--white);
     }
 
     a:hover
     {
-        text-decoration: underline;
+        font-weight: bold;
+        color:var(--green)
     }
 
     .title
