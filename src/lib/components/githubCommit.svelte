@@ -3,7 +3,6 @@
 
     export let commit : any;
     let date = new Date(commit.commit.committer.date);
-    console.log(commit)
 </script>
 
 <div class="container">
