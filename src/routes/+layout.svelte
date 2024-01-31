@@ -1,4 +1,5 @@
 <script>
+    import CookieNotice from "$lib/components/cookieNotice.svelte";
     import DevIndicator from "$lib/components/devIndicator.svelte";
     import Footer from "$lib/components/footer.svelte";
     import GoogleAnalytics from "$lib/components/googleAnalytics.svelte";
@@ -11,6 +12,7 @@
 <DevIndicator></DevIndicator>
 <GoogleAnalytics></GoogleAnalytics>
 <MicrosoftClarity></MicrosoftClarity>
+<CookieNotice></CookieNotice>
 
 <div>
     <Navbar></Navbar>
