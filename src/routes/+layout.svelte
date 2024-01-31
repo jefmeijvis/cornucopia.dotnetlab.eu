@@ -3,12 +3,14 @@
     import Footer from "$lib/components/footer.svelte";
     import GoogleAnalytics from "$lib/components/googleAnalytics.svelte";
     import Metadata from "$lib/components/metadata.svelte";
+    import MicrosoftClarity from "$lib/components/microsoftClarity.svelte";
     import Navbar from "$lib/components/navigation/navbar.svelte";
 </script>
 
 <Metadata></Metadata>
 <DevIndicator></DevIndicator>
 <GoogleAnalytics></GoogleAnalytics>
+<MicrosoftClarity></MicrosoftClarity>
 
 <div>
     <Navbar></Navbar>
