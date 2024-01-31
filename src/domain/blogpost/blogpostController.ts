@@ -34,6 +34,13 @@ export function getBlogposts() : Blogpost[]
             path : directory,
         }
 
+        // check if the post is hidden
+        if(post.hidden)
+        {
+            console.log("🔴 Skipping blogpost because set to hidden: [" + post.title + "]")
+            continue;
+        }
+
         // Check the post date
         let today = new Date();
         let year = today.getFullYear();
@@ -41,12 +48,12 @@ export function getBlogposts() : Blogpost[]
         let day = ('' + (today.getDate())).padStart(2,'0')
         let todayAsString = year + month + day;
         if((post.date + '').localeCompare(todayAsString) >= 0)
+        {
+            console.log("🔴 Skipping blogpost because release date is " + post.date + " and today is " + todayAsString +   ": [" + post.title + "]")
             continue;
+        }
 
-        // check if the post is hidden
-        if(post.hidden)
-            continue;
-
+        console.log("🟢 Added blogpost: [" + post.title + "]")
         result.push(post)
     }
 
