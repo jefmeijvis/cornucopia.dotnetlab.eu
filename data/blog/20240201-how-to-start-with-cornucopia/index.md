@@ -33,9 +33,9 @@ Why these suits?  We looked at the [Owasp top 10](https://cornucopia.dotnetlab.e
 
 Here it gets a little bit tricky.  There are a few routes you could take about how to introduce Cornucopia in your planning process:
 
-	1. You integrate playing Cornucopia into your Product Planning Meeting
-	2. You integrate playing Cornucopia into your Sprint Planning Meeting
-	3. You create a new planning meeting focused on Appsec by playing Cornucopia
+1. You integrate playing Cornucopia into your Product Planning Meeting
+2. You integrate playing Cornucopia into your Sprint Planning Meeting
+3. You create a new planning meeting focused on Appsec by playing Cornucopia
 
 ### Option 1: Integrate playing Cornucopia into the Product Planning Meeting
 At first glance, integrating Cornucopia into the Product Planning Meeting seems like a logical option.  
@@ -80,7 +80,7 @@ Make sure all of your team-members have the Cornucopia cards and they have viewe
 
 **Properties of the Cornucopia meeting**
 Who should attend?
-	Make sure you include the developers, architect and the Product Owner into the meeting.  If you have a dedicated Functional Analyst, then you could include him as well.
+Make sure you include the developers, architect and the Product Owner into the meeting.  If you have a dedicated Functional Analyst, then you could include him as well.
 
 What is the agenda of the first Cornucopia-meeting?
 - The purpose of Appsec and why Cornucopia is a good way to start
@@ -93,11 +93,13 @@ In future blogposts, I will elaborate further on how to best conduct a Cornucopi
 Limit yourself to writing down the possible threats by simply writing down the cards which are relevant to your project.
 
 eg: 
-- Authentication - 5
-- Authorization - 9
+- Authentication -5
+- Authorization -9
 - Authorization -5
 
-**The result of the meeting should be a list of relevant cards.  These cards = threats.  On our website, you find lots of tools to conduct a decent Threat Model for each card.  Information about writing Threat Models will become available on this website in the course of 2024.**
+**The result of the meeting should be a list of relevant cards.  These cards = threats.**  
+
+More information about how to go from cards to Product Backlog Items will become available on this website in the course of 2024.
 
 ## Conclusion
 Playing the Cornucopia cardgame is a great way to start your Appsec program.  You can integrate playing Cornucopia in your Scrum Process and we advise to do that by creating a dedicated meeting.  
