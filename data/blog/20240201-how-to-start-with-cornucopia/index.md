@@ -110,3 +110,5 @@ The outcome of that meeting should be a list of relevant cards for your developm
 Good luck!
 
 Ive
+
+Please use the comment section below to give feedback or ask questions.
