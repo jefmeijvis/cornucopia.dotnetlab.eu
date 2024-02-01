@@ -33,9 +33,9 @@ Why these suits?  We looked at the [Owasp top 10](https://cornucopia.dotnetlab.e
 
 Here it gets a little bit tricky.  There are a few routes you could take about how to introduce Cornucopia in your planning process:
 
-1. You integrate playing Cornucopia into your Product Planning Meeting
-2. You integrate playing Cornucopia into your Sprint Planning Meeting
-3. You create a new planning meeting focused on Appsec by playing Cornucopia
+1. You integrate playing Cornucopia into your Product Planning Meeting.
+2. You integrate playing Cornucopia into your Sprint Planning Meeting.
+3. You create a new planning meeting focused on Appsec by playing Cornucopia.
 
 ### Option 1: Integrate playing Cornucopia into the Product Planning Meeting
 At first glance, integrating Cornucopia into the Product Planning Meeting seems like a logical option.  
