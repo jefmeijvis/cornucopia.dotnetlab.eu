@@ -110,7 +110,3 @@ The outcome of that meeting should be a list of relevant cards for your developm
 Good luck!
 
 Ive
-
-You are searching for help about starting with Appsec in your development team?  Contact [dotNET lab](https://www.dotnetlab.eu/en/contact-en/) and we'll get in touch with you.
-
-You can by Cornucopia cards in our webshop.  We intentionally keep the prices for these cards as low as possible to enable teams of all sizes to succesfully start their Appsec program by playing Cornucopia.
