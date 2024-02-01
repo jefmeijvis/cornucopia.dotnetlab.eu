@@ -32,7 +32,9 @@ function getDataFromPath(path : string)
     if (fs.existsSync(indexFile))
         content = fs.readFileSync(indexFile, 'utf8');
     else
-        console.log('🍎 ' + indexFile + ' doesnt exist')
+    {
+        //console.log('🍎 ' + indexFile + ' doesnt exist')
+    }
 
 
     let folders = FileSystemHelper.getDirectories(path);
