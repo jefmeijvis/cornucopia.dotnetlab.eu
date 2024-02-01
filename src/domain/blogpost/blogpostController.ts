@@ -47,7 +47,9 @@ export function getBlogposts() : Blogpost[]
         let month = ('' + (today.getMonth() + 1)).padStart(2,'0')
         let day = ('' + (today.getDate())).padStart(2,'0')
         let todayAsString = year + month + day;
-        if((post.date + '').localeCompare(todayAsString) >= 0)
+        let compare = (post.date + '').localeCompare(todayAsString);
+        console.log(compare)
+        if( compare > 0)
         {
             console.log("🔴 Skipping blogpost because release date is " + post.date + " and today is " + todayAsString +   ": [" + post.title + "]")
             continue;
@@ -57,7 +59,7 @@ export function getBlogposts() : Blogpost[]
         result.push(post)
     }
 
-    result.sort((a : Blogpost, b : Blogpost) => ('' + a.date).localeCompare(b.date))
+    result.sort((a : Blogpost, b : Blogpost) => ('' + b.date).localeCompare(a.date))
     return result;
 }
 
