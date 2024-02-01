@@ -5,6 +5,7 @@ tags: scrum,agile
 hidden: false
 ---
 
+# How to start with Cornucopia in a Scrum team
 Individually or as a team, you have decided that you want to improve the level of cybersecurity of your applications by integrating an Appsec process in your development workflow.
 
 Our Owasp Cornucopia cards are a great way of starting your Appsec process!  But how do you start?
