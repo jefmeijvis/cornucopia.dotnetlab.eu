@@ -4,7 +4,7 @@ author: ive-verstappen
 tags: scrum,agile
 hidden: false
 ---
-## From Card to Backlog: Simplifying Appsec Integration
+# The easiest way to go from card to Product Backlog Item
 
 Cornucopia is aimed at the developer, not the security engineer.  Therefore, we feel that there should be an easy way to go from identifying a threat or vulnerabiltiy to a Product Backlog Item.
 
