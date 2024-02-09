@@ -4,7 +4,6 @@ author: ive-verstappen
 tags: agile
 hidden: false
 ---
-
 # Why Play Cornucopia?
 Hello.  If you're interested in building secure applications, you're at the right place!  By playing cornucopia, you will quickly learn how to build more secure applications!  Playing Cornucopia together with your team mates will unlock the full potential of your AppSec program and you'll build software which is much more secure!
 
