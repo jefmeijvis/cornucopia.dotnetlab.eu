@@ -13,9 +13,9 @@ So, you have played your first Cornucopia game and you now need to transfer a ca
 ## Playing cornucopia: a practical scenario
 Suppose your team has used three Cornucopia suits: Authentication, Authorization, and Data Validation & Encoding, identifying threats relevant to your project:
 
-Authentication: 3, 4, 8, 5
-Authorization: 5, 9, Q, K
-Data Validation & Encoding: 2, 7, 8
+- Authentication: 3, 4, 8, 5
+- Authorization: 5, 9, Q, K
+- Data Validation & Encoding: 2, 7, 8
 
 The next step is to form Product Backlog Items from these cards.
 
