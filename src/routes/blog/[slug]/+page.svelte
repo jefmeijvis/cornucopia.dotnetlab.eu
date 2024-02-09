@@ -11,7 +11,7 @@
 <SvelteMarkdown {renderers} source={blogpost.markdown}></SvelteMarkdown>
 <Utterances delay={100} name={blogpost.title + ''}></Utterances>
 <p>
-    <a href="https://github.com/jefmeijvis/cornucopia.dotnetlab.eu/tree/master/data/blog/{blogpost.title}/index.md">View this post on Github</a>
+    <a href="https://github.com/jefmeijvis/cornucopia.dotnetlab.eu/tree/master/data/blog/{blogpost.path}/index.md">View this post on Github</a>
 </p>
 
 <style>
