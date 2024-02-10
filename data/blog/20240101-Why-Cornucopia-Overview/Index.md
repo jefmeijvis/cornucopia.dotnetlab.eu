@@ -1,7 +1,7 @@
 ---
 date: 20240102
 author: ive-verstappen
-tags: agile
+tags: agile,scrum
 hidden: false
 ---
 # Why Play Cornucopia?
