@@ -30,3 +30,5 @@ Cornucopia is the fastest way to learn about building more secure applications. 
 ### want to get in touch?
 
 **Get in touch with us at [dotNET lab Belgium](https://www.dotnetlab.eu/en/contact-en/)** 
+
+Good luck in playing cornucopia!
