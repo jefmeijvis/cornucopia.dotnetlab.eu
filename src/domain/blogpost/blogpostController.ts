@@ -14,7 +14,7 @@ export function getBlogposts() : Blogpost[]
     // For every directory, fetch the 'index.md' file
     for(let i = 0 ; i < directories.length ; i++)
     {
-        let directory = directories[i];
+        let directory = directories[i].toLowerCase();
         console.log("🔵 Found directory " + directory)
         let filepath = basepath + '/' + directory + '/index.md'
         let file = fs.readFileSync(filepath, 'utf8');
