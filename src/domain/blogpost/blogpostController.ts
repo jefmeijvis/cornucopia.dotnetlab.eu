@@ -49,7 +49,6 @@ export function getBlogposts() : Blogpost[]
         let day = ('' + (today.getDate())).padStart(2,'0')
         let todayAsString = year + month + day;
         let compare = (post.date + '').localeCompare(todayAsString);
-        console.log(compare)
         if( compare > 0)
         {
             console.log("🔴 Skipping blogpost because release date is " + post.date + " and today is " + todayAsString +   ": [" + post.title + "]")
