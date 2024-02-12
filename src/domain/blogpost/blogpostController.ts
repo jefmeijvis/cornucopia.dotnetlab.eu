@@ -10,6 +10,7 @@ export function getBlogposts() : Blogpost[]
 
     // Collect all directories
     let directories = FileSystemHelper.getDirectories(basepath);
+    console.dir(directories)
 
     // For every directory, fetch the 'index.md' file
     for(let i = 0 ; i < directories.length ; i++)
@@ -38,7 +39,7 @@ export function getBlogposts() : Blogpost[]
         // check if the post is hidden
         if(post.hidden)
         {
-            console.log("🔴 Skipping blogpost because set to hidden: [" + post.title + "]")
+            console.log("🔴 Skipping blogpost because set to hidden: [" + directory + "]")
             continue;
         }
 
