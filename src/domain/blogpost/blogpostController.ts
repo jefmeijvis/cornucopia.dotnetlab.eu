@@ -2,6 +2,7 @@ import { FileSystemHelper } from "$lib/filesystem/fileSystemHelper";
 import fs from 'fs'
 import fm from "front-matter"
 import type { Blogpost } from "./blogpost";
+import { LocalCacheSync } from "$lib/utils/cache";
 
 export function getBlogposts() : Blogpost[]
 {
@@ -66,13 +67,12 @@ export function getBlogposts() : Blogpost[]
 
 export function getBlogpostsByAuthor(name : string) : Blogpost[]
 {
-    let blogposts = getBlogposts();
+    let blogposts : Blogpost[] = LocalCacheSync(getBlogposts,20,'posts');
     return blogposts.filter(post => post.author == name);
 }
 
 export function getBlogpostByTitle(title : string) : Blogpost
 {
-    let blogposts = getBlogposts();
-    
+    let blogposts : Blogpost[] = LocalCacheSync(getBlogposts,20,'posts');
     return blogposts.find(post => {return post.path == title}) || {} as Blogpost
 }
