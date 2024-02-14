@@ -2,6 +2,7 @@ import { FileSystemHelper } from "$lib/filesystem/fileSystemHelper";
 import fs from 'fs'
 import fm from "front-matter"
 import type { Blogpost } from "./blogpost";
+import { LocalCacheSync } from "$lib/utils/cache";
 
 export function getBlogposts() : Blogpost[]
 {
@@ -10,11 +11,13 @@ export function getBlogposts() : Blogpost[]
 
     // Collect all directories
     let directories = FileSystemHelper.getDirectories(basepath);
+    console.dir(directories)
 
     // For every directory, fetch the 'index.md' file
     for(let i = 0 ; i < directories.length ; i++)
     {
-        let directory = directories[i];
+        let directory = directories[i].toLowerCase();
+        console.log("🔵 Found directory " + directory)
         let filepath = basepath + '/' + directory + '/index.md'
         let file = fs.readFileSync(filepath, 'utf8');
         let parsed = fm(file);
@@ -37,7 +40,7 @@ export function getBlogposts() : Blogpost[]
         // check if the post is hidden
         if(post.hidden)
         {
-            console.log("🔴 Skipping blogpost because set to hidden: [" + post.title + "]")
+            console.log("🔴 Skipping blogpost because set to hidden: [" + directory + "]")
             continue;
         }
 
@@ -48,7 +51,6 @@ export function getBlogposts() : Blogpost[]
         let day = ('' + (today.getDate())).padStart(2,'0')
         let todayAsString = year + month + day;
         let compare = (post.date + '').localeCompare(todayAsString);
-        console.log(compare)
         if( compare > 0)
         {
             console.log("🔴 Skipping blogpost because release date is " + post.date + " and today is " + todayAsString +   ": [" + post.title + "]")
@@ -65,13 +67,12 @@ export function getBlogposts() : Blogpost[]
 
 export function getBlogpostsByAuthor(name : string) : Blogpost[]
 {
-    let blogposts = getBlogposts();
+    let blogposts : Blogpost[] = LocalCacheSync(getBlogposts,20,'posts');
     return blogposts.filter(post => post.author == name);
 }
 
 export function getBlogpostByTitle(title : string) : Blogpost
 {
-    let blogposts = getBlogposts();
-    
+    let blogposts : Blogpost[] = LocalCacheSync(getBlogposts,20,'posts');
     return blogposts.find(post => {return post.path == title}) || {} as Blogpost
 }
