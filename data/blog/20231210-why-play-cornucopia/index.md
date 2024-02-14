@@ -12,10 +12,10 @@ Welcome!  If you're interested in building secure applications, you're at the ri
 Developed by cybersecurity experts, each Cornucopia card describes a real-world security challenge. The game is designed to help software developers to understand advanced security concepts in a fun way. 
 
 ### Continuous Learning, Simplified
-We're committed to your growth. Our platform is continuously updated with streamlined, developer-friendly guidance for each Cornucopia card. Your feedback drives our evolution, ensuring the resources we offer meet your needs as a developer.
+We're committed to your growth. Our website is continuously updated with easy to understand guidance for each Cornucopia card. Your feedback is important for us, ensuring the resources we offer meet your needs.
 
 ### Get Insights from our Blog
-Dive into the nitty-gritty of Cornucopia and broader security practices through our developer-centric blog posts. Got a security conundrum? Let us know, and we'll address it in a way that resonates with you, the developer.
+Dive into the nitty-gritty of Cornucopia and broader security practices through our blog posts. Got a question? Let us know, and we'll address it for you.
 
 ### Interactive mapping
 The cards provide interactive links to several standards.  When possible, we make the links interactive.  We have implemented ASVS and CAPEC.  
