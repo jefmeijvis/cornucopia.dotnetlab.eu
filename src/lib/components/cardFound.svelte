@@ -31,6 +31,7 @@
         title = card.suit[0].toUpperCase() + card.suit.substring(1,card.suit.length) + " " + card.card.toUpperCase();
         mappings = GetCardMappings(card.suit,card.card);
         attacks = GetCardAttacks(card.suit,card.card);
+        card = card;
     }
 </script>
 
@@ -58,8 +59,10 @@
         <p><a href="/taxonomy/attacks/{attack.url}">{attack.name}</a></p>
     {/each}
 
-    <Utterances name={card.suit + '-' + card.card}></Utterances>
-    <ViewSourceOnGithub path="{card.githubUrl}"></ViewSourceOnGithub>
+    {#key card}
+        <Utterances name={card.suit + '-' + card.card.toUpperCase()}></Utterances>
+        <ViewSourceOnGithub path="{card.githubUrl}"></ViewSourceOnGithub>
+    {/key}
 </div>
 
 <style>
