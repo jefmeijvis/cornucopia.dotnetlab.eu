@@ -16,8 +16,8 @@ export function getCardBySuitAndName(suit : string, card : string) : Card
     let cardObject = {} as Card;
     cardObject.summary = parsed.body;
     cardObject.suit = suit;
-    cardObject.card = card;
-    cardObject.url = '/' + suit + '/' + card;
+    cardObject.card = card.toLowerCase();
+    cardObject.url = '/' + suit + '/' + card.toLowerCase();
     cardObject.githubUrl = 'data/cards/cornucopia-v1/' + suit + '/' + card;
 
     return cardObject;
