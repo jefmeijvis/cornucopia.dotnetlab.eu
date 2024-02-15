@@ -16,7 +16,7 @@ export function getCardBySuitAndName(suit : string, card : string) : Card
     let cardObject = {} as Card;
     cardObject.summary = parsed.body;
     cardObject.suit = suit;
-    cardObject.card = card.toLowerCase();
+    cardObject.card = card;
     cardObject.url = '/' + suit + '/' + card.toLowerCase();
     cardObject.githubUrl = 'data/cards/cornucopia-v1/' + suit + '/' + card;
 
@@ -58,7 +58,7 @@ export function getCardsFlat() : Card[]
 
 function orderFunction(a : Card, b : Card) : number
 {
-    let orderA = order.get(a.card) || -1;
-    let orderB = order.get(b.card) || -1;
+    let orderA = order.get(a.card.toLowerCase()) || -1;
+    let orderB = order.get(b.card.toLowerCase()) || -1;
     return orderA < orderB ? -1 : 1
 }
