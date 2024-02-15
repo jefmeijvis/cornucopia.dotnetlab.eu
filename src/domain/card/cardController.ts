@@ -9,7 +9,7 @@ import type { Suit } from '../suit/suit';
 export function getCardBySuitAndName(suit : string, card : string) : Card
 {
     let base : string = './data/cards/cornucopia-v1/';
-    let path : string = base + suit + '/' + card.toUpperCase() + '/explanation.md';
+    let path : string = base + suit + '/' + (card.length == 1 ? card.toUpperCase() : card) + '/explanation.md';
     let file = fs.readFileSync(path, 'utf8');
     let parsed = fm(file);
 
