@@ -19,16 +19,17 @@
 
   export let card: Card;
   export let cards: Card[];
+  export let ASVSRoutes : Route[];
 
   function linkASVS(input: string) {
-    let routes : Route[]= FileSystemHelper.getRouteStructure();
+    let routes : Route[]= ASVSRoutes;
     console.log(routes);
     console.log(input);
     let str = input.lastIndexOf('.') !== -1 ? input.substring(0, input.lastIndexOf('.')) : input;
     let parts = str.split('.').map((part) => part.padStart(2, '0'));
     let searchString = parts.join('.');
     console.log("searchstring:",searchString);  
-    let result : Route | undefined = routes.find((route) => route.Section === searchString) ;
+    let result : Route | undefined = routes.find((route) => route.Section === searchString);
     console.log(result);
     return ( result ? result.Path + "#V" + input : "" );
   }
