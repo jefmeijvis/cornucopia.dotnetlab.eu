@@ -29,7 +29,7 @@ export class FileSystemHelper {
     );
 
     firstLevelDirs.forEach((firstLevelDir) => {
-      const firstLevelPath = path.join(basePath, firstLevelDir);
+      const firstLevelPath = basePath + '/' + firstLevelDir;
       const firstPart = firstLevelDir.match(sectionRegex)?.[1];
 
       const secondLevelDirs = this.getDirectories(firstLevelPath).filter(
@@ -39,8 +39,8 @@ export class FileSystemHelper {
       secondLevelDirs.forEach((secondLevelDir) => {
         const secondPart = secondLevelDir.match(sectionRegex)?.[1];
         const section = `${firstPart}.${secondPart}`;
-        let fullPath = path.join(firstLevelPath, secondLevelDir);
-        fullPath = fullPath.replace("data\\taxonomy", "\\taxonomy").replaceAll('\\','/')
+        let fullPath = firstLevelPath + '/' + secondLevelDir;
+        fullPath = fullPath.replace("data/taxonomy", "/taxonomy");
 
         routes.push({
           Path: fullPath,
