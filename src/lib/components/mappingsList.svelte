@@ -10,24 +10,23 @@
     {#if linkFunction == undefined}
       <span>{m}</span>{#if index != mappings.length - 1}<span>,</span>{/if}
     {:else}
-      <a target="_blank" href={linkFunction(m)}>{m}</a
-      >{#if index != mappings.length - 1}<span>,</span>{/if}
+      <a href={linkFunction(m)}>{m}</a>
+      {#if index != mappings.length - 1}<span>,</span>{/if}
     {/if}
   {/each}
 </p>
 
 <style>
-  p,a
-    {
+  p,
+  a {
     color: var(--white);
     font-family: var(--font-title);
     font-weight: 400;
     font-size: 1.5rem;
   }
 
-  p
-    {
-    width : 100%;
+  p {
+    width: 100%;
     word-break: break-all;
     white-space: normal;
   }
