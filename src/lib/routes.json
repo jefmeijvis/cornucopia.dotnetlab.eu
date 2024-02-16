@@ -1,0 +1,286 @@
+[
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\01-secure-software-development-lifecycle",
+    "Section": "01.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\02-authentication-architecture",
+    "Section": "01.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\03-session-management-architecture",
+    "Section": "01.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\04-access-control-architecture",
+    "Section": "01.04"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\05-input-and-output-architecture",
+    "Section": "01.05"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\06-cryptographic-architecture",
+    "Section": "01.06"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\07-errors-logging-and-auditing-architecture",
+    "Section": "01.07"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\08-data-protection-and-privacy-architecture",
+    "Section": "01.08"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\09-communications-architecture",
+    "Section": "01.09"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\10-malicious-software-architecture",
+    "Section": "01.10"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\11-business-logic-architecture",
+    "Section": "01.11"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\12-secure-file-upload-architecture",
+    "Section": "01.12"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\13-api-architecture",
+    "Section": "01.13"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\01-architecture-design-and-threat-modeling\\14-configuration-architecture",
+    "Section": "01.14"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\02-authentication\\01-password-security",
+    "Section": "02.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\02-authentication\\02-general-authenticator-security",
+    "Section": "02.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\02-authentication\\03-authenticator-lifecycle",
+    "Section": "02.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\02-authentication\\04-credential-storage",
+    "Section": "02.04"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\02-authentication\\05-credential-recovery",
+    "Section": "02.05"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\02-authentication\\06-look-up-secret-verifier",
+    "Section": "02.06"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\02-authentication\\07-out-of-band-verifier",
+    "Section": "02.07"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\02-authentication\\08-one-time-verifier",
+    "Section": "02.08"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\02-authentication\\09-cryptographic-verifier",
+    "Section": "02.09"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\02-authentication\\10-service-authentication",
+    "Section": "02.10"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\03-session-management\\01-fundamental-session-management-security",
+    "Section": "03.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\03-session-management\\02-session-binding",
+    "Section": "03.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\03-session-management\\03-session-termination",
+    "Section": "03.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\03-session-management\\04-cookie-based-session-management",
+    "Section": "03.04"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\03-session-management\\05-token-based-session-management",
+    "Section": "03.05"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\03-session-management\\06-federated-re-authentication",
+    "Section": "03.06"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\03-session-management\\07-defenses-against-session-management-exploits",
+    "Section": "03.07"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\04-access-control\\01-general-access-control-design",
+    "Section": "04.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\04-access-control\\02-operation-level-access-control",
+    "Section": "04.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\04-access-control\\03-other-access-control-considerations",
+    "Section": "04.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\05-validation-sanitization-and-encoding\\01-input-validation",
+    "Section": "05.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\05-validation-sanitization-and-encoding\\02-sanitization-and-sandboxing",
+    "Section": "05.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\05-validation-sanitization-and-encoding\\03-output-encoding-and-injection-prevention",
+    "Section": "05.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\05-validation-sanitization-and-encoding\\04-memory-string-and-unmanaged-code",
+    "Section": "05.04"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\05-validation-sanitization-and-encoding\\05-deserialization-prevention",
+    "Section": "05.05"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\06-stored-cryptography\\01-data-classification",
+    "Section": "06.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\06-stored-cryptography\\02-algorithms",
+    "Section": "06.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\06-stored-cryptography\\03-random-values",
+    "Section": "06.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\06-stored-cryptography\\04-secret-management",
+    "Section": "06.04"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\07-error-handling-and-logging\\01-log-content",
+    "Section": "07.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\07-error-handling-and-logging\\02-log-processing",
+    "Section": "07.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\07-error-handling-and-logging\\03-log-protection",
+    "Section": "07.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\07-error-handling-and-logging\\04-error-handling",
+    "Section": "07.04"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\08-data-protection\\01-general-data-protection",
+    "Section": "08.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\08-data-protection\\02-client-side-data-protection",
+    "Section": "08.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\08-data-protection\\03-sensitive-private-data",
+    "Section": "08.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\09-communication\\01-client-communication-security",
+    "Section": "09.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\09-communication\\02-server-communication-security",
+    "Section": "09.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\10-malicious-code\\01-code-integrity",
+    "Section": "10.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\10-malicious-code\\02-malicious-code-search",
+    "Section": "10.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\10-malicious-code\\03-application-integrity",
+    "Section": "10.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\11-business-logic\\01-business-logic-security",
+    "Section": "11.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\12-files-and-resources\\01-file-upload",
+    "Section": "12.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\12-files-and-resources\\02-file-integrity",
+    "Section": "12.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\12-files-and-resources\\03-file-execution",
+    "Section": "12.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\12-files-and-resources\\04-file-storage",
+    "Section": "12.04"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\12-files-and-resources\\05-file-download",
+    "Section": "12.05"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\12-files-and-resources\\06-ssrf-protection",
+    "Section": "12.06"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\13-api-and-web-service\\01-generic-web-service-security",
+    "Section": "13.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\13-api-and-web-service\\02-restful-web-service",
+    "Section": "13.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\13-api-and-web-service\\03-soap-web-service",
+    "Section": "13.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\13-api-and-web-service\\04-graphql",
+    "Section": "13.04"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\14-configuration\\01-build-and-deploy",
+    "Section": "14.01"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\14-configuration\\02-dependency",
+    "Section": "14.02"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\14-configuration\\03-unintended-security-disclosure",
+    "Section": "14.03"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\14-configuration\\04-http-security-headers",
+    "Section": "14.04"
+  },
+  {
+    "Path": "Q:\\source\\cornucopia.dotnetlab.eu\\data\\taxonomy\\ASVS-4.0.3\\14-configuration\\05-http-request-header-validation",
+    "Section": "14.05"
+  }
+]
