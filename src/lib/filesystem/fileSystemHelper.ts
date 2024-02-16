@@ -20,7 +20,7 @@ export class FileSystemHelper {
   }
 
   public static ASVSRouteMap(): any[] {
-    const basePath: string = "data\\taxonomy\\ASVS-4.0.3";
+    const basePath: string = "data/taxonomy/ASVS-4.0.3";
     const sectionRegex = /^(\d{2})-/;
     let routes: Route[] = [];
 
