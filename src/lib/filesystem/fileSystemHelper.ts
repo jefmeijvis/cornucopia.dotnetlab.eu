@@ -39,10 +39,11 @@ export class FileSystemHelper {
       secondLevelDirs.forEach((secondLevelDir) => {
         const secondPart = secondLevelDir.match(sectionRegex)?.[1];
         const section = `${firstPart}.${secondPart}`;
-        const fullPath = path.join(firstLevelPath, secondLevelDir);
+        let fullPath = path.join(firstLevelPath, secondLevelDir);
+        fullPath = fullPath.replace("data\\taxonomy", "\\taxonomy").replaceAll('\\','/')
 
         routes.push({
-          Path: fullPath.replace("data\\", "/").replaceAll("\\", "/"),
+          Path: fullPath,
           Section: section,
         });
       });
