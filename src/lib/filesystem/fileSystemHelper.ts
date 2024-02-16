@@ -42,7 +42,7 @@ export class FileSystemHelper {
         const fullPath = path.join(firstLevelPath, secondLevelDir);
 
         routes.push({
-          Path: fullPath.replace("data\\", "./"),
+          Path: fullPath.replace("data\\", "/").replaceAll('\\','/'),
           Section: section,
         });
       });
