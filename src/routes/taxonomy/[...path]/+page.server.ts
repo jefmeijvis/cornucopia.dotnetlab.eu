@@ -44,14 +44,15 @@ function getDataFromPath(path : string)
         let folderName = folders[i];
         let folder = path + '/' + folderName;
         let files = FileSystemHelper.getFiles(folder);
-        if(files.includes('index.md'))
-        {
-            resultFiles.push(folderName);
-        }
-        else
-        {
-            resultFolders.push(folderName);
-        }
+        files.includes('index.md') ? resultFolders.push(folderName) : resultFiles.push(folderName);
+        // if(files.includes('index.md'))
+        // {
+        //     resultFiles.push(folderName);
+        // }
+        // else
+        // {
+        //     resultFolders.push(folderName);
+        // }
     }
 
     return [resultFiles,resultFolders,content];

@@ -15,7 +15,7 @@
         let base : string = "https://cheatsheetseries.owasp.org/IndexASVS.html#";
         let index = mapping.toString().replaceAll('.','');
         let lookupIndex = getIndex(mapping)
-        let title = data[lookupIndex];
+        let title = data[lookupIndex as keyof typeof data];
         title = title.toString().toLowerCase().replaceAll(' ','-').replaceAll(',','')
         return base + 'v' + index + '-' + title
     }
@@ -23,13 +23,13 @@
     function getDisplayText(mapping : number) : string
     {
         let lookupIndex = getIndex(mapping)
-        return 'ASVS V' + mapping.toString() + ' - ' + data[lookupIndex] 
+        return 'ASVS V' + mapping.toString() + ' - ' + data[lookupIndex as keyof typeof data] 
     }
 
     function hasValidLink(mapping : number) : boolean
     {
         let lookupIndex = getIndex(mapping);
-        let title = data[lookupIndex];
+        let title = data[lookupIndex as keyof typeof data];
         if (title)
         {
             isEmpty = false;
