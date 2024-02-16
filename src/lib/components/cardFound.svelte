@@ -14,24 +14,30 @@
   import CardBrowser from "$lib/components/cardBrowser.svelte";
   import type { Card } from "../../domain/card/card";
   import ViewSourceOnGithub from "$lib/components/viewSourceOnGithub.svelte";
-  import { FileSystemHelper } from "$lib/filesystem/fileSystemHelper";
   import type { Route } from "../../domain/routes/route";
 
   export let card: Card;
   export let cards: Card[];
-  export let ASVSRoutes : Route[];
+  export let ASVSRoutes: Route[];
 
   function linkASVS(input: string) {
-    let routes : Route[]= ASVSRoutes;
-    console.log(routes);
-    console.log(input);
-    let str = input.lastIndexOf('.') !== -1 ? input.substring(0, input.lastIndexOf('.')) : input;
-    let parts = str.split('.').map((part) => part.padStart(2, '0'));
-    let searchString = parts.join('.');
-    console.log("searchstring:",searchString);  
-    let result : Route | undefined = routes.find((route) => route.Section === searchString);
-    console.log(result);
-    return ( result ? result.Path + "#V" + input : "" );
+    input = input.split("-")[0]; // if it's a range of topics, link to the first one
+    let routes: Route[] = ASVSRoutes;
+    let searchString = FormatToDoubleDigitSearchstring(input);
+    let result: Route | undefined = routes.find(
+      (route) => route.Section === searchString
+    );
+    return result ? result.Path + "#V" + input : "";
+  }
+
+  function FormatToDoubleDigitSearchstring(input: string) {
+    let str =
+      input.lastIndexOf(".") !== -1
+        ? input.substring(0, input.lastIndexOf("."))
+        : input;
+    let parts = str.split(".").map((part) => part.padStart(2, "0"));
+    let searchString = parts.join(".");
+    return searchString;
   }
 
   function linkCapec(input: string) {
@@ -41,27 +47,41 @@
   let mappings: Mapping | undefined = GetCardMappings(card.suit, card.card);
   let attacks: Attack[] = GetCardAttacks(card.suit, card.card);
 
-  $: 
-    {
-    title = card.suit[0].toUpperCase() + card.suit.substring(1,card.suit.length) + " " + card.card.toUpperCase();
-    mappings = GetCardMappings(card.suit,card.card);
-    attacks = GetCardAttacks(card.suit,card.card);
+  $: {
+    title =
+      card.suit[0].toUpperCase() +
+      card.suit.substring(1, card.suit.length) +
+      " " +
+      card.card.toUpperCase();
+    mappings = GetCardMappings(card.suit, card.card);
+    attacks = GetCardAttacks(card.suit, card.card);
   }
 </script>
 
 <div class="container">
   <h1 class="title">{Text.Format(title)}</h1>
   <Summary {card}></Summary>
-  <CardBrowser card={card} {cards}></CardBrowser>
+  <CardBrowser {card} {cards}></CardBrowser>
   <a class="link" href="/how-to-play">How to play?</a>
   <p>{GetCardDescription(card.suit, card.card)}</p>
   {#if mappings}
     <h1 class="title">Mappings</h1>
-    <MappingsList title="Owasp ASVS (4.0):" mappings={mappings.owasp_asvs} linkFunction={linkASVS}/>
-    <MappingsList title="Capec:" mappings={mappings.capec} linkFunction={linkCapec}/>
+    <MappingsList
+      title="Owasp ASVS (4.0):"
+      mappings={mappings.owasp_asvs}
+      linkFunction={linkASVS}
+    />
+    <MappingsList
+      title="Capec:"
+      mappings={mappings.capec}
+      linkFunction={linkCapec}
+    />
     <MappingsList title="Owasp SCP:" mappings={mappings.owasp_scp} />
-    <MappingsList title="Owasp Appsensor:" mappings={mappings.owasp_appsensor}/>
-    <MappingsList title="Safecode:" mappings={mappings.safecode}/>
+    <MappingsList
+      title="Owasp Appsensor:"
+      mappings={mappings.owasp_appsensor}
+    />
+    <MappingsList title="Safecode:" mappings={mappings.safecode} />
   {/if}
 
   <h1 class="title">ASVS (4.0) Cheatsheetseries Index</h1>

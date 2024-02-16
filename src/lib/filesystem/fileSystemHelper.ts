@@ -19,7 +19,7 @@ export class FileSystemHelper {
       .map((dirent) => dirent.name);
   }
 
-  public static getRouteStructure(): any[] {
+  public static ASVSRouteMap(): any[] {
     const basePath: string = "data\\taxonomy\\ASVS-4.0.3";
     const sectionRegex = /^(\d{2})-/;
     let routes: Route[] = [];
@@ -42,7 +42,7 @@ export class FileSystemHelper {
         const fullPath = path.join(firstLevelPath, secondLevelDir);
 
         routes.push({
-          Path: fullPath.replace("data\\", "/").replaceAll('\\','/'),
+          Path: fullPath.replace("data\\", "/").replaceAll("\\", "/"),
           Section: section,
         });
       });
