@@ -3,6 +3,7 @@ date: 20231210
 author: ive-verstappen
 tags: scrum,agile
 hidden: false
+description: Why Play Cornucopia? Welcome!  If you're interested in building secure applications, you're at the right place!  Playing Cornucopia not only sharpens your own security skills but it will help you ransform the way your team approaches secure application development.
 ---
 
 # Why Play Cornucopia?
