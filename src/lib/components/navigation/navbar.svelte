@@ -15,7 +15,6 @@
     AddLink(links,"Taxonomy","/taxonomy");
     AddLink(links,"Cards","/cards");
     AddLink(links,"Home","/");
-    AddLink(links,"RSS","/rss.xml");
 
     function getMobile(w: number, h: number) {
         mobile = w / h < 1;
