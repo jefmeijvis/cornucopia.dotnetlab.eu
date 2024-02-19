@@ -18,7 +18,7 @@ let bodyStart =
   "<title>Cornucopia dotnetlab</title>" +
   "<link>https://cornucopia.dotnetlab.eu</link>" +
   "<language>en</language>" +
-  "<description>Blogging about general secure software development. Often making use of .NET, Azure and Svelte</description>" +
+  "<description>OWASP Cornucopia is originally created by Colin Watson. It is open source and can be downloaded free of charge from the OWASP website.</description>" +
   "<image>" +
   "<url>https://cornucopia.dotnetlab.eu/images/favicon.png</url>" +
   "<title>Cornucopia dotnetlab</title>" +
