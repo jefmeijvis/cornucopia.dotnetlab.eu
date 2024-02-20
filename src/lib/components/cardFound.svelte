@@ -86,7 +86,7 @@
 
   <h1 class="title">ASVS (4.0) Cheatsheetseries Index</h1>
   {#if mappings}
-    <AsvsOverview mappings={mappings.owasp_asvs}></AsvsOverview>
+    <AsvsOverview mappings={mappings.owasp_asvs.map(s => +s.split('.').slice(0, 2).join('.'))}></AsvsOverview>
   {/if}
   <h1 class="title">Attacks</h1>
   {#each attacks as attack}
