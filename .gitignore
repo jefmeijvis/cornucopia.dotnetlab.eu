@@ -11,4 +11,5 @@ vite.config.ts.timestamp-*
 .vscode/settings.json
 /cache/*.cache
 .vs
+/.vs
 package-lock.json

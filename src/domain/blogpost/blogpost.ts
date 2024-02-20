@@ -7,4 +7,5 @@ export type Blogpost =
     tags : string[],
     hidden : boolean,
     date : string,
+    description : string    
 }
