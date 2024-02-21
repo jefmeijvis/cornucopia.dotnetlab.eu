@@ -9,15 +9,15 @@ import type { Suit } from '../suit/suit';
 export function getCardBySuitAndName(suit : string, card : string) : Card
 {
     let base : string = './data/cards/cornucopia-v1/';
-    let path : string = base + suit + '/' + card + '/explanation.md';
+    let path : string = base + suit + '/' + (card.length == 1 ? card.toUpperCase() : card) + '/explanation.md';
     let file = fs.readFileSync(path, 'utf8');
     let parsed = fm(file);
 
     let cardObject = {} as Card;
     cardObject.summary = parsed.body;
     cardObject.suit = suit;
-    cardObject.card = card;
-    cardObject.url = '/' + suit + '/' + card;
+    cardObject.card = card.toLowerCase();
+    cardObject.url = '/' + suit + '/' + card.toLowerCase();
     cardObject.githubUrl = 'data/cards/cornucopia-v1/' + suit + '/' + card;
 
     return cardObject;
@@ -58,7 +58,7 @@ export function getCardsFlat() : Card[]
 
 function orderFunction(a : Card, b : Card) : number
 {
-    let orderA = order.get(a.card) || -1;
-    let orderB = order.get(b.card) || -1;
+    let orderA = order.get(a.card.toLowerCase()) || -1;
+    let orderB = order.get(b.card.toLowerCase()) || -1;
     return orderA < orderB ? -1 : 1
 }

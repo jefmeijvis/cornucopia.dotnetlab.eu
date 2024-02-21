@@ -3,6 +3,7 @@ date: 20240215
 author: ive-verstappen
 tags: scrum,agile
 hidden: false
+description: The easiest way to go from card to Product Backlog Item. Cornucopia is aimed at the developer, not the security engineer. Therefore, we feel that there should be an easy way to go from identifying a threat or vulnerabiltiy to a Product Backlog Item.
 ---
 # 3 scenarios for transforming a Cornucopia Card to a Product Backlog Item
 
