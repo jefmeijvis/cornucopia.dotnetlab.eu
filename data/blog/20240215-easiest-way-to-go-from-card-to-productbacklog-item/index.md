@@ -4,11 +4,15 @@ author: ive-verstappen
 tags: scrum,agile
 hidden: false
 ---
-# The easiest way to go from card to Product Backlog Item
+# 3 scenarios for transforming a Cornucopia Card to a Product Backlog Item
 
-Cornucopia is aimed at the developer, not the security engineer.  Therefore, we feel that there should be an easy way to go from identifying a threat or vulnerabiltiy to a Product Backlog Item.
+The purpose of playing the Owasp Cornucopia card game is to easily identify threats as a development team.  In an earlier blogpost, I described how to optimally integrate Threat Modeling by playing the Owasp Cornucopia game in the Scrum process.  In this blogpost, I will explore 3 real-world scenarios to transform a Cornucopia card to a Product Backlog Item.
 
-So, you have played your first Cornucopia game and you now need to transfer a card to the product backlog so you can plan the requirement into your sprints.
+The Owasp Cornucopia cardgame is a lightweight way to do threat modeling and is aimed at the developer, not the security engineer.  Therefore, in this blogpost, I focused on the easiest way to get a working threat model for each Cornucopia Card.
+
+The assumption is that you played the Cornucopia game with your team before and you have now a list of identified cards, possibly with some notes of why this card is relevant for your project.
+
+The job at hand is that you now need to transfer the list of cards to the product backlog and you have to create Product Backlog Items.
 
 ## Playing cornucopia: a practical scenario
 Suppose your team has used three Cornucopia suits: Authentication, Authorization, and Data Validation & Encoding, identifying threats relevant to your project:
@@ -41,17 +45,13 @@ For our sample, lets take 3 cards and work them out.
 2. Data Validation & Encoding-8
 3. Authentication-4
 
-## Analysis to go from card to Backlog-item
-
-Lets go through our 3 cards together.
-
-### Analysis of Authorization-K
+### Scenario 1: Analysis of Authorization-K
 While the development-team assumes that they implement server-side controls, they acknowledged that there is no logging in place that logs changes to the allocation of roles to the users.  You wrote this on the scorecard for Authentication-K:
 	- "Add Logging to each change of role-allocation for a user".
 
 You simply create the Product Backlog Item: "Add logging to all changes of user-information in the application".
 
-### Analysis of Data Validation & Encoding-8
+### Scenario 2: Analysis of Data Validation & Encoding-8
 You haven't got notes for this card, so you only have the information that this card is written down as a valid card for your application.
 
 Now what do you do?
@@ -65,7 +65,7 @@ You realise you don't have a central implementation for the sanitization of your
 
 You create the Product Backlog Item: "Add central implementation for the sanitization of all input-data for the system".
 
-### Analysis of Authentication-4
+### Scenario 3: Analysis of Authentication-4
 You wrote down "it's easy to enumerate all users".
 
 You realize that the way e-mailadresses are defined in your company provides an easy patterns to identify and enlist all accounts of your company.
