@@ -39,7 +39,12 @@
     </div>
     <p class="footer">OWASP and the OWASP logo are trademarks of the <a href="https://owasp.org/">OWASP Foundation</a></p>
     <p class="footer"><a href="/about#license">Licensing information</a> | <a href="/build">Build information</a></p>
-    <p class="footer"><a href="https://www.dotnetlab.eu">DotNETlab</a> {new Date().getFullYear()} <a href="/rss.xml"><img style="position:relative;top:3px;" height="15px" src="/images/rss.svg" alt="rss" /></a></p>
+    <p class="footer">
+        <a href="https://www.dotnetlab.eu">DotNETlab</a> 
+        <span> {new Date().getFullYear()} </span>
+        <a href="/rss.xml"><img style="position:relative;top:3px;" height="15px" src="/images/rss.svg" alt="rss" /></a>
+        <span> | </span>
+        <a href="https://cornucopia.dotnetlab.eu/sitemap.xml">Sitemap</a></p>
 </footer>
 
 
