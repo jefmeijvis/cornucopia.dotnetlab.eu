@@ -5,27 +5,27 @@ tags: scrum,agile
 hidden: false
 description: The easiest way to go from card to Product Backlog Item. Cornucopia is aimed at the developer, not the security engineer. Therefore, we feel that there should be an easy way to go from identifying a threat or vulnerabiltiy to a Product Backlog Item.
 ---
-# 3 scenarios for transforming a Cornucopia Card to a Product Backlog Item
+# 3 Scenarios for Transforming a Cornucopia Card into a Product Backlog Item
 
-The purpose of playing the Owasp Cornucopia card game is to easily identify threats as a development team.  In an earlier blogpost, I described how to optimally integrate Threat Modeling by playing the Owasp Cornucopia game in the Scrum process.  In this blogpost, I will explore 3 real-world scenarios to transform a Cornucopia card to a Product Backlog Item.
+The Owasp Cornucopia card game serves as an engaging tool for development teams to identify potential threats. In a previous post, I outlined the optimal integration of Threat Modeling within the Scrum process using the Owasp Cornucopia game. This post delves into three practical scenarios for converting Cornucopia cards into actionable Product Backlog Items (PBIs).
 
-The Owasp Cornucopia cardgame is a lightweight way to do threat modeling and is aimed at the developer, not the security engineer.  Therefore, in this blogpost, I focused on the easiest way to get a working threat model for each Cornucopia Card.
+The Owasp Cornucopia card game offers a developer-focused, lightweight approach to threat modeling, minimizing the complexity often associated with security engineering. Here, I aim to demonstrate 3 straightforward methods for creating effective threat models from each Cornucopia card.
 
-The assumption is that you played the Cornucopia game with your team before and you have now a list of identified cards, possibly with some notes of why this card is relevant for your project.
+Assuming your team has previously played the Cornucopia game, you should have a list of identified cards, each potentially annotated with reasons for their relevance to your project. The task now is to translate these cards into PBIs within your product backlog.
 
-The job at hand is that you now need to transfer the list of cards to the product backlog and you have to create Product Backlog Items.
+## Playing Cornucopia: A Practical Scenario
 
-## Playing cornucopia: a practical scenario
-Suppose your team has used three Cornucopia suits: Authentication, Authorization, and Data Validation & Encoding, identifying threats relevant to your project:
+Imagine your team has used three Cornucopia suits: Authentication, Authorization, and Data Validation & Encoding to identify threats pertinent to your project:
 
 - Authentication: 3, 4, 8, 5
 - Authorization: 5, 9, Q, K
 - Data Validation & Encoding: 2, 7, 8
 
-The next step is to form Product Backlog Items from these cards.
+The next steps involve crafting PBIs from these identified cards.
 
-### Prioritize the cards
-Cornucopia naturally suggests ordering the cards by value:
+### Prioritizing the Cards
+
+Cornucopia inherently recommends sorting the cards by their value, providing a preliminary order. However, this prioritization can be adjusted based on specific project needs and insights.
 
 1. Authorization-K
 2. Authorization-Q
@@ -38,59 +38,49 @@ Cornucopia naturally suggests ordering the cards by value:
 9. Authentication-3
 10. Data Validation & Encoding-2
 
-This is a great way to start, but you can reshuffle the prioritization according to your own ideas and priorities.
-
-For our sample, lets take 3 cards and work them out.
+Lets use following three cards for detailed examination:
 
 1. Authorization-K
 2. Data Validation & Encoding-8
 3. Authentication-4
 
-### Scenario 1: Analysis of Authorization-K
+### Scenario 1: Analyzing Authorization-K
+
 While the development-team assumes that they implement server-side controls, they acknowledged that there is no logging in place that logs changes to the allocation of roles to the users.  You wrote this on the scorecard for Authentication-K:
-	- "Add Logging to each change of role-allocation for a user".
+- "Add Logging to each change of role-allocation for a user".
 
 You simply create the Product Backlog Item: "Add logging to all changes of user-information in the application".
 
-### Scenario 2: Analysis of Data Validation & Encoding-8
-You haven't got notes for this card, so you only have the information that this card is written down as a valid card for your application.
+### Scenario 2: Analyzing Data Validation & Encoding-8
 
-Now what do you do?
+Without specific notes for this card, you rely solely on its identified relevance. The steps are as follows:
 
-1. check the ASVS mapping on the card
-2. We use the mapping to ASVS 3.0 in our example
+1. Review the ASVS mapping provided on the card.
+2. Reference ASVS 4.0 - 1.1.6, emphasizing the need for centralized security controls.
 
-ASVS 3.0 - 1.7: "Central implementation for security controls"
+This review highlights the absence of a unified approach to sanitizing input data, prompting the creation of a PBI: "Establish a centralized mechanism for sanitizing all system input data."
 
-You realise you don't have a central implementation for the sanitization of your input-fields and strings (eg URL-strings) of your application.
+**Consult the Cheat Sheet Series Index**  
+The Cheat Sheet Series offers invaluable insights into securing software development. It's recommended that the Technical Lead reviews the cheat sheets related to identified cards to uncover potential security gaps, benefiting from language-specific secure coding examples.
 
-You create the Product Backlog Item: "Add central implementation for the sanitization of all input-data for the system".
+### Scenario 3: Analyzing Authentication-4
 
-### Scenario 3: Analysis of Authentication-4
-You wrote down "it's easy to enumerate all users".
+The ease of enumerating user accounts, due to predictable email address patterns, is noted. Despite the inability to alter company email policies, it's decided to acknowledge this threat and seek IT guidance on mitigation strategies. This scenario does not result in a new PBI.
 
-You realize that the way e-mailadresses are defined in your company provides an easy patterns to identify and enlist all accounts of your company.
+### Prioritizing Product Backlog Items
 
-After discussions with the managers of the company, you conclude that you can't impact the e-mail policy of your organization.  You write down that you need to accept this threat and discuss with IT how to cope with this issue.
+Security threats should be treated as any other backlog item, with the Technical Lead and Product Owner collaboratively prioritizing the PBIs.
 
-No Product Backlog Items is created for this card.
+## Guidance from OWASP ASVS
 
-### Prioritization of the Product Backlog Items
-Treat security threats like any other Backlog item.  As a technical lead, you discuss the threats with the Product Owner and prioritize the items.
-
-## OWASP ASVS provides guidance
-
-Owasp ASVS is a great resource to dive in depth into each card.  By going through the ASVS-items for each card, you gain quickly detailed insights into security features that should be implemented.
-
-Going through the ASVS-mapping for each card means taking the most effiective path to identifying and analyzing relevant threats for your application.
+The OWASP ASVS offers detailed insights into each card's security aspects, facilitating a thorough threat analysis and the identification of necessary security features for implementation.
 
 ## Conclusion
-One of the great features about Owasp Cornucopia is that it doens't exist in a vacuum.  Playing Owasp Cornucopia does not only provide your team with a great way to collaboratively identify threats.  Thanks to its references to other excellent Owasp projects, it will provide you with easy to digest information to allow you to quickly define excellent Product Backlog Items to enable you to improve the security-levels of your application.
 
-By leveraging Cornucopia and OWASP ASVS, even those with limited security expertise can make significant security improvements in a short time.
+The Owasp Cornucopia game, through its practical approach and linkage to other OWASP resources, not only aids teams in identifying threats but also in swiftly defining PBIs to enhance application security. Utilizing Cornucopia alongside OWASP ASVS can significantly improve security measures, even for software developers with limited Threat Modeling expertise.
 
 Good Luck!
 
 Ive
 
-Please use the comment section below to give feedback or ask questions.
+Feel free to use the comment section below for feedback or questions.
