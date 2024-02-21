@@ -33,6 +33,8 @@
 </script>
 
 <div 
+role='button'
+tabindex="-1"
 on:keydown={reset} 
 on:click={reset}
 on:mouseenter={mouseenter}

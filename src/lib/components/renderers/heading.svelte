@@ -12,19 +12,37 @@
 </script>
   
   {#if depth === 1}
-    <h1 class="clickable" on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}><slot></slot></h1>
+    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+    <h1 class="clickable" on:keydown={()=>goto("#" + cleanText(text))} on:click={()=>goto("#" + cleanText(text))}
+     id={cleanText(text)}>
+      <slot></slot>
+    </h1>
   {:else if depth === 2}
-    <h2 class="clickable" on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}>
+      <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+    <h2 class="clickable" on:keydown={()=>goto("#" + cleanText(text))} on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}>
       <slot></slot>
     </h2>
   {:else if depth === 3}
-    <h3 class="clickable" on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}><slot></slot></h3>
+    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+    <h3 class="clickable" on:keydown={()=>goto("#" + cleanText(text))} on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}>
+      <slot></slot>
+    </h3>
   {:else if depth === 4}
-    <h4 class="clickable" on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}><slot></slot></h4>
+    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+    <h4 class="clickable" on:keydown={()=>goto("#" + cleanText(text))} on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}>
+      <slot></slot>
+    </h4>
   {:else if depth === 5}
-    <h5 id={text}><slot></slot></h5>
+    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+
+    <h5 class="clickable" on:keydown={()=>goto("#" + cleanText(text))} on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}>
+      <slot></slot>
+    </h5>
   {:else if depth === 6}
-    <h6 id={text}><slot></slot></h6>
+    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+    <h6 class="clickable" on:keydown={()=>goto("#" + cleanText(text))} on:click={()=>goto("#" + cleanText(text))} id={cleanText(text)}>
+      <slot></slot>
+    </h6>
   {:else}
     {raw}
   {/if}
