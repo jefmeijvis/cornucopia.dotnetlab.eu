@@ -1,6 +1,7 @@
 import type { Blogpost } from "../../domain/blogpost/blogpost.js";
 import { LocalCache } from "$lib/utils/cache.js";
 import { getBlogposts } from "../../domain/blogpost/blogpostController.js";
+import { Text } from "$lib/utils/text.js";
 export const prerender = true;
 // Header options
 const responseInit: ResponseInit = {
@@ -37,7 +38,7 @@ export async function GET() {
 
     // Title
     body += "<title>";
-    body += post.title;
+    body += Text.Format(post.title);
     body += "</title>";
    
     // Link
