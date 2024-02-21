@@ -18,10 +18,10 @@ let bodyStart =
   "<title>Cornucopia dotnetlab</title>" +
   "<link>https://cornucopia.dotnetlab.eu</link>" +
   "<language>en</language>" +
-  "<description>OWASP Cornucopia is originally created by Colin Watson. It is open source and can be downloaded free of charge from the OWASP website.</description>" +
+  "<description>Owasp Cornucopia is a CyberSecurity card game, meant to be played in an agile development context. It allows developers to identify and discuss security requirements for their software applications. It is an easy way to introduce the practice of threat modeling in a software development team.</description>" +
   "<image>" +
-  "<url>https://cornucopia.dotnetlab.eu/images/favicon.png</url>" +
-  "<title>Cornucopia dotnetlab</title>" +
+  "<url>https://cornucopia.dotnetlab.eu/images/opengraph.png</url>" +
+  "<title>Cornucopia dotNET lab</title>" +
   "<link>https://cornucopia.dotnetlab.eu</link>" +
   "</image>";
 
@@ -56,7 +56,7 @@ export async function GET() {
 
     // Guid
     body += '<source url="https://cornucopia.dotnetlab.eu/rss">';
-    body += "cornucopia dotnetlab";
+    body += "Cornucopia dotNET lab";
     body += "</source>";
 
     // Category
