@@ -11,24 +11,27 @@ let options : RequestInit =
     }
 }
 
+/*
 export async function load({params})
 {
     return {
         commits : await LocalCache(getCommits,3600,"get-all-commits"),
     }
 }
+*/
 
 async function getCommits()
 {
 
     let response = await fetch('https://api.github.com/repos/jefmeijvis/cornucopia.dotnetlab.eu/commits',options);
     let json = await response.json();
+    console.dir(json);
 
     for(let i = 0 ; i < json.length ; i++)
     {
         let commit : any = json[i];
         let sha : string = commit.sha;
-        let details = await LocalCache(()=>getDetails(sha),900,'github-details-' + sha);
+        let details = await LocalCache(()=>getDetails(sha),3600,'github-details-' + sha);
         json[i].status = details.state; 
         json[i].details = details;
     }

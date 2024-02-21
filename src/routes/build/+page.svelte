@@ -8,11 +8,13 @@
     <h1>Build information</h1>
     <p>This website is a static build from source.</p>
     <p>Latest build timestamp: {data.renderTimestamp}</p>
+    <!--
     <h1>Latest deployments</h1>
     {#each data.commits as commit}
         <GithubCommit {commit}></GithubCommit>
     {/each}
     <ViewSourceOnGithub path=""></ViewSourceOnGithub>
+    -->
 </div>
 
 <style>
