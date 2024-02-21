@@ -8,13 +8,13 @@
 <div class="container">
     <div class="heading">
         <div class="heading-left">
-            <a target="_blank" href="{commit.committer.html_url}">
+            <a target="_blank" href="{commit.committer?.html_url ?? ''}">
                 <img title={commit.commit.author.name} alt={commit.commit.author.name} src={commit.committer.avatar_url}/>
             </a>
         </div>
         <div class="heading-center">
             <p>
-                <a target="_blank" href="{commit.committer.html_url}">
+                <a target="_blank" href="{commit.committer?.html_url ?? ''}">
                     {commit.commit.author.name} (<i>{commit.committer.login}</i>) {Text.FormatDateAsDate(date)}
                 </a>
 
