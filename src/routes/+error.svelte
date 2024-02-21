@@ -12,7 +12,7 @@
 
     function start()
     {
-        timeoutId = setTimeout(decrementTimer,33);
+        timeoutId = +setTimeout(decrementTimer,33);
     }
     
     function decrementTimer()
@@ -22,7 +22,7 @@
         
         clearTimeout(timeoutId);
         timer -= 33;
-        timeoutId = setTimeout(decrementTimer,33);
+        timeoutId = +setTimeout(decrementTimer,33);
         if(timer < 33)
             goto('/');
     }

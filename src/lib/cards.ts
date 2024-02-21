@@ -13,7 +13,7 @@ export type Mapping =
 {
     value : string,
     owasp_scp : number[],
-    owasp_asvs : number[],
+    owasp_asvs : string[],
     owasp_appsensor : string[],
     capec : number[],
     safecode : number[],
