@@ -21,7 +21,7 @@ Imagine your team has used three Cornucopia suits: Authentication, Authorization
 - Authorization: 5, 9, Q, K
 - Data Validation & Encoding: 2, 7, 8
 
-The next steps involve crafting PBIs from these identified cards.
+The next steps involve creating PBIs from these identified cards.
 
 ### Prioritizing the Cards
 
@@ -60,7 +60,7 @@ Without specific notes for this card, you rely solely on its identified relevanc
 
 This review highlights the absence of a unified approach to sanitizing input data, prompting the creation of a PBI: "Establish a centralized mechanism for sanitizing all system input data."
 
-**Consult the Cheat Sheet Series Index**  
+** !! Consult the OWASP Cheat Sheet Series Index !! **  
 The Cheat Sheet Series offers invaluable insights into securing software development. It's recommended that the Technical Lead reviews the cheat sheets related to identified cards to uncover potential security gaps, benefiting from language-specific secure coding examples.
 
 ### Scenario 3: Analyzing Authentication-4
