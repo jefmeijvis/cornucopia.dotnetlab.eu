@@ -37,6 +37,7 @@
     <div class="tree">
         <h1>Cards</h1>
         {#each data.suits as suit}
+            <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
             <h2 on:keypress="{()=>toggle(suit.name)}" on:click="{()=>toggle(suit.name)}">└── {Text.Format(suit.name)}</h2>
             {#if map.get(suit.name)}
                 {#each suit.cards as card}
