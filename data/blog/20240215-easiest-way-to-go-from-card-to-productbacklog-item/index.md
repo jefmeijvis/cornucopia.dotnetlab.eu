@@ -56,7 +56,7 @@ You simply create the Product Backlog Item: "Add logging to all changes of user-
 Without specific notes for this card, you rely solely on its identified relevance. The steps are as follows:
 
 1. Review the ASVS mapping provided on the card.
-2. Reference ASVS 4.0 - 1.1.6, emphasizing the need for centralized security controls.
+2. Reference control 1.1.6 of the ASVS 4.0 standard, emphasizing the need for centralized security controls.
 
 This review highlights the absence of a unified approach to sanitizing input data, prompting the creation of a PBI: "Establish a centralized mechanism for sanitizing all system input data."
 
