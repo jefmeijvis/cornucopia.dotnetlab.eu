@@ -64,7 +64,7 @@ The OWASP Application Security Verification Standard (ASVS) is a framework for s
 
 OWASP ASVS offers a definitive suite of functionalities that should be integrated into your application to ensure its security.
 
-Engaging with OWASP ASVS and incorporating its mandates into your development process is highly beneficial. Utilizing the Cornucopia Card's mapping to OWASP ASVS is an effective way to verify that your application meets the necessary security benchmarks.
+Engaging with OWASP ASVS and incorporating its lessons into your development process is highly useful. Utilizing the Cornucopia Card's mapping to OWASP ASVS is an effective way to verify that your application meets the necessary security benchmarks.
 
 References to ASVS 2.5.2 and 2.5.3 appear within Authentication-3, and are as follows:
 
@@ -82,29 +82,27 @@ Confirm that there are no means to retrieve a user's current password under any 
 By clicking on each ASVS description link, you can explore the Common Weakness Enumeration, which aids in understanding the nuances of these weaknesses, related with password recovery.
 
 ## Capec
-A detailed discussion on Capec will be featured in an upcoming post. We recommend that players of Cornucopia temporarily set Capec aside, as it demands a substantial understanding from developers. 
+CAPEC provides strategic defenses against each attack technique.  Over time, it allows you as a developer to start mastering defensive counter-moves for specific attack-patterns.
 
-Capec, or the Common Attack Pattern Enumeration and Classification, serves as an extensive catalog of tactics that attackers employ to infiltrate applications and systems—essentially a compendium of hacking strategies. Navigating through Capec enables developers to learn about and to anticipate and mitigate hacker methodologies.
-
-CAPEC also provides strategic defenses against each attack technique.  Over time, it can allows you as a developer to start mastering defensive counter-moves for specific attack-patterns.
+A detailed discussion on Capec will be featured in an upcoming post. We recommend that players of Cornucopia temporarily set Capec aside.  While it is useful, I believe it is a bit overkill if you're starting with Cornucopia. 
 
 ## Non-Interactive Mappings
 
-Currently, certain mappings such as those for OWASP SCP, Appsensor, and Safecode are static due to the lack of a method for linking directly to discrete information segments.
+Currently, certain mappings such as those for OWASP SCP, Appsensor, and Safecode are static due to the lack of a method for linking directly to a functioning website-page.
 
 ## ASVS (4.0) Cheatsheet Series Index
 
-The Cheatsheet Series Index is a noteworthy OWASP initiative.
+The Cheatsheet Series Index is another great OWASP initiative.  We higly recommend going through the refernced cheatsheets when you are going through the information of a card.
 
-We urge you to delve into the cheatsheets provided when devising your threat model. However, these resources should not be consulted concurrently with gameplay.
+However, please avoid checking the Cheatsheet resources should during gameplay.  Consulting the Cheatsheets whilst playing the game will slow down the process considerably.
 
-For the current context, we present a link to a relevant cheatsheet:
+For Authentication-3, this is the referenced cheatsheet:
 
 ### ASVS 2.5 - Credential Recovery Requirements Cheatsheet
 [Credential Recovery Requirements Cheatsheet](https://cheatsheetseries.owasp.org/IndexASVS.html#v25-credential-recovery-requirements)
 
 ## Attacks
-Our cybersecurity specialists have examined various attack instances and aligned them with corresponding Cornucopia cards. These instances represent notorious attack patterns. The alignment aims to provide developers with a tangible understanding of how a card's vulnerability might translate into actual security threats.
+Our cybersecurity specialists have examined various attack instances and referenced them to the Cornucopia cards. These instances are real-world examples of hacks and represent well-known attack patterns.  I believe the attacks present clear examples of how a card's vulnerability might translate into actual real-world security threats.
 
 ## Conclusion
 OWASP Cornucopia improves the knowledge about cybersecurity for your team considerably. It is a great starting-point for your teams and will open te door to a wealth of knowledge thanks to lots of great OWASP projects.  
