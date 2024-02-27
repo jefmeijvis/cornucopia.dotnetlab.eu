@@ -1,7 +1,7 @@
 ---
 date: 20240227
 author: ive-verstappen
-tags: DeepDive
+tags: Deep-Dive
 hidden: false
 description: A deep dive into the information on a cornucopia card
 ---
@@ -107,5 +107,5 @@ For the current context, we present a link to a relevant cheatsheet:
 Our cybersecurity specialists have examined various attack instances and aligned them with corresponding Cornucopia cards. These instances represent notorious attack patterns. The alignment aims to provide developers with a tangible understanding of how a card's vulnerability might translate into actual security threats.
 
 ## Conclusion
-OWASP Cornucopia serves as an invaluable primer to the realm of cybersecurity knowledge. This article merely introduces the wealth of insights available within the Cornucopia cards.
+OWASP Cornucopia improves the knowledge about cybersecurity for your team considerably. It is a great starting-point for your teams and will open te door to a wealth of knowledge thanks to lots of great OWASP projects.  
 
