@@ -7,28 +7,28 @@ description: A deep dive into the information on a cornucopia card
 ---
 # A Deep Dive into the Information on a Cornucopia Card
 
-While the OWASP Cornucopia card game provides lots of information about threats, more than is commonly understood by developers.
+The OWASP Cornucopia card game provides lots of information about threats, more than is commonly understood by developers.
 
 To address this, we've added a unique QR code to each card, linking directly to additional information. At dotNET lab, our goal is to ensure that every card is as clear and understandable as possible for developers.
 
-Let's examine one [card—Authentication-3](https://cornucopia.dotnetlab.eu/authentication/3) as a representative example and review the information it contains.
+Let's examine one card - [Authentication-3](https://cornucopia.dotnetlab.eu/authentication/3) - as a representative example and review the information it contains.
 
 ## The General Structure of the Authentication-3 Card
-1. Card-101 with 4 chapters:
-    a. Scenario
-    b. Example
-    c. Risks
-    d. Mitigation
-2. The card, including its image and the text on the card
-3. Mappings
-    a. Interactive mappings
-        i. OWASP ASVS
-        ii. CAPEC
-    b. Non-interactive mappings (for now)
-        i. OWASP SCP
-        ii. OWASP AppSensor
-        iii. Savecode
-4. ASVS (4.0) Cheat Sheet Series index
+- Card-101 with 4 chapters:
+    - Scenario
+    -  Example
+    -  Risks
+    -  Mitigation
+- The card, including its image and the text on the card
+- Mappings
+  - Interactive mappings
+  - OWASP ASVS
+  - CAPEC
+- Non-interactive mappings (for now)
+  - OWASP SCP
+  - OWASP AppSensor
+  - Savecode
+- ASVS (4.0) Cheat Sheet Series index
 
 ## The Card-101
 
@@ -68,27 +68,27 @@ Engaging with OWASP ASVS and incorporating its mandates into your development pr
 
 References to ASVS 2.5.2 and 2.5.3 appear within Authentication-3, and are as follows:
 
-#### ASVS 2.5.2: "No Secret Questions"
+### ASVS 2.5.2: "No Secret Questions"
 Ensure that password hints or knowledge-based authentication methods, commonly referred to as "secret questions," are absent from your system.
 
 If you have a feature whereby a user can enter secret questions, you should plan to delete this feature.
 
 A corresponding CWE-ID link is also provided for deeper insight.
 
-#### ASVS 2.5.3: "Verify Password Credential Recovery Does Not Expose Current Password"
+### ASVS 2.5.3: "Verify Password Credential Recovery Does Not Expose Current Password"
 Confirm that there are no means to retrieve a user's current password under any circumstances.
 
-#### CWE-640: "Weak Password Recovery Mechanism for Forgotten Password"
+### CWE-640: "Weak Password Recovery Mechanism for Forgotten Password"
 By clicking on each ASVS description link, you can explore the Common Weakness Enumeration, which aids in understanding the nuances of these weaknesses, related with password recovery.
 
-#### Capec
+### Capec
 A detailed discussion on Capec will be featured in an upcoming post. We recommend that players of Cornucopia temporarily set Capec aside, as it demands a substantial understanding from developers. 
 
 Capec, or the Common Attack Pattern Enumeration and Classification, serves as an extensive catalog of tactics that attackers employ to infiltrate applications and systems—essentially a compendium of hacking strategies. Navigating through Capec enables developers to learn about and to anticipate and mitigate hacker methodologies.
 
 CAPEC also provides strategic defenses against each attack technique.  Over time, it can allows you as a developer to start mastering defensive counter-moves for specific attack-patterns.
 
-#### Non-Interactive Mappings
+### Non-Interactive Mappings
 
 Currently, certain mappings such as those for OWASP SCP, Appsensor, and Safecode are static due to the lack of a method for linking directly to discrete information segments.
 
@@ -100,12 +100,12 @@ We urge you to delve into the cheatsheets provided when devising your threat mod
 
 For the current context, we present a link to a relevant cheatsheet:
 
-#### ASVS 2.5 - Credential Recovery Requirements Cheatsheet
+### ASVS 2.5 - Credential Recovery Requirements Cheatsheet
 [Credential Recovery Requirements Cheatsheet](https://cheatsheetseries.owasp.org/IndexASVS.html#v25-credential-recovery-requirements)
 
 ### Attacks
 Our cybersecurity specialists have examined various attack instances and aligned them with corresponding Cornucopia cards. These instances represent notorious attack patterns. The alignment aims to provide developers with a tangible understanding of how a card's vulnerability might translate into actual security threats.
 
-#### Conclusion
+## Conclusion
 OWASP Cornucopia serves as an invaluable primer to the realm of cybersecurity knowledge. This article merely introduces the wealth of insights available within the Cornucopia cards.
 
