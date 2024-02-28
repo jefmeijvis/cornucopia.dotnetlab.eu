@@ -107,3 +107,8 @@ Our cybersecurity specialists have examined various attack instances and referen
 ## Conclusion
 OWASP Cornucopia improves the knowledge about cybersecurity for your team considerably. It is a great starting-point for your teams and will open te door to a wealth of knowledge thanks to lots of great OWASP projects.  
 
+Good Luck!
+
+Ive
+
+Feel free to use the comment section below for feedback or questions.
