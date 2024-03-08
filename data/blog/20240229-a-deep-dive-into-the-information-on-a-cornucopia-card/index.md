@@ -14,11 +14,7 @@ To address this, we've added a unique QR code to each card, linking directly to 
 Let's examine one card - [Authentication-3](https://cornucopia.dotnetlab.eu/authentication/3) - as a representative example and review the information it contains.
 
 ## The General Structure of the Authentication-3 Card
-- Card-101 with 4 chapters:
-    - Scenario
-    -  Example
-    -  Risks
-    -  Mitigation
+- Technical Note
 - The card, including its image and the text on the card
 - Mappings
   - Interactive mappings
@@ -30,23 +26,10 @@ Let's examine one card - [Authentication-3](https://cornucopia.dotnetlab.eu/auth
   - Savecode
 - ASVS (4.0) Cheat Sheet Series index
 
-## The Card-101
+## Technical note
 
-We've created a 101 section for each card, based on the original text. This 101 is structured into four detailed chapters, which we'll outline below.
-
-### Scenario
-Here, we provide an overview of how the attack might unfold. For each card, we aim to offer multiple examples of potential scenarios and how an attack could be executed.
-
-In the case of Authentication-3, we've outlined 8 scenarios demonstrating how this vulnerability could be exploited.
-
-### Example
-We take one scenario—number 4, "Interception in transit"—and use it to illustrate how an attack could occur.
-
-### Risks
-This section offers a succinct description of the risks tied to the threat addressed by the card. Here, the risks are significant and can instantly compromise the entirety of the system's security.
-
-### Mitigation
-We suggest several "best practices" that developers can implement to avert this threat.
+We've included a brief technical note for each card, based on the original WIKI-pages of Cornucopia.
+We feel that this Technical Note is very useful for a developer to better understand the application of the Cornucopia Card.  We advise to consult the ASVS 4.0 mapping to gain more in-depth knowledge of a specific card.
 
 ## The Card
 A visual link to the original card is provided, along with a reproduction of the text that appears on the card itself.
