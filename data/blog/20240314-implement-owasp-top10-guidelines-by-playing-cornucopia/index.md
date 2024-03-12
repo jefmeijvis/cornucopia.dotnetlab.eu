@@ -30,6 +30,7 @@ At dotNET lab, we have mapped every Cornucopia card can be mapped to the OWASP T
 
 We have mapped the coverage of OWASP TOP 10 guidelines of the Cornucopia, tallied the occurences and created a heatmap.  Here it is:
 ![General heatmap Cornucopia-TOP10 mapping](algemeen.png)
+
 A few conclusions can be drawn based on our heatmap:
 
 - In general, Cornucopia has a decent coverage of all Top 10 items
@@ -86,9 +87,7 @@ While the C-suit doesn't seem to have a strong correlation with specific OWASP T
 The Session Management suit rounds out the cornucopia game with a focus on Security Misconfiguration.  
 
 ## Conclusion
-The OWASP Cornucopia card game stands as a hands-on resource for Agile teams focused on making their development processes more secure. 
-
-Cornucopia is more than just a game, but can be your team's way to the implementation of the OWASP Top 10 guidelines. Through interactive gameplay, teams not only gain insight into security vulnerabilities but also build a foundation in secure development practices. 
+Your implementation of the OWASP TOP 10 guidelines can start with simply playing the Cornucopia cardgame.  Cornucopia has a decent coverage of the TOP 10 categories, whereby each suit has its focus.  Depending on the priorities of your team, you could choose on which suit you want to focus next.
 
 Additionally, Cornucopia acts as a springboard into the broader OWASP ecosystem, inviting teams to explore beyond Cornucopia or the Top 10 and delve into other projects that OWASP offers, such as ASVS. Embracing Cornucopia should elevate your team's security knowledge, improving your defense against cyber threats.
 
