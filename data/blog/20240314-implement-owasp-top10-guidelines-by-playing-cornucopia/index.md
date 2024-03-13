@@ -1,11 +1,11 @@
 ---
-date: 20240314
+date: 20240313
 author: ive-verstappen
 tags: owasp-top10, Agile
 hidden: false
 description: Implement the OWASP top 10 guidelines by playing the Cornucopia cardgame - in numbers
 ---
-# Implement the OWASP top 10 guidelines by playing the Cornucopia cardgame - in numbers
+# HOW TO Implement the OWASP top 10 guidelines by playing the Cornucopia cardgame - in numbers
 
 The OWASP Top 10 list is an excellent guide for the start of an Application Security improvement program of a software development team.  However, what we see is that lots of software development teams who don't have access to a dediciated security professional (or team) struggle to correctly implement the OWASP Top 10 guides.
 
