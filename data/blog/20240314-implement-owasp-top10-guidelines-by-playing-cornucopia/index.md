@@ -46,7 +46,7 @@ Through the next chapters, I'll go briefly through each suit and its mappings.
 - Cornucopia (C) suit
 	
 ## DVE suit has an excellent overall coverage of OWASP Top 10
-![Data Validation & Encoding](dve-suit.png)
+![Data Validation & Encoding[medium]](dve-suit.png)
 
 ### My observations and opinion for the DVE-suit
 This suit has a strong coverage of the OWASP Top 10 items.  
@@ -54,32 +54,32 @@ This suit has a strong coverage of the OWASP Top 10 items.
 This makes the DVE suit an ideal choice for teams who start with their AppSec program by playing OWASP Cornucopia.  
 
 ## The AZ (AuthoriZation) suit has a strong focus on #1 - Broken Access Control
-![Authorization](az-suit.png)
+![Authorization[medium]](az-suit.png)
 
 ### My observations ans opinion for the AZ (Authorization) suit
 If you want focus on the most important OWASP Top 10 Category, the AZ-suit is the best choice.
 
 ## The (CR) Cryptography suit is pure play #02 - Cryptographic Failures
-![Cryptography](cr-suit.png)
+![Cryptography[medium]](cr-suit.png)
 
 ### My observations and opinions for the CR suit
 The cryptography suit is all about cryptography.  That is no suprise!  While the scope of this suit is narrow, the cryptography category is ranked #2 on the OWASP Top 10.  This means that the CR-suit should be high on your shortlist to include in your Cornucopia game.
 
 ## The AuthenTication (AT) suit closes all weaknesses on the Authentication & Authorization front
-![Authentication](at-suit.png)
+![Authentication[medium]](at-suit.png)
 
 ### My observations and opinions for the AT suit
 Include this suit if your teams wants to make sure everything is done about possible Authentication & Authorization weaknesses.  
 
 ## The Cornucopia (C) suit helps your team focus on nasty security vulnerabilities often exploited by hackers
-![Cornucopia](c-suit.png)
+![Cornucopia[medium]](c-suit.png)
 
 ### My observations and opinions for the C suit
 
 While the C-suit doesn't seem to have a strong correlation with specific OWASP Top 10 categories, it has a strong focus on the very nasty vulnerabilities.  It focuses on 05-Security Misconfiguration and 06-Vulnerable and Outdated components.  
 
 ## The Session Management (SM) suit prevents Security Misconfiguration and Data Integrity failures
-![Session Management](sm-suit.png)
+![Session Management[medium]](sm-suit.png)
 
 
 ### My observations and opinions for the SM suit
