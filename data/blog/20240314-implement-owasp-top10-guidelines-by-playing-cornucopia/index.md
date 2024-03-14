@@ -29,7 +29,7 @@ This makes playing Cornucopia ideally suited for teams who use an Agile process 
 At dotNET lab, we have mapped every Cornucopia card can be mapped to the OWASP Top 10 items.  We have proveded the mapping from OWASP Top 10 to their corresponding Cornucopia Cards in our overview of the OWASP Top 10 items.
 
 We have mapped the coverage of OWASP TOP 10 guidelines of the Cornucopia, tallied the occurences and created a heatmap.  Here it is:
-![General heatmap Cornucopia-TOP10 mapping](algemeen.png)
+![General heatmap Cornucopia-TOP10 mapping[medium]](algemeen.png)
 
 A few conclusions can be drawn based on our heatmap:
 
