@@ -34,7 +34,7 @@ function getDataFromPath(path: string) {
   var parentdir = path.split("/").slice(0, -1).join("/");
   let disclaimerFile: string = parentdir + "/Disclaimer.md";
   if (fs.existsSync(disclaimerFile)) {
-    content += "\n" +fs.readFileSync(disclaimerFile, "utf8");
+    content += "\r\n" +fs.readFileSync(disclaimerFile, "utf8");
   }
 
   let folders = FileSystemHelper.getDirectories(path);
