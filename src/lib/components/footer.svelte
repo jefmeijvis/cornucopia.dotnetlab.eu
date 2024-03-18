@@ -1,3 +1,44 @@
+<script lang="ts">
+    import { onMount } from "svelte";
+
+    export let timestamp : Date;
+    let timeAgo : string = '';
+
+    function doOnMount()
+    {
+        let hours : number =  getHoursSince(timestamp);
+
+        if(hours < 1)
+        {
+            let minutes = Math.ceil(hours * 60);
+            timeAgo = ', or ' + minutes + ' minutes ago'
+        }
+        else if(hours > 1 && hours < 2)
+        {
+            timeAgo = ', or 1 hour ago'
+        }
+        else
+        {
+            timeAgo = ', or ' + Math.ceil(hours) + ' hours ago'
+        }
+    }
+
+    function getCurrentDate() : string
+    {
+        return timestamp.toUTCString() 
+    }
+
+    function getHoursSince(input : Date) : number
+    {
+        let now = new Date()
+        let difference = Math.abs(now.getTime() - input.getTime());
+        let differenceInHours = difference / (1000 * 3600);
+        return differenceInHours;
+    }
+
+    onMount(doOnMount)
+</script>
+
 <footer>
     <div class="flex-container">
         <div class="box">
@@ -38,13 +79,15 @@
         </div>
     </div>
     <p class="footer">OWASP and the OWASP logo are trademarks of the <a href="https://owasp.org/">OWASP Foundation</a></p>
+    <p class="footer">Last update was {getCurrentDate()}{timeAgo}</p>
     <p class="footer"><a href="/about#license">Licensing information</a> | <a href="/build">Build information</a></p>
     <p class="footer">
         <a href="https://www.dotnetlab.eu">DotNETlab</a> 
         <span> {new Date().getFullYear()} </span>
         <a href="/rss.xml"><img style="position:relative;top:3px;" height="15px" src="/images/rss.svg" alt="rss" /></a>
         <span> | </span>
-        <a href="https://cornucopia.dotnetlab.eu/sitemap.xml">Sitemap</a></p>
+        <a href="https://cornucopia.dotnetlab.eu/sitemap.xml">Sitemap</a>
+    </p>
 </footer>
 
 

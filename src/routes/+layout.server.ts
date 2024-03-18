@@ -5,5 +5,6 @@ export async function load(event)
 {
     return {
         renderTimestamp : Text.FormatDateAsDate(new Date()),
+        timestamp : new Date(),
     }
 }

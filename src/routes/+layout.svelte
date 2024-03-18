@@ -6,6 +6,7 @@
     import Metadata from "$lib/components/metadata.svelte";
     import MicrosoftClarity from "$lib/components/microsoftClarity.svelte";
     import Navbar from "$lib/components/navigation/navbar.svelte";
+    export let data;
 </script>
 
 <Metadata></Metadata>
@@ -19,7 +20,7 @@
     <div class="slot-container">
         <slot></slot>
     </div>
-    <Footer></Footer>
+    <Footer timestamp={data.timestamp}></Footer>
 </div>
 
 
