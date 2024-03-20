@@ -1,12 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2018, C4
-document: OWASP Top Ten Proactive Controls 2018
-order: 8
-
----
-
 # C4: Encode and Escape Data
 
 ## Description

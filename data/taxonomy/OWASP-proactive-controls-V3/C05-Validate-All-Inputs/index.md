@@ -1,12 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2018, C5
-document: OWASP Top Ten Proactive Controls 2018
-order: 9
-
----
-
 # C5: Validate All Inputs
 
 ## Description
