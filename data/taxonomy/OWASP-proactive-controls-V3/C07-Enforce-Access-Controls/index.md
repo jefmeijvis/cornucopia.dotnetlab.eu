@@ -1,12 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2018, C7
-document: OWASP Top Ten Proactive Controls 2018
-order: 11
-
----
-
 # C7: Enforce Access Controls
 
 ## Description
