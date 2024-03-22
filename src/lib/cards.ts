@@ -1,6 +1,8 @@
 import data from "./data";
 import mappings from "./mappings";
 import attacks from '$lib/attacks.json'
+import { getProactiveControlsForCard } from "./dotnetlabData";
+import type { ProactiveControl } from "./dotnetlabData";
 
 export type Card = 
 {
@@ -17,7 +19,7 @@ export type Mapping =
     owasp_appsensor : string[],
     capec : number[],
     safecode : number[],
-
+    proactive_controls : ProactiveControl[],
 }
 
 export function GetCard(suit : string, card : string) : Card | undefined
@@ -67,7 +69,10 @@ export function GetCardMappings(suit : string, card : string, addition : number 
             {
                 if(mappings.suits[i].cards[j].value.toLowerCase() == card.toLowerCase())
                 {
-                    return mappings.suits[i].cards[j] as Mapping;
+                   var result =  mappings.suits[i].cards[j] as Mapping;
+                   result.proactive_controls = getProactiveControlsForCard(card);
+                   console.log(result.proactive_controls);
+                    return result;//mappings.suits[i].cards[j] as Mapping;
                 }
             }
         }
