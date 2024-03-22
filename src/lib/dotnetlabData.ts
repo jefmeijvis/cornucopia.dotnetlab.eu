@@ -62,8 +62,6 @@ interface CardToProactiveControlsMapping {
 // Function returned the proactive controls for any given card
 export function getProactiveControlsForCard(cardId:string): ProactiveControl[] {
     const relatedControlIds = cardToProactiveControlsMapping[cardId];
-    console.log("looking up -> cardId:" + cardId);
-    console.log("relatedControlIds:" + relatedControlIds);
     if (relatedControlIds?.length === 0 || !relatedControlIds) {
         return []; // Return lege array als geen related controls gevonden zijn
     }
