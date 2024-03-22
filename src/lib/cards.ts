@@ -1,7 +1,7 @@
 import data from "./data";
 import mappings from "./mappings";
 import attacks from "$lib/attacks.json";
-import { getProactiveControlsForCard } from "./dotnetlabData";
+import { getProactiveControlsForCard, getTop10IndexesForCard } from "./dotnetlabData";
 import type { ProactiveControl } from "./dotnetlabData";
 
 export type Card = {
@@ -18,6 +18,7 @@ export type Mapping = {
   capec: number[];
   safecode: number[];
   proactive_controls: ProactiveControl[];
+  owasp_top10: number[];
 };
 
 export function GetCard(suit: string, card: string): Card | undefined {
@@ -66,6 +67,7 @@ export function GetCardMappings(
             mappings.suits[i].cards[j].value.toLowerCase();
           var result = mappings.suits[i].cards[j] as Mapping;
           result.proactive_controls = getProactiveControlsForCard(cardname);
+          result.owasp_top10 = getTop10IndexesForCard(cardname);
           return result; //mappings.suits[i].cards[j] as Mapping;
         }
       }

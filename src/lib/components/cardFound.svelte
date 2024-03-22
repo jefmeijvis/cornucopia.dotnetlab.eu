@@ -19,6 +19,7 @@
   export let card: Card;
   export let cards: Card[];
   export let ASVSRoutes: Route[];
+  export let OWASPTop10Routes: Route[];
 
   function linkASVS(input: string) {
     input = input.split("-")[0]; // if it's a range of topics, link to the first one
@@ -29,7 +30,16 @@
     );
     return result ? result.Path + "#V" + input : "";
   }
-
+  function linkTop10(input: string) {
+    let top10routes: Route[] = OWASPTop10Routes;
+    console.dir(top10routes);
+    let searchString = input.toString().padStart(2, "0");
+    console.log(searchString);
+    let result: Route | undefined = top10routes.find(
+      (route) => route.Section.startsWith(searchString)
+    );
+    return result ? result.Path : "";
+  }
   function FormatToDoubleDigitSearchstring(input: string) {
     let str =
       input.lastIndexOf(".") !== -1
@@ -71,6 +81,13 @@
       mappings={mappings.owasp_asvs}
       linkFunction={linkASVS}
     />
+    {#if mappings.owasp_top10?.length > 0}
+    <MappingsList
+    title="Owasp TOP 10:"
+    mappings={mappings.owasp_top10}
+    linkFunction={linkTop10}
+  />
+  {/if}
     <MappingsList
       title="Capec:"
       mappings={mappings.capec}
@@ -82,10 +99,12 @@
       mappings={mappings.owasp_appsensor}
     />
     <MappingsList title="Safecode:" mappings={mappings.safecode} />
-    <MappingsList
-      title="Proactive Controls:"
-      mappings={mappings.proactive_controls}
-    />
+    {#if mappings.proactive_controls?.length > 0}
+      <MappingsList
+        title="Proactive Controls:"
+        mappings={mappings.proactive_controls}
+      />
+    {/if}
   {/if}
 
   <h1 class="title">ASVS (4.0) Cheatsheetseries Index</h1>

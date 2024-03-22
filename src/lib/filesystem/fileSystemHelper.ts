@@ -29,7 +29,7 @@ export class FileSystemHelper {
     );
 
     firstLevelDirs.forEach((firstLevelDir) => {
-      const firstLevelPath = basePath + '/' + firstLevelDir;
+      const firstLevelPath = basePath + "/" + firstLevelDir;
       const firstPart = firstLevelDir.match(sectionRegex)?.[1];
 
       const secondLevelDirs = this.getDirectories(firstLevelPath).filter(
@@ -39,13 +39,38 @@ export class FileSystemHelper {
       secondLevelDirs.forEach((secondLevelDir) => {
         const secondPart = secondLevelDir.match(sectionRegex)?.[1];
         const section = `${firstPart}.${secondPart}`;
-        let fullPath = firstLevelPath + '/' + secondLevelDir;
+        let fullPath = firstLevelPath + "/" + secondLevelDir;
         fullPath = fullPath.replace("data/taxonomy", "/taxonomy");
 
         routes.push({
           Path: fullPath,
           Section: section,
         });
+      });
+    });
+
+    return routes;
+  }
+
+  public static TOP10RouteMap(): any[] {
+    const basePath: string = "data/taxonomy/OWASP-top-10";
+    const sectionRegex = /^(\d{2})-/;
+    let routes: Route[] = [];
+
+    const firstLevelDirs = this.getDirectories(basePath).filter((dir) =>
+      sectionRegex.test(dir)
+    );
+    console.log("firstLevelDirs", firstLevelDirs);
+    firstLevelDirs.forEach((firstLevelDir) => {
+      const firstLevelPath = basePath + "/" + firstLevelDir;
+      const firstPart = firstLevelDir.match(sectionRegex)?.[1];
+
+      let fullPath = firstLevelPath + "/";
+      fullPath = fullPath.replace("data/taxonomy", "/taxonomy");
+      console.log("...."+fullPath, firstLevelDir);
+      routes.push({
+        Path: fullPath,
+        Section: firstPart!,
       });
     });
 
