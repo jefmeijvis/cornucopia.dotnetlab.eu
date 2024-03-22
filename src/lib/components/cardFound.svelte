@@ -32,9 +32,7 @@
   }
   function linkTop10(input: string) {
     let top10routes: Route[] = OWASPTop10Routes;
-    console.dir(top10routes);
     let searchString = input.toString().padStart(2, "0");
-    console.log(searchString);
     let result: Route | undefined = top10routes.find(
       (route) => route.Section.startsWith(searchString)
     );

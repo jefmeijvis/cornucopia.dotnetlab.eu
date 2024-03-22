@@ -59,32 +59,15 @@ const proactiveControls: ProactiveControl[] = [
   },
 ];
 
-// const cardToProactiveControlsMapping: CardToProactiveControlsMapping = {
-//   "data validation & encoding A": ["C01"],
-//   "data validation & encoding 2": ["C01"],
-//   "data validation & encoding 3": ["C01"],
-//   "data validation & encoding 4": ["C01"],
-//   "data validation & encoding 5": ["C01"],
-//   "data validation & encoding 6": ["C01"],
-//   "data validation & encoding 7": ["C01"],
-//   "data validation & encoding 8": ["C01"],
-//   "data validation & encoding 9": ["C01"],
-//   "data validation & encoding 10": ["C01"],
-//   "data validation & encoding j": ["C01", "C02"],
-//   "data validation & encoding q": ["C01", "C02"],
-//   "data validation & encoding k": ["C01", "C02"],
-// };
-
 export interface ProactiveControl {
   id: number;
   value: string;
 }
 
-// interface CardToProactiveControlsMapping {
-//   [cardId: string]: string[]; // geeft een object met string keys & array of string values
-// }
-
 function processProactiveControls() {
+
+    // these are the releastionships between the proactive controls and the cards
+    // for each proactive control, we have a list of cards that are related to it
   const ProactiveControlRelations = [
     {
       index: 1,
@@ -517,7 +500,11 @@ export function getTop10IndexesForCard(cardName: string): number[] {
   const key = cardName.toLowerCase();
   return CardToTop10[key];
 }
-export function getProactiveControlsForCard(cardName: string): ProactiveControl[] {
+export function getProactiveControlsForCard(
+  cardName: string
+): ProactiveControl[] {
   var key = cardName.toLowerCase();
-  return proactiveControls.filter(x => CardToProactiveControls[key].includes(x.id));
+  return proactiveControls.filter((x) =>
+    CardToProactiveControls[key].includes(x.id)
+  );
 }
