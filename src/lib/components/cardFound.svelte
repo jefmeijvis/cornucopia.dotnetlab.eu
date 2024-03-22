@@ -82,21 +82,31 @@
       mappings={mappings.owasp_appsensor}
     />
     <MappingsList title="Safecode:" mappings={mappings.safecode} />
+    <MappingsList
+      title="Proactive Controls:"
+      mappings={mappings.proactive_controls}
+    />
   {/if}
 
   <h1 class="title">ASVS (4.0) Cheatsheetseries Index</h1>
   {#if mappings}
-    <AsvsOverview mappings={[...new Set (mappings.owasp_asvs.map(s => +s.split('.').slice(0, 2).join('.')))]}></AsvsOverview>
+    <AsvsOverview
+      mappings={[
+        ...new Set(
+          mappings.owasp_asvs.map((s) => +s.split(".").slice(0, 2).join("."))
+        ),
+      ]}
+    ></AsvsOverview>
   {/if}
   <h1 class="title">Attacks</h1>
   {#each attacks as attack}
     <p><a href="/taxonomy/attacks/{attack.url}">{attack.name}</a></p>
   {/each}
 
-    {#key card}
-        <Utterances name={card.suit + '-' + card.card.toUpperCase()}></Utterances>
-        <ViewSourceOnGithub path="{card.githubUrl}"></ViewSourceOnGithub>
-    {/key}
+  {#key card}
+    <Utterances name={card.suit + "-" + card.card.toUpperCase()}></Utterances>
+    <ViewSourceOnGithub path={card.githubUrl}></ViewSourceOnGithub>
+  {/key}
 </div>
 
 <style>

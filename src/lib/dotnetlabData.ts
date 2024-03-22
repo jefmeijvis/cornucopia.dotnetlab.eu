@@ -6,47 +6,47 @@ const proactiveControls:ProactiveControl[] = [{
     "value": "/taxonomy/OWASP-proactive-controls-V3/C01-Define-Security-Requirements"},
     {
     "id" :"C02",
-    "value": "/taxonomy/OWASP-proactive-controls-V3/C02-Develop-Secure-Architectures"},
+    "value": "/taxonomy/OWASP-proactive-controls-V3/C02-Leverage-Security-Frameworks-and-Libraries"},
     {
     "id" :"C03",
-    "value": "/taxonomy/OWASP-proactive-controls-V3/C03-Develop-Secure-Code"},
+    "value": "/taxonomy/OWASP-proactive-controls-V3/C03-Secure-Database-Access"},
     {
     "id" :"C04",
-    "value": "/taxonomy/OWASP-proactive-controls-V3/C04-Test-Security"},
+    "value": "/taxonomy/OWASP-proactive-controls-V3/C04-Encode-and-Escape-Data"},
     {
     "id" :"C05",
-    "value": "/taxonomy/OWASP-proactive-controls-V3/C05-Test-Data-Protection"},
+    "value": "/taxonomy/OWASP-proactive-controls-V3/C05-Validate-All-Inputs"},
     {
     "id" :"C06",
-    "value": "/taxonomy/OWASP-proactive-controls-V3/C06-Protect-Data"},
+    "value": "/taxonomy/OWASP-proactive-controls-V3/C06-Implement-Digital-Identity"},
     {
     "id" :"C07",
-    "value": "/taxonomy/OWASP-proactive-controls-V3/C07-Implement-Security-Monitoring"},
+    "value": "/taxonomy/OWASP-proactive-controls-V3/C07-Enforce-Access-Controls"},
     {
     "id" :"C08",
-    "value": "/taxonomy/OWASP-proactive-controls-V3/C08-Respond-to-Incidents"},
+    "value": "/taxonomy/OWASP-proactive-controls-V3/C08-Protect-Data-Everywhere"},
     {
     "id" :"C09",
-    "value": "/taxonomy/OWASP-proactive-controls-V3/C09-Secure-Development-Lifecycle"},
+    "value": "/taxonomy/OWASP-proactive-controls-V3/C09-Implement-Security-Logging-and-Monitoring"},
     {
     "id" :"C10",
-    "value": "/taxonomy/OWASP-proactive-controls-V3/C10-Protect-Infrastructure"},
+    "value": "/taxonomy/OWASP-proactive-controls-V3/C10-Handle-All-Errors-and-Exceptions"},
     ]
 
 const cardToProactiveControlsMapping: CardToProactiveControlsMapping = {
-    "DVA": ["C01"],
-    "DV2": ["C01"],
-    "DV3": ["C01"],
-    "DV4": ["C01"],
-    "DV5": ["C01"],
-    "DV6": ["C01"],
-    "DV7": ["C01"],
-    "DV8": ["C01"],
-    "DV9": ["C01"],
-    "DVX": ["C01"],
-    "DVJ": ["C01", "C02"],
-    "DVQ": ["C01", "C02"],
-    "DVK": ["C01", "C02"],
+    "data validation & encoding A": ["C01"],
+    "data validation & encoding 2": ["C01"],
+    "data validation & encoding 3": ["C01"],
+    "data validation & encoding 4": ["C01"],
+    "data validation & encoding 5": ["C01"],
+    "data validation & encoding 6": ["C01"],
+    "data validation & encoding 7": ["C01"],
+    "data validation & encoding 8": ["C01"],
+    "data validation & encoding 9": ["C01"],
+    "data validation & encoding 10": ["C01"],
+    "data validation & encoding j": ["C01", "C02"],
+    "data validation & encoding q": ["C01", "C02"],
+    "data validation & encoding k": ["C01", "C02"],
 
 }
 
@@ -62,12 +62,13 @@ interface CardToProactiveControlsMapping {
 // Function returned the proactive controls for any given card
 export function getProactiveControlsForCard(cardId:string): ProactiveControl[] {
     const relatedControlIds = cardToProactiveControlsMapping[cardId];
-    if (!relatedControlIds) {
+    console.log("looking up -> cardId:" + cardId);
+    console.log("relatedControlIds:" + relatedControlIds);
+    if (relatedControlIds?.length === 0 || !relatedControlIds) {
         return []; // Return lege array als geen related controls gevonden zijn
     }
     return proactiveControls.filter(control => relatedControlIds.includes(control.id));
 }
 
 // Example: 
-// const controlsForDV2 = getProactiveControlsForCard("DV2");
-// console.log(controlsForDV2);
+// const proactiveControlsForCard = getProactiveControlsForCard("Data validation & encoding2");
