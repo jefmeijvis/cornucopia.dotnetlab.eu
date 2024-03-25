@@ -5,7 +5,7 @@
   export let linkFunction: any = undefined;
 </script>
 
-<p>
+<p class={title.startsWith("(Deprecated)") ? "grey" : ""}>
   {title}
   {#each mappings as m, index}
     {#if typeof m === "number" || typeof m === "string"}
@@ -30,7 +30,9 @@
     font-weight: 400;
     font-size: 1.5rem;
   }
-
+.grey, .grey a {
+    color: grey;
+  }
   p {
     width: 100%;
     word-break: break-all;

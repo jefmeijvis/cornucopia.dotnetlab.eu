@@ -21,6 +21,10 @@
   export let ASVSRoutes: Route[];
   export let OWASPTop10Routes: Route[];
 
+  function deprecatedLinkASVS(input : string)
+    {
+        return "https://owasp-aasvs.readthedocs.io/en/latest/requirement-" + input + ".html"
+    }
   function linkASVS(input: string) {
     input = input.split("-")[0]; // if it's a range of topics, link to the first one
     let routes: Route[] = ASVSRoutes;
@@ -80,8 +84,9 @@
       linkFunction={linkASVS}
     />
     <MappingsList
-      title="(Deprecated)Owasp ASVS (3.0):"
+      title="(Deprecated) Owasp ASVS (3.0):"
       mappings={mappings.owasp_asvs_deprecated}
+      linkFunction={deprecatedLinkASVS}
     />
     {#if mappings.owasp_top10?.length > 0}
     <MappingsList
