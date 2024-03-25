@@ -79,6 +79,10 @@
       mappings={mappings.owasp_asvs}
       linkFunction={linkASVS}
     />
+    <MappingsList
+      title="(Deprecated)Owasp ASVS (3.0):"
+      mappings={mappings.owasp_asvs_deprecated}
+    />
     {#if mappings.owasp_top10?.length > 0}
     <MappingsList
     title="Owasp TOP 10:"

@@ -1,9 +1,10 @@
 import type { ProactiveControl } from "../domain/card/ProactiveControl";
 import data from "./data";
-import mappings from "./mappings";
+// import mappings from "./mappings";
+import { mergedMappings } from "./mergeMapping";
 import attacks from "$lib/attacks.json";
 import { getProactiveControlsForCard, getTop10IndexesForCard } from "../domain/card/getDotnetlabCardData";
-
+let mappings = mergedMappings;
 export type Card = {
   id: string;
   value: string;
@@ -14,6 +15,7 @@ export type Mapping = {
   value: string;
   owasp_scp: number[];
   owasp_asvs: string[];
+  owasp_asvs_deprecated: string[];
   owasp_appsensor: string[];
   capec: number[];
   safecode: number[];
