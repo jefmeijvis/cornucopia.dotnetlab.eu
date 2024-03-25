@@ -1,5 +1,6 @@
-// these are the releastionships between the proactive controls and the cards
-export const proactiveControlRelations = [
+import type { ProactiveControlRelation } from "./ProactiveControl";
+
+export const proactiveControlRelations : ProactiveControlRelation[]= [
   {
     index: 1,
     cards: {

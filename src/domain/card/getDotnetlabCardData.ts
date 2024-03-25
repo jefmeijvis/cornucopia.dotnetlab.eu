@@ -5,12 +5,11 @@ import { proactiveControls } from "./proactiveControls";
 import { proactiveControlRelations } from "./proactiveControlRelations";
 import { addToMapping } from "../../lib/filesystem/addToMapping";
 
-const CardToProactiveControls: CardMapping = {};
-const CardToTop10: CardMapping = {};
 
 // code for card to proactive control mapping:
-function processProactiveControls() {
+function processProactiveControls() :CardMapping {
   // for each proactive control, we have a list of cards that are related to it
+  const CardToProactiveControls: CardMapping = {};
   proactiveControlRelations.forEach(({ index, cards }) => {
     Object.entries(cards).forEach(([category, cardNumbers]) => {
       cardNumbers.forEach((cardNumber: string) => {
@@ -22,11 +21,13 @@ function processProactiveControls() {
       });
     });
   });
+  return CardToProactiveControls;
 }
 
 
 // code for card to top10 mapping:
-function processTop10() {
+function processTop10():CardMapping {
+  const CardToTop10: CardMapping = {};
   top10relations.forEach(({ index, cards }) => {
     Object.entries(cards).forEach(([category, cardNumbers]) => {
       cardNumbers.forEach((cardNumber: string) => {
@@ -34,26 +35,22 @@ function processTop10() {
       });
     });
   });
+  return CardToTop10;
 }
 
-
 export function getTop10IndexesForCard(cardName: string): number[] {
-  processTop10();
+  var CardToTop10 = processTop10();
   const key = cardName.toLowerCase();
   return CardToTop10[key];
 }
 export function getProactiveControlsForCard(
   cardName: string
 ): ProactiveControl[] {
-  processProactiveControls();
+  var CardToProactiveControls = processProactiveControls();
   var key = cardName.toLowerCase();
-
  var relatedControls = CardToProactiveControls[key] || [];
-
   var result = proactiveControls.filter((x) => relatedControls.includes(x.id));
-  
   return result;
-  //return proactiveControls?.filter((x) =>CardToProactiveControls[key].includes(x?.id)) ?? [];
 }
 
 
