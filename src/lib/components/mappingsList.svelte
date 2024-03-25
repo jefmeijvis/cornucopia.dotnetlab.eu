@@ -1,6 +1,5 @@
 <script lang="ts">
-  import type { ProactiveControl } from "$lib/dotnetlabData";
-
+  import type { ProactiveControl } from "../../domain/card/ProactiveControl";
   export let title: string;
   export let mappings: number[] | string[] | ProactiveControl[];
   export let linkFunction: any = undefined;

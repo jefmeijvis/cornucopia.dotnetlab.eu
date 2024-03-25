@@ -10,6 +10,6 @@ export const load = (({ params }) => {
     card: getCardBySuitAndName(params.suit, params.card),
     cards: getCardsFlat(),
     ASVSRoutes: FileSystemHelper.ASVSRouteMap(),
-    OWASPTop10Routes: FileSystemHelper.TOP10RouteMap(),
+    OWASPTop10Routes: FileSystemHelper.OWASPTOP10RouteMap(),
   };
 }) satisfies PageServerLoad;

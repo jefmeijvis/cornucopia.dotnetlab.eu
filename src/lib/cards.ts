@@ -1,8 +1,8 @@
+import type { ProactiveControl } from "../domain/card/ProactiveControl";
 import data from "./data";
 import mappings from "./mappings";
 import attacks from "$lib/attacks.json";
-import { getProactiveControlsForCard, getTop10IndexesForCard } from "./dotnetlabData";
-import type { ProactiveControl } from "./dotnetlabData";
+import { getProactiveControlsForCard, getTop10IndexesForCard } from "../domain/card/getDotnetlabCardData";
 
 export type Card = {
   id: string;

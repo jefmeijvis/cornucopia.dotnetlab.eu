@@ -52,7 +52,7 @@ export class FileSystemHelper {
     return routes;
   }
 
-  public static TOP10RouteMap(): any[] {
+  public static OWASPTOP10RouteMap(): any[] {
     const basePath: string = "data/taxonomy/OWASP-top-10";
     const sectionRegex = /^(\d{2})-/;
     let routes: Route[] = [];
@@ -60,14 +60,12 @@ export class FileSystemHelper {
     const firstLevelDirs = this.getDirectories(basePath).filter((dir) =>
       sectionRegex.test(dir)
     );
-    console.log("firstLevelDirs", firstLevelDirs);
     firstLevelDirs.forEach((firstLevelDir) => {
       const firstLevelPath = basePath + "/" + firstLevelDir;
       const firstPart = firstLevelDir.match(sectionRegex)?.[1];
 
       let fullPath = firstLevelPath + "/";
       fullPath = fullPath.replace("data/taxonomy", "/taxonomy");
-      console.log("...."+fullPath, firstLevelDir);
       routes.push({
         Path: fullPath,
         Section: firstPart!,
