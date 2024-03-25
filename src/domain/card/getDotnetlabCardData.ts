@@ -9,46 +9,46 @@ import { addToMapping } from "../../lib/filesystem/addToMapping";
 // code for card to proactive control mapping:
 function processProactiveControls() :CardMapping {
   // for each proactive control, we have a list of cards that are related to it
-  const CardToProactiveControls: CardMapping = {};
+  const cardToProactiveControls: CardMapping = {};
   proactiveControlRelations.forEach(({ index, cards }) => {
     Object.entries(cards).forEach(([category, cardNumbers]) => {
       cardNumbers.forEach((cardNumber: string) => {
         addToMapping(
           `${category} ${cardNumber}`,
           index,
-          CardToProactiveControls
+          cardToProactiveControls
         );
       });
     });
   });
-  return CardToProactiveControls;
+  return cardToProactiveControls;
 }
 
 
 // code for card to top10 mapping:
 function processTop10():CardMapping {
-  const CardToTop10: CardMapping = {};
+  const cardToTop10: CardMapping = {};
   top10relations.forEach(({ index, cards }) => {
     Object.entries(cards).forEach(([category, cardNumbers]) => {
       cardNumbers.forEach((cardNumber: string) => {
-        addToMapping(`${category} ${cardNumber}`, index, CardToTop10);
+        addToMapping(`${category} ${cardNumber}`, index, cardToTop10);
       });
     });
   });
-  return CardToTop10;
+  return cardToTop10;
 }
 
 export function getTop10IndexesForCard(cardName: string): number[] {
-  var CardToTop10 = processTop10();
+  var cardToTop10 = processTop10();
   const key = cardName.toLowerCase();
-  return CardToTop10[key];
+  return cardToTop10[key];
 }
 export function getProactiveControlsForCard(
   cardName: string
 ): ProactiveControl[] {
-  var CardToProactiveControls = processProactiveControls();
+  var cardToProactiveControls = processProactiveControls();
   var key = cardName.toLowerCase();
- var relatedControls = CardToProactiveControls[key] || [];
+ var relatedControls = cardToProactiveControls[key] || [];
   var result = proactiveControls.filter((x) => relatedControls.includes(x.id));
   return result;
 }
