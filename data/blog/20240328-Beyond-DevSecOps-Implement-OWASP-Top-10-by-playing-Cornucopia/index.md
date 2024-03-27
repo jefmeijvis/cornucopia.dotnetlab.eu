@@ -1,5 +1,5 @@
 ---
-date: 20240328
+date: 20240327
 author: ive-verstappen
 tags: agile,scrum
 hidden: true
