@@ -2,7 +2,7 @@
 date: 20240327
 author: ive-verstappen
 tags: agile,scrum
-hidden: true
+hidden: false
 description: Beyond DevSecOps - Implement OWASP Top 10 by playing Cornucopia
 ---
 # Beyond DevSecOps: Implement OWASP Top 10 by playing Cornucopia
