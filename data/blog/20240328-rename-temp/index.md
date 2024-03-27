@@ -13,7 +13,7 @@ In the pursuit of secure software development, the adoption of DevSecOps has bee
 DevSecOps lays down the groundwork by automating security checks, but this is just the foundation. True AppSec requires us to look at the bigger picture—identifying security needs that are not just technical but also architectural and strategic.  OWASP provides excellent guidance for you and your team to move beyond DevSecOps.
 
 ## OWASP TOP 10 as guiding principle for your manual security efforts
-While DevSecOps tools can flag common vulnerabilities like SQL injection or XSS, they might miss out on complex issues such as logic flaws or architectural weaknesses. To make sure you focus on the right priorities in developing more secure software, OWASP TOP 10 provides great guidance and helps you prioritize your efforts.  However, thorough understanding of OWASP TOP 10 requires in-depth knowledge about security.  If you are new to this, it can be daunting to figure out how to correctly improve the security of your applications.
+While DevSecOps tools can flag common vulnerabilities like SQL injection or XSS, they might miss out on complex issues such as logic flaws or architectural weaknesses. To make sure you focus on the right priorities in developing more secure software, OWASP TOP 10 provides great guidance and helps you prioritize your efforts.  However, thorough understanding of OWASP TOP 10 requires in-depth knowledge about security.  If you are new to this, it can be daunting to figure out how to correctly improve the security of your applications. 
 
 Luckily, there is much more to OWASP than the TOP 10.  If you're new to AppSec and OWASP, we advise to start with playing OWASP Cornucopia.
 
