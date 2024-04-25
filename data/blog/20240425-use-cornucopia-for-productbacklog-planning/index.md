@@ -57,16 +57,16 @@ If you look at ASVS Level 1, you will see lots of requirements concerning authen
 
 We strongly advise teams to go for an approach whereby you choose to entirely avoid storing user-information within your system.
 
-## Embracing Automated Security Testing
+## The pitfall of prioritizing only Functional Requirements
 
-As we continue to build our Product Backlog with security as a foundation, automated security testing becomes indispensable. By integrating tools that perform static and dynamic analysis, teams can identify vulnerabilities in real-time, as code is written and committed. This proactive approach ensures that security is not just a single checkpoint but a continuous thread throughout the software development lifecycle.
+During the prioritization-process of the Product Backlog, it is tempting to prioritize Functional Features that deliver immediate, visible value to the user.  Beware of this bias.  As stated above, there are several sources of Bsuiness Value for your application.  Risk Reduction is a major source of Business Value.  This is where Non-Functional Requirements, especially security, become important.
 
-## Continuous Education and Security Awareness
+Focusing solely on features and functionality can lead to a precarious situation where the product, though rich in capabilities, becomes a breeding ground for vulnerabilities. It's akin to building a house with lavish interiors but with doors that don't lock securely.
 
-Building secure software is an evolving challenge that requires a commitment to continuous education and awareness. Regular training sessions, security workshops, and game-based learning, such as the Cornucopia card game, can keep the team updated on the latest security trends and threats.
-
-Furthermore, instilling a culture of security awareness where every team member feels responsible for the application’s security leads to better design decisions and coding practices. Encourage developers to obtain security certifications and participate in security forums and conferences. By investing in the team's knowledge, you can turn each developer into a security advocate.
+Prioritizing security within the backlog is a strategic move. It's about understanding that each line of code not only adds functionality but also potential risk. It's about recognizing that reducing the risk of a security incident is as valuable as any other marketable feature – if not more. As we navigate through our product backlog, let's remember to weigh the non-functional alongside the functional, valuing security not as an afterthought, but as a foundational component of our product's integrity and our users' trust.
 
 ## Conclusion
 
-Prioritizing your product backlog with a strong emphasis on security can appear daunting at first, but with a structured approach, it becomes a strategic asset. Deciding on your application's security bar and planning strategically for implementation sets a clear path. Utilizing the OWASP ASVS as a guide, and embracing automated security testing, will ensure consistent security practices are embedded within your development process. Furthermore, fostering continuous education and a culture of security awareness will empower your team to build and maintain secure software. By taking these steps, you create a resilient, security-conscious product that stands up to the demands of the modern digital landscape.
+In conclusion, while functional requirements are critical for delivering value to the customer, non-functional requirements, particularly security, are essential for risk reduction and long-term sustainability of the product. They should be given due consideration and balanced against the functional
+
+aspects to avoid the pitfall of a skewed backlog that could compromise the application's security posture and, ultimately, its market value. Let's keep the scales balanced; let's not underestimate the silent, yet profound, value of security.
