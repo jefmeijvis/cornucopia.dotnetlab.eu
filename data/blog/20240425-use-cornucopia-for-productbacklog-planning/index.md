@@ -5,7 +5,7 @@ tags: agile,scrum
 hidden: false
 description: Use Cornucopia for planning your security features into your product backlog
 ---
-# Avoid using "gut feeling" to prioritize your product backlog
+# Use Owasp Cornucopia to guide your Product Planning and avoid the pitfall of only prioritizing Functional Requirements
 
 After playing the Cornucopia card game, you should have created an ordered list of product backlog items. The concept of a Product Backlog is easy to understand: the highest priority Product Backlog Item (PBI) should be the next one to work on. So, prioritizing the PBIs of most importance is key. There are two categories of product backlog items:
 
