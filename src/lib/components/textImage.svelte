@@ -1,74 +1,94 @@
 <script lang="ts">
-    export let reverse = false;
+	export let align: 'left' | 'right' = 'left';
+	export let id : string = "";
     export let component : any;
 
-    let width: number;
-    let height: number;
-    let mobile: boolean = false;
+	let innerWidth = 0;
+	let innerHeight = 0;
+	let mobile: boolean;
+	$: {
+		mobile = innerWidth / innerHeight < 1;
+	}
 
-    function getMobile(w: number, h: number) 
-    {
-        mobile = w / h < 1;
-    }
+	function getStyle(isMobile: boolean) {
+		if (isMobile) return '';
 
-    $: getMobile(width, height);
+		if (align == 'left') {
+			return 'flex-direction:row';
+		} else {
+			return 'flex-direction:row-reverse';
+		}
+	}
 </script>
 
-<svelte:window bind:innerWidth={width} bind:innerHeight={height} />
+<svelte:window bind:innerWidth bind:innerHeight />
 
-<div class="container">
-    {#if (reverse)}
-        <div class="text">
-            <slot></slot>
-        </div>
-        <div class="image">
-            <svelte:component this={component}></svelte:component>
-        </div>
-    {:else}
-        <div class="image">
-            <svelte:component this={component}></svelte:component>
-        </div>
-        <div class="text">
-            <slot></slot>
-        </div>
-    {/if}
+{#if id != ""}
+	<div class="anchor" id={id}></div>
+{/if}
+<div class="container" style={getStyle(mobile)}>
+	<div class="image">
+        <svelte:component this={component}></svelte:component>
+    </div>
+	<div style="{align == 'left' && !mobile ? 'padding-left:2rem;' : 'padding-right:2rem;'}" class="text">
+		<slot />
+	</div>
 </div>
 
 
 <style>
-    .container
-    {
-        width: min(100rem , 80%);
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-        margin-top: 5rem;
-    }
+	.anchor
+	{
+		position: absolute;
+		height: 1rem;
+		transform: translate(0,-4rem);
+		width: 1rem;
+		pointer-events: none;
+	}
+	.container {
+		width: 90%;
+		margin: auto;
+		padding: 0rem;
+		display: flex;
+		padding-top: 2rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
 
-    .text
-    {
-        width : calc(50% - 2rem);
-        padding: 1rem;
-    }
+	.text {
+		height: 100%;
+		width: 50%;
+		opacity: 80%;
+	}
 
-    .image
-    {
-        padding: 1rem;
-        width : 50%;
-    }
+	.image {
+		width: 50%;
+	}
 
-    @media (max-aspect-ratio: 1/1) 
-    {
-        .container
-        {
-            flex-direction: column;
-            width : calc(100% - 2rem);
-            margin: 1rem;
-        }
+	img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		border-radius: .3rem;
+		filter:grayscale();
+	}
 
-        .text,.image
-        {
-            width : calc(100% - 2rem);
-        }
-    }
+	@media (max-aspect-ratio: 1/1) {
+		.container {
+			flex-direction: column;
+		}
+
+		.image {
+			width: 90%;
+			padding: 0;
+			margin: auto;
+		}
+
+		.text {
+			padding: 1rem;
+			height: 100%;
+			width: calc(100% - 2rem);
+		}
+	}
 </style>
