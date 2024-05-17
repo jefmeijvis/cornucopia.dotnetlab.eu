@@ -2,7 +2,7 @@
 date: 20240517
 author: jef-meijvis
 tags: owasp,scrum
-hidden: true
+hidden: false
 description: Cornucopia talk OWASP chapter belgium
 ---
 # Cornucopia talk OWASP chapter Belgium
