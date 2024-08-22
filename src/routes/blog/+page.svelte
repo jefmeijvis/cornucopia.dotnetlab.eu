@@ -12,7 +12,7 @@
 {:else}
     <div class="list">
         {#each data.posts as post}
-            <button title="View {Text.Format(post.path)}" on:click={()=>goto('/blog/' + post.path)}>
+            <button data-umami-event="blogpost-button" title="View {Text.Format(post.path)}" on:click={()=>goto('/blog/' + post.path)}>
                 <p class="title">{Text.Format(post.title)}</p>
                 <p class="info">
                     {Text.FormatDate(post.date)}

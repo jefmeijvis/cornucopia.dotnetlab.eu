@@ -61,9 +61,9 @@ $: getMobile(width, height);
 {#if menuOpen}
     <div class="mobile-menu">
         {#each [...links].reverse() as link}
-            <button class="link-mobile" on:click={()=>{toggleMenu();goto(link.href)}}>{link.name}</button>
+            <button data-umami-event="navbar-{link.name}-button" class="link-mobile" on:click={()=>{toggleMenu();goto(link.href)}}>{link.name}</button>
         {/each}
-        <button class="link-mobile" on:click={()=>{window.location.href = 'https://webshop.dotnetlab.eu/product/cornucopia-card-deck/'}}>Webshop</button>
+        <button data-umami-event="webshop-button" class="link-mobile" on:click={()=>{window.location.href = 'https://webshop.dotnetlab.eu/product/cornucopia-card-deck/'}}>Webshop</button>
     </div>
 {/if}
 

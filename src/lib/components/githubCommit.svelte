@@ -21,7 +21,7 @@
             </p>
         </div>
         <div class="heading-right">
-            <button on:click={()=>window.open(commit.html_url,'_blank')}>
+            <button data-umami-event="github-commit-button" on:click={()=>window.open(commit.html_url,'_blank')}>
                 {#if commit.status == 'success' || commit.status == 'pending'}
                     <img class="status" alt="success" src="/icons/success.png">
                 {:else}
