@@ -46,14 +46,14 @@ $: getMobile(width, height);
     <a class="logo" href="/">{$page.url.hostname == "localhost" ? 'Development' : 'Cornucopia'}</a>
     {#if mobile}
         {#if menuOpen}
-            <button in:fade on:click={toggleMenu}><img alt="button to close the menu" src="/icons/close.png"/></button>
+            <button data-umami-event="mobile-navbar-open-button" in:fade on:click={toggleMenu}><img alt="button to close the menu" src="/icons/close.png"/></button>
         {:else}
-            <button in:fade on:click={toggleMenu}><img alt="button to open the menu" src="/icons/menu.png"/></button>
+            <button data-umami-event="mobile-navbar-close-button" in:fade on:click={toggleMenu}><img alt="button to open the menu" src="/icons/menu.png"/></button>
         {/if}
     {:else}
-        <a class="link webshop" target="_blank" href="https://webshop.dotnetlab.eu/product/cornucopia-card-deck/">Webshop</a>
+        <a data-umami-event="desktop-webshop-button" class="link webshop" target="_blank" href="https://webshop.dotnetlab.eu/product/cornucopia-card-deck/">Webshop</a>
         {#each links as link}
-            <a class="link" href="{link.href}">{link.name}</a>
+            <a data-umami-event="desktop-navbar-{link.name}-button" class="link" href="{link.href}">{link.name}</a>
         {/each}
     {/if}
 </nav>
@@ -61,9 +61,9 @@ $: getMobile(width, height);
 {#if menuOpen}
     <div class="mobile-menu">
         {#each [...links].reverse() as link}
-            <button data-umami-event="navbar-{link.name}-button" class="link-mobile" on:click={()=>{toggleMenu();goto(link.href)}}>{link.name}</button>
+            <button data-umami-event="mobile-navbar-{link.name}-button" class="link-mobile" on:click={()=>{toggleMenu();goto(link.href)}}>{link.name}</button>
         {/each}
-        <button data-umami-event="webshop-button" class="link-mobile" on:click={()=>{window.location.href = 'https://webshop.dotnetlab.eu/product/cornucopia-card-deck/'}}>Webshop</button>
+        <button data-umami-event="mobile-webshop-button" class="link-mobile" on:click={()=>{window.location.href = 'https://webshop.dotnetlab.eu/product/cornucopia-card-deck/'}}>Webshop</button>
     </div>
 {/if}
 
