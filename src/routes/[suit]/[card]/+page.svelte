@@ -12,9 +12,12 @@
     let suits_options = ["data-validation-&-encoding","authentication","session-management","authorization","cryptography","cornucopia","wild-card","explanation"]
     return (cards_options.includes(cardObject.card.toLowerCase()) && suits_options.includes(cardObject.suit.toLowerCase()))
   }
+
+  
+
 </script>
 
-<p><a href="/cards">Back to overview</a></p>
+<p><a href="/cards">Back to overview yeah</a></p>
 {#if cardFound()}
   <CardFound ASVSRoutes={data.ASVSRoutes} cards={data.cards} card={data.card} />
 {:else}
